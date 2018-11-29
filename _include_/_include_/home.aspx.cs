@@ -17,4 +17,9 @@ public partial class home : System.Web.UI.Page
         Response.Redirect(".\\account\\signup.aspx");
         //
     }
+
+    protected void ImageButton12_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect(".\\account\\signup.aspx");
+    }
 }

@@ -41,6 +41,22 @@
             width: 30%;
             height: 521px;
         }
+
+        .table_style{
+            padding : 10px;
+        }
+        .auto-style21 {
+            height: 28px;   
+        }
+        .table_class ,th,td{
+        }
+        .auto-style22 {
+            height: 452px;
+        }
+        .auto-style23 {
+            height: 523px;
+            padding: 10px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -111,12 +127,13 @@
         &nbsp;
     </p>
                     <div class="auto-style14" style="padding: 45px; background-color: #FFFFFF; text-align: center;">
+                        <asp:Image ID="Image4" runat="server" ImageUrl="~/objects/images/home_lQ_Icon.png" />
                         <br />
                         <br />
-                        <asp:Label ID="Label16" runat="server" ForeColor="#999999" Text="상, 중, 하의 레벨 그리고 새로운 퀴즈들." Font-Size="20pt"></asp:Label>
+                        <asp:Label ID="Label16" runat="server" ForeColor="#999999" Text="3단계의 레벨 그리고 새로운 퀴즈들." Font-Size="20pt"></asp:Label>
                         <br />
-                        <asp:Label ID="Label17" runat="server" Font-Size="30pt" ForeColor="#33CCCC" Text="약 30개 이상"></asp:Label>
-                        <asp:Label ID="Label18" runat="server" ForeColor="#999999" Text="개" Font-Size="15pt"></asp:Label>
+                        <asp:Label ID="Label17" runat="server" Font-Size="30pt" ForeColor="#33CCCC" Text="약 30"></asp:Label>
+                        <asp:Label ID="Label18" runat="server" ForeColor="#999999" Text=" 개" Font-Size="15pt"></asp:Label>
                     </div>
     <p class="auto-style12">
         &nbsp;
@@ -141,27 +158,100 @@
         &nbsp;
     </p>
     <p class="auto-style12">
-        &nbsp;
+        &nbsp;<table cellspacing="50" class="widthhundred">
+            <tr>
+                <td class="auto-style21">
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/C.png" />
+                </td>
+                <td class="auto-style21">
+                    <asp:ImageButton ID="ImageButton3" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                </td>
+                <td class="auto-style21">
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                </td>
+                <td class="auto-style21">
+                    <asp:ImageButton ID="ImageButton5" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ImageButton ID="ImageButton6" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                </td>
+                <td>
+                    <asp:ImageButton ID="ImageButton7" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                </td>
+                <td>
+                    <asp:ImageButton ID="ImageButton8" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                </td>
+                <td>
+                    <asp:ImageButton ID="ImageButton9" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style22">
+                    <asp:ImageButton ID="ImageButton10" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                </td>
+                <td class="auto-style22">
+                    <asp:ImageButton ID="ImageButton11" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                </td>
+                <td class="auto-style22"></td>
+                <td class="auto-style22"></td>
+            </tr>
+        </table>
+&nbsp;</p>
+                    <div class="auto-style23" style="padding: 45px; background-color: #FFFFFF; text-align: center;">
+                        <br />
+                        <br />
+                        <br />
+                        <asp:Label ID="Label20" runat="server" Font-Size="30pt" ForeColor="#33CCCC" Text="퀴즈를 맞추고 레벨을 올려 언어들을 지배하십시오"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="Label21" runat="server" Font-Size="20pt" ForeColor="#9999BC" Text="코드를 배우고, 세상을 배우자" Font-Strikeout="False"></asp:Label>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <asp:Label ID="Label22" runat="server" Font-Size="20pt" ForeColor="#365393" Text="저희는 각 언어에 대한 퀴즈를 제공해드립니다." Font-Strikeout="False"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="Label23" runat="server" Font-Size="20pt" ForeColor="#365393" Text="퀴즈를 맞추시면 보상을 드립니다." Font-Strikeout="False"></asp:Label>
+                        &#39;<br />
+                        <br />
+                        <asp:Label ID="Label24" runat="server" Font-Size="20pt" ForeColor="#365393" Text="저희는 당신의 언어 이해력을 올려드립니다." Font-Strikeout="False"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:Label ID="Label25" runat="server" Font-Size="20pt" ForeColor="#365393" Text="세상 모든 언어를 알때까지." Font-Strikeout="False"></asp:Label>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <asp:Label ID="Label26" runat="server" Font-Size="20pt" ForeColor="#365393" Text="완벽한 프로그래밍은 무엇일까요? 지금 알아보세요!" Font-Strikeout="False"></asp:Label>
+                    </div>
+    <p class="auto-style12">
+        &nbsp;</p>
+    <p class="auto-style12">
+        &nbsp;</p>
+    <p class="auto-style12">
+        &nbsp;</p>
+    <p class="auto-style12">
+        &nbsp;</p>
+    <p class="auto-style12">
+        &nbsp;</p>
+    <p class="auto-style12">
+                        <asp:Label ID="Label27" runat="server" Font-Size="25pt" ForeColor="#33CCCC" Text="지금 시작하세요!" Font-Strikeout="False"></asp:Label>
+                        </p>
+    <p class="auto-style12">
+                        <asp:Label ID="Label28" runat="server" Font-Size="25pt" ForeColor="#33CCCC" Text="다른 사람은 모르는 언어를 찾고 싶지 않나요?" Font-Strikeout="False"></asp:Label>
+                        </p>
+    <p class="auto-style12">
+        &nbsp;</p>
+    <p class="auto-style12">
+        &nbsp;</p>
+    <p class="auto-style12">
+        <asp:ImageButton ID="ImageButton12" runat="server" Height="80px" ImageUrl="~/objects/images/sign_up_for_free.png" OnClick="ImageButton12_Click" Width="250px" />
     </p>
     <p class="auto-style12">
-        &nbsp;
-    </p>
-    <p class="auto-style12">
-        &nbsp;
-    </p>
-    <p class="auto-style12">
-        &nbsp;
-    </p>
-    <p class="auto-style12">
-        &nbsp;
-    </p>
-    <p class="auto-style12">
-        &nbsp;
-    </p>
-    <p class="auto-style12">
-        &nbsp;
-    </p>
-    <p>
-    </p>
+        &nbsp;</p>
+    <hr />
 </asp:Content>
 
