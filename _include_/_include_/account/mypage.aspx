@@ -1,19 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="mypage.aspx.cs" Inherits="account_mypage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    <style type="text/css">
-        .auto-style12 {
-            text-align: center;
-        }
-        .auto-style13 {
-            text-align: left;
-        }
-        .auto-style14 {
-            text-align: right;
-            width: 764px;
-            font-size: x-large;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <p>
@@ -27,6 +14,7 @@
             <td class="auto-style13"><strong>
                 <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style18"></asp:TextBox>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="수정" />
+&nbsp;<asp:Label ID="Label12" runat="server"></asp:Label>
                 </strong></td>
         </tr>
         <tr>
@@ -107,9 +95,7 @@
 <p class="auto-style12">
     <asp:Label ID="Label11" runat="server" Font-Size="X-Large"></asp:Label>
 </p>
-    <p class="auto-style13">
-        &nbsp;</p>
-    <p class="auto-style13">
+    <p class="auto-style12">
         &nbsp;</p>
 </asp:Content>
 
