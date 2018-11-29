@@ -19,12 +19,6 @@
         .auto-style1 {
             width: 99%;
         }
-        .auto-style4 {
-            height: 120px;
-            width: 40%;
-            align-content: flex-end;
-            
-        }
         .auto-style5 {
             padding : 150px;
             text-align: center;
@@ -43,7 +37,7 @@
             text-align: center;
             color: darkgray;
         }
-        .auto-style3 {
+        .auto-style4 {
             height: 120px;
             width: 40%;
             text-align: right;
@@ -59,18 +53,20 @@
         <div>
         <table class="auto-style1">
             <tr> 
-                <td class="auto-style7"></td>
+                <td class="auto-style7">&nbsp;</td>
                 <td class="auto-style4">
 &nbsp;
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="51px" ImageUrl="~/objects/images/logo.png" Width="246px" PostBackUrl="~/home.aspx" />
                     </td>
-                <td class="auto-style3">
+                <td class="auto-style4">
+                    <asp:LinkButton ID="LinkButton3" runat="server" CssClass="auto-style2" ForeColor="Black" OnClick="LinkButton3_Click">커뮤니티</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:LinkButton ID="LinkButton1" runat="server" CssClass="auto-style2" ForeColor="Black" OnClick="LinkButton1_Click">회원가입</asp:LinkButton>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:LinkButton ID="LinkButton2" runat="server" CssClass="auto-style2" ForeColor="Black" OnClick="LinkButton2_Click">로그인</asp:LinkButton>
                 </td>
                 <td class="auto-style9">
-                    </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5" colspan="4">
@@ -80,6 +76,7 @@
             </tr>
             <tr>
                 <td class="auto-style11" colspan="4">
+                    <br />
     Copyright&copy; 2018 Inje Univ. College of Computer Engineering All right received.</td>
             </tr>
         </table>

@@ -12,6 +12,9 @@
         .auto-style11 {
             text-align: center;
         }
+    .auto-style12 {
+        font-size: x-large;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -21,9 +24,9 @@
     <p>
     </p>
     <h1 class="auto-style6">#include에 오신 것을 진심으로 환영합니다!</h1>
-    <p class="auto-style11">
-        안녕하세요! <asp:Label ID="Label1" runat="server"></asp:Label>
-        님</p>
+    <h4>
+        <span class="auto-style12">안녕하세요! </span> <asp:Label ID="Label1" runat="server" CssClass="auto-style12"></asp:Label>
+        님</h4>
     <p class="auto-style7">
         &nbsp;</p>
     <p>
