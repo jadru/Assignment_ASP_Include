@@ -33,6 +33,7 @@
             text-align: right;
         }
         .auto-style10 {
+        .auto-style10 {     
             height: 120px;
             width: 40%;
             text-align: right;
