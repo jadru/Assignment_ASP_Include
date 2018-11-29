@@ -3,14 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
     .auto-style1 {
-        
+        width: 500px;
     }
     .auto-style2 {
         width: 32px;
         height: 201px;
     }
     .auto-style3 {
-        font-size: x-large;
         color: #0066CC;
     }
     .auto-style4 {
