@@ -9,7 +9,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-        @import url('https://fonts.googleapis.com/css?family=Jua');
+        @import url('https://fonts.googleapis.com/css?family=Jua&subset=korean');
         .global-style {
             background-color :#f4fafa;
             font-family: 'Jua', sans-serif;
@@ -24,7 +24,7 @@
             width: 40%;
         }
         .auto-style5 {
-            padding : 50px;
+            padding : 150px;
         }
         .auto-style7 {
             height: 120px;

@@ -21,72 +21,43 @@
             text-align: center;
             width: 299px;
         }
-        .auto-style14 {
-            border-style: solid;
-            border-color: inherit;
-            border-width: medium;
-width: 884px;
-            height: 248px;
-            }
-        .auto-style20 {
-            height: 70px;
-            width: 292px;
-        }
         .auto-style21 {
             font-size: medium;
             height: 120px;
             text-align: center;
         }
-        .auto-style24 {
-            height: 70px;
-            width: 291px;
-            font-size: large;
-            text-align: right;
-        }
-        .auto-style25 {
-            width: 291px;
-            font-size: large;
-            text-align: right;
-        }
-        .auto-style28 {
-            height: 69px;
-            width: 291px;
-            font-size: large;
-            text-align: right;
-        }
-        .auto-style29 {
-            height: 69px;
-            width: 292px;
-        }
         .auto-style30 {
             text-align: center;
+        }
+        .auto-style31 {
+            width: 60%;
+            padding: 40px;
+        }
+        .auto-style32 {
+            width: 40%;
+            padding: 40px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div>
-        <table class="auto-style14" align="center">
+        <table class="auto-style1" style="background-color:plum">
             <tr>
-                <td class="auto-style25" rowspan="3">
+                <td class="auto-style31">
+                    <h1>PHP - Hypertext Preprocessor</h1>
+                    <p>최초 개발자 : Rasmus Lerdorf</p>
+                    <p>운영 및 개발자 : The PHP Group</p>
+                    <p>공식 사이트 : http://www.php.net</p>
+                </td>
+                <td class="auto-style32">
         <strong>
                 <asp:Image ID="Image2" runat="server" Height="176px" ImageUrl="~/objects/images/php-00441489844a0103eae71ba2fe15244c.png" Width="342px" />
                 </strong></td>
-                <td class="auto-style28"><strong>최초 개발자 :</strong></td>
-                <td class="auto-style29">Rasmus Lerdorf</td>
             </tr>
-            <tr>
-                <td class="auto-style28"><strong>운영 및 개발자 :</strong></td>
-                <td class="auto-style29">The PHP Group</td>
-            </tr>
-            <tr>
-                <td class="auto-style24"><strong>공식 사이트 :</strong></td>
-                <td class="auto-style20"><a href="http://www.php.net">http://www.php.net</a></td>
-            </tr>
-</table>
+        </table>
     </div>
     <h1 class="auto-style30">
-        <strong style="background-color: #CCFFFF; border-style: solid">PHP - Hypertext Preprocessor
-                </strong></h1>
+        &nbsp;</h1>
     
     <p class="auto-style6">
         웹 서버에서 사용되는 대표적인 스크립트 언어이다.</p>
