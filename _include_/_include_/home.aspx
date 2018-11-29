@@ -159,9 +159,9 @@
                         <asp:Image ID="Image4" runat="server" ImageUrl="~/objects/images/home_lQ_Icon.png" />
                         <br />
                         <br />
-                        <asp:Label ID="Label16" runat="server" ForeColor="#999999" Text="3단계의 레벨 그리고 새로운 퀴즈들." Font-Size="20pt"></asp:Label>
+                        <asp:Label ID="Label16" runat="server" ForeColor="#999999" Text="5단계의 레벨 그리고 새로운 퀴즈들." Font-Size="20pt"></asp:Label>
                         <br />
-                        <asp:Label ID="Label17" runat="server" Font-Size="30pt" ForeColor="#33CCCC" Text="약 30"></asp:Label>
+                        <asp:Label ID="Label17" runat="server" Font-Size="30pt" ForeColor="#33CCCC" Text="약 20"></asp:Label>
                         <asp:Label ID="Label18" runat="server" ForeColor="#999999" Text=" 개" Font-Size="15pt"></asp:Label>
                     </div>
     <p class="auto-style12">
@@ -194,13 +194,13 @@
         &nbsp;<table cellspacing="30" class="widthhundred">
             <tr>
                 <td class="auto-style21">
-                    <asp:ImageButton ID="ImageButton2" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/C.png" />
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/C.png" OnClick="ImageButton2_Click" />
                 </td>
                 <td class="auto-style27">
-                    <asp:ImageButton ID="ImageButton3" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                    <asp:ImageButton ID="ImageButton3" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/PHP.png" OnClick="ImageButton3_Click" />
                 </td>
                 <td class="auto-style21">
-                    <asp:ImageButton ID="ImageButton4" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/SQL.png" OnClick="ImageButton4_Click" />
                 </td>
                 <td class="auto-style24">
                     <asp:ImageButton ID="ImageButton5" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
