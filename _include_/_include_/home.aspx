@@ -21,13 +21,16 @@
         .auto-style12 {
             text-align: center;
         }
+        .auto-style13 {
+            left: 165px;
+            z-index: 1;
+        }
+        .auto-style14 {
+            height: 200px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <p class="auto-style12">
-        &nbsp;</p>
-<p class="auto-style12">
-    &nbsp;</p>
     <table class="auto-style1">
         <tr>
             <td class="auto-style11">
@@ -37,13 +40,18 @@
     <asp:Label ID="Label2" runat="server" Text="이곳에서 한번에." Font-Names="배달의민족 주아" Font-Size="25pt" ForeColor="#36537E"></asp:Label>
                 <br />
                 <br />
-    <asp:ImageButton ID="ImageButton1" runat="server" CssClass="auto-style7" Height="70px" ImageUrl="~/objects/images/sign_up_for_free.png" Width="200px" />
+                <br />
+    <asp:ImageButton ID="ImageButton1" runat="server" CssClass="auto-style13" Height="77px" ImageUrl="~/objects/images/sign_up_for_free.png" Width="242px" OnClick="ImageButton1_Click" />
             </td>
             <td>
     <asp:Image ID="Image2" runat="server" CssClass="auto-style8" ImageUrl="~/objects/images/home_image1.png" />
             </td>
         </tr>
     </table>
+    <div class="auto-style14">
+    </div>
+<p class="auto-style12">
+    &nbsp;</p>
 <p class="auto-style12">
     &nbsp;</p>
 <p class="auto-style12">
