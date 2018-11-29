@@ -3,13 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
     .auto-style1 {
-        width: 500px;
+        width: 550px;
     }
     .auto-style2 {
         width: 32px;
         height: 201px;
     }
     .auto-style3 {
+
         color: #0066CC;
     }
     .auto-style4 {
@@ -37,12 +38,12 @@
             width: 300px;
         }
         .auto-style40 {
-            width: 550px;
+            height: 89px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<table class="auto-style1">
+    <table class="auto-style1">
     <tr>
         <td class="auto-style39" rowspan="4">
             <asp:Image ID="Image2" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
@@ -55,7 +56,7 @@
         <td><h1>PHP I</h1></td>
     </tr>
     <tr>
-        <td><h3>PHP설치환경과 기본적인 개념 학습</h3></td>
+        <td class="auto-style3"><h3>PHP설치환경과 기본적인 개념 학습</h3></td>
     </tr>
     <tr>
         <td>
@@ -121,7 +122,7 @@
         <td><h1>PHP II</h1></td>
     </tr>
     <tr>
-        <td><h3>PHP의 문법 배우기 - 변수, 연산자, 제어구조</h3></td>
+        <td class="auto-style3"><h3>PHP의 문법 배우기 - 변수, 연산자, 제어구조</h3></td>
     </tr>
     <tr>
         <td>
@@ -152,10 +153,10 @@
         </td>
     </tr>
     <tr>
-        <td>PHP III</td>
+        <td><h1>PHP III</h1></td>
     </tr>
     <tr>
-        <td>카운터 만들기</td>
+        <td class="auto-style3"><h3>카운터 만들기</h3></td>
     </tr>
     <tr>
         <td>
@@ -186,10 +187,10 @@
         </td>
     </tr>
     <tr>
-        <td>PHP IV</td>
+        <td><h1>PHP IV</h1></td>
     </tr>
     <tr>
-        <tdPHP 디버깅</td>
+        <td><h3 class="auto-style3">PHP 디버깅</h3></td>
     </tr>
     <tr>
         <td>
@@ -210,20 +211,20 @@
 </p>
 <p>
 </p>
-<table class="auto-style1">
+<table class="auto-style41">
     <tr>
         <td rowspan="4" class="auto-style39">
             <asp:Image ID="Image17" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
         </td>
-        <td>
+        <td class="auto-style40">
                 <asp:Image ID="Image18" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />
         </td>
     </tr>
     <tr>
-        <td>PHP V</td>
+        <td><h1>PHP V</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3">PHP 최종 정리</td>
+        <td class="auto-style3"><h3>PHP 최종 정리</h3></td>
     </tr>
     <tr>
         <td>

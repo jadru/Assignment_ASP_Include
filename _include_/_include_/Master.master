@@ -5,13 +5,14 @@
 <html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>include</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Jua');
         .global-style {
             background-color :#f4fafa;
-            font-family: Arial;
+            font-family: 'Jua', sans-serif;
         }
         .auto-style1 {
             width: 100%;
@@ -22,7 +23,6 @@
         }
         .auto-style5 {
             padding : 150px;
-            text-align : center
         }
         .auto-style7 {
             height: 120px;
@@ -34,7 +34,6 @@
             text-align: right;
         }
         .auto-style10 {
-        .auto-style10 {     
             height: 120px;
             width: 40%;
             text-align: right;
