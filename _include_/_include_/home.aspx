@@ -274,7 +274,7 @@
                         <asp:Label ID="Label27" runat="server" Font-Size="25pt" ForeColor="#33CCCC" Text="지금 시작하세요!" Font-Strikeout="False"></asp:Label>
                         </p>
     <p class="auto-style12">
-                        <asp:Label ID="Label28" runat="server" Font-Size="25pt" ForeColor="#33CCCC" Text="다른 사람은 모르는 언어를 찾고 싶지 않나요?" Font-Strikeout="False"></asp:Label>
+                        <asp:Label ID="Label28" runat="server" Font-Size="25pt" ForeColor="#33CCCC" Text="친구들은 모르는 언어를 찾고 싶지 않나요?" Font-Strikeout="False"></asp:Label>
                         </p>
     <p class="auto-style12">
         &nbsp;</p>

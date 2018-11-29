@@ -35,6 +35,6 @@ public partial class home : System.Web.UI.Page
 
     protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect(".\\languages\\sql\\sqlmain.aspx");
+       // Response.Redirect(".\\languages\\sql\\sqlmain.aspx");
     }
 }
