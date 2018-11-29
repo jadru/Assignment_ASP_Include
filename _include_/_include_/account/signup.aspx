@@ -2,39 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
-    .auto-style7 {
-        text-align: left;
-        height: 20px;
-            width: 288px;
-        }
-    .auto-style13 {
-        text-align: left;
-        height: 100px;
-            width: 288px;
-        }
-    .auto-style20 {
-        font-size: large;
-    }
         .auto-style22 {
             text-align: center;
         }
-        .auto-style27 {
-            text-align: left;
-            height: 100px;
-            width: 150px;
-        }
-        .auto-style28 {
-            width: 567px;
+        .auto-style23 {
+            width: 504px;
             text-align: right;
-            font-size: x-large;
-            height: 100px;
         }
-        .auto-style29 {
-            height: 100px;
-            text-align: center;
-            width: 26%;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <p>
@@ -45,7 +20,7 @@
     &nbsp;</p>
 <table class="auto-style18">
     <tr>
-        <td class="auto-style28">Name:</td>
+        <td class="auto-style23">Name:</td>
         <td class="auto-style29">
             <asp:TextBox ID="TextBox1" runat="server" Height="32px" Width="250px"></asp:TextBox>
         </td>
@@ -54,7 +29,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style28">ID:</td>
+        <td class="auto-style23">ID:</td>
         <td class="auto-style29">
             <asp:TextBox ID="TextBox2" runat="server" Height="32px" Width="250px"></asp:TextBox>
         </td>
@@ -63,7 +38,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style28">E-mail:</td>
+        <td class="auto-style23">E-mail:</td>
         <td class="auto-style29">
             <asp:TextBox ID="TextBox3" runat="server" Height="32px" Width="250px"></asp:TextBox>
         </td>
@@ -72,7 +47,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style28">Password:</td>
+        <td class="auto-style23">Password:</td>
         <td class="auto-style29">
             <asp:TextBox ID="TextBox4" runat="server" Height="32px" Width="250px" TextMode="Password"></asp:TextBox>
         </td>
@@ -81,7 +56,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style28">Password Confirm:</td>
+        <td class="auto-style23">Password Confirm:</td>
         <td class="auto-style29">
             <asp:TextBox ID="TextBox5" runat="server" Height="32px" Width="250px" TextMode="Password"></asp:TextBox>
         </td>
