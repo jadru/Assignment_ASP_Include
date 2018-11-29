@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            height: 120px;
+            text-align: right;
+        }
+        .auto-style4 {
+            height: 120px;
+            width: 70%;
+        }
+        .auto-style5 {
+            height: 512px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        <table class="auto-style1">
+            <tr style="background-color: #CCFFFF"> 
+                <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Image ID="Image1" runat="server" Height="51px" Width="246px" />
+&nbsp;
+                    </td>
+                <td class="auto-style3">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="Main" Value="Main"></asp:MenuItem>
+                            <asp:MenuItem Text="Languages" Value="Languages"></asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle Font-Bold="True" Font-Size="Large" ForeColor="#0066FF" HorizontalPadding="30px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5" colspan="2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p></p>
+                </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>
