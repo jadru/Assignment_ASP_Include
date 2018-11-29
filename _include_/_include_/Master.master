@@ -22,6 +22,7 @@
         }
         .auto-style5 {
             padding : 150px;
+            text-align : center
         }
         .auto-style7 {
             height: 120px;
@@ -38,7 +39,7 @@
             width: 40%;
             text-align: right;
         }
-    </style>
+        </style>
 </head>
 <body class ="global-style">
     <form id="form1" runat="server">
@@ -65,7 +66,6 @@
             <tr>
                 <td class="auto-style5" colspan="4">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                    <p></p>
                 </asp:ContentPlaceHolder>
                 </td>
             </tr>
