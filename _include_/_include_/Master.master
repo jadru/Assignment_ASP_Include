@@ -32,7 +32,7 @@
         <table class="auto-style1">
             <tr style="background-color: #CCFFFF"> 
                 <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Image ID="Image1" runat="server" Height="51px" Width="246px" />
+                    <asp:Image ID="Image1" runat="server" Height="51px" Width="246px" ImageUrl="~/objects/images/logo.png" />
 &nbsp;
                     </td>
                 <td class="auto-style3">
