@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
     .auto-style1 {
-        width: 550px;
+        width: 50%;
     }
     .auto-style2 {
         width: 32px;
@@ -23,13 +23,11 @@
         }
     .auto-style6 {
         width: 600px;
+        margin-left: 120px;
     }
         .auto-style24 {
             width: 32px;
             height: 234px;
-        }
-        .auto-style25 {
-            margin-left: 120px;
         }
         .auto-style33 {
             width: 65px;
@@ -66,7 +64,6 @@
 </table>
 <p>
     &nbsp;</p>
-<p class="auto-style25">
     <table class="auto-style6">
         <tr>
             <td class="auto-style33">
@@ -100,7 +97,6 @@
             </td>
         </tr>
         </table>
-</p>
 <p>
     &nbsp;</p>
 <p>
@@ -143,7 +139,7 @@
     &nbsp;</p>
 <p>
     &nbsp;</p>
-<table class="auto-style1">
+<table class="auto-style41">
     <tr>
         <td class="auto-style39" rowspan="4">
             <asp:Image ID="Image7" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />

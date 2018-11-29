@@ -13,6 +13,8 @@
         .global-style {
             background-color :#f4fafa;
             font-family: 'Jua', sans-serif;
+            width: 100%;
+            align-content: center;
         }
         .auto-style1 {
             width: 100%;
@@ -22,7 +24,7 @@
             width: 40%;
         }
         .auto-style5 {
-            padding : 150px;
+            padding : 50px;
         }
         .auto-style7 {
             height: 120px;
@@ -37,6 +39,11 @@
             height: 120px;
             width: 40%;
             text-align: right;
+        }
+        .auto-style11 {
+            padding : 20px;
+            text-align: center;
+            color: darkgray;
         }
         </style>
 </head>
@@ -68,8 +75,12 @@
                 </asp:ContentPlaceHolder>
                 </td>
             </tr>
+            <tr>
+                <td class="auto-style11" colspan="4">
+    Copyright&copy; 2018 Inje Univ. College of Computer Engineering All right received.</td>
+            </tr>
         </table>
         </div>
     </form>
-</body>
+    </body>
 </html>
