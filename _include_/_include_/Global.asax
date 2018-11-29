@@ -4,7 +4,7 @@
 
     void Application_Start(object sender, EventArgs e) 
     {
-        Application["islogin"] = false;
+        Application["islogin"] = "false";
         Application["name"] = "";
         Application["id"] = "";
         Application["email"] = "";

@@ -11,4 +11,9 @@ public partial class languages_php_PHP_I : System.Web.UI.Page
     {
 
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("languages\\php\\phpmain.aspx");
+    }
 }

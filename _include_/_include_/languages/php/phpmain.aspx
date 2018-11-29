@@ -22,26 +22,47 @@
         height: 316px;
         }
     .auto-style6 {
-        width: 600px;
+        width: 990px;
         margin-left: 120px;
-    }
+            height: 345px;
+        }
         .auto-style24 {
             width: 32px;
             height: 234px;
         }
         .auto-style33 {
-            width: 65px;
+            width: 97px;
         }
         .auto-style39 {
             width: 300px;
         }
         .auto-style40 {
             height: 89px;
+            padding-left: 20px;
+        }
+        .auto-style41 {
+            margin-left: 40px;
+        width: 694px;
+    }
+        .auto-style42 {
+            margin-left: 160px;
+        }
+        .auto-style43 {
+            height: 89px;
+            padding-left: 20px;
+            width: 135px;
+        }
+        .auto-style44 {
+            width: 61%;
+        }
+        .auto-style45 {
+            margin-left: 40px;
+            width: 61%;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table class="auto-style1">
+    <table class="auto-style44">
     <tr>
         <td class="auto-style39" rowspan="4">
             <asp:Image ID="Image2" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
@@ -58,7 +79,7 @@
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton1" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" OnClick="ImageButton1_Click" />
         </td>
     </tr>
 </table>
@@ -69,8 +90,8 @@
             <td class="auto-style33">
     <asp:Image ID="Image6" runat="server" CssClass="auto-style2" ImageUrl="~/objects/images/connect_image.png" />
             </td>
-            <td class="auto-style40">
-    <asp:Image ID="Image14" runat="server" ImageUrl="~/objects/images/connect_image_width.png" />
+            <td class="auto-style43">
+                <asp:Image ID="Image20" runat="server" Height="13px" ImageUrl="~/objects/images/connect_image_width.png" Width="400px" />
             </td>
             <td>
                 <table class="auto-style1">
@@ -98,14 +119,8 @@
         </tr>
         </table>
 <p>
-    &nbsp;</p>
-<p>
-    &nbsp;</p>
-<p>
-    &nbsp;</p>
-    <p>
-        &nbsp;</p>
-<table class="auto-style1">
+    &nbsp;&nbsp;</p>
+<table class="auto-style44">
     <tr>
         <td class="auto-style39" rowspan="4">
             <asp:Image ID="Image4" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
@@ -130,7 +145,7 @@
     &nbsp;</p>
 <p>
     &nbsp;</p>
-<p class="auto-style25">
+<p class="auto-style42">
     <asp:Image ID="Image13" runat="server" CssClass="auto-style24" ImageUrl="~/objects/images/connect_image.png" />
     </p>
 <p>
@@ -139,7 +154,7 @@
     &nbsp;</p>
 <p>
     &nbsp;</p>
-<table class="auto-style41">
+<table class="auto-style45">
     <tr>
         <td class="auto-style39" rowspan="4">
             <asp:Image ID="Image7" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
@@ -164,7 +179,7 @@
 </p>
 <p>
 </p>
-<p class="auto-style25">
+<p class="auto-style42">
     <asp:Image ID="Image12" runat="server" CssClass="auto-style24" ImageUrl="~/objects/images/connect_image.png" />
 </p>
 <p>
@@ -173,13 +188,19 @@
 </p>
 <p>
     &nbsp;</p>
-<table class="auto-style1">
+<table class="auto-style44">
     <tr>
-        <td class="auto-style39" rowspan="4">
+        <td class="auto-style39" rowspan="5">
             <asp:Image ID="Image10" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
         </td>
         <td">
             <asp:Image ID="Image11" runat="server" Height="68px" ImageUrl="~/objects/images/php_study.png" Width="162px" />
+        </td>
+    </tr>
+    <tr>
+        <td><h1>
+            <asp:Image ID="Image21" runat="server" Height="68px" ImageUrl="~/objects/images/php_study.png" Width="162px" />
+            </h1>
         </td>
     </tr>
     <tr>
@@ -200,7 +221,7 @@
 </p>
 <p>
 </p>
-<p class="auto-style25">
+<p class="auto-style42">
     <asp:Image ID="Image19" runat="server" CssClass="auto-style24" ImageUrl="~/objects/images/connect_image.png" />
 </p>
 <p>
@@ -217,7 +238,7 @@
         </td>
     </tr>
     <tr>
-        <td><h1>PHP V</h1></td>
+        <td><h1>PHP V</h1>
     </tr>
     <tr>
         <td class="auto-style3"><h3>PHP 최종 정리</h3></td>

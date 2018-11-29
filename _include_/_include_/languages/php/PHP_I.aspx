@@ -37,14 +37,22 @@
             width: 40%;
             padding: 40px;
         }
+        .auto-style33 {
+            font-weight: normal;
+        }
+        .auto-style50 {
+            border-radius:10px;
+            box-shadow:3px 3px 3px 3px #999;
+            width: 100%;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div>
-        <table class="auto-style1" style="background-color:plum">
-            <tr>
+        <table class="auto-style50" style="background-color:plum">
+            <tr">
                 <td class="auto-style31">
-                    <h1>PHP - Hypertext Preprocessor</h1>
+                    <h1 class="auto-style33"><strong>PHP - Hypertext Preprocessor</strong></h1>
                     <p>최초 개발자 : Rasmus Lerdorf</p>
                     <p>운영 및 개발자 : The PHP Group</p>
                     <p>공식 사이트 : http://www.php.net</p>
@@ -80,5 +88,9 @@
         초기에는개인 홈페이지 만드는 도구(Personal Home Page tools) 를 의미했으나 현재는 하이퍼텍스트 전처리기(Hypertext Preprocessor)를 의미한다.</p>
     <p class="auto-style21">
         출처 : 한국정보통신기술협회</p>
+<p class="auto-style21">
+        <strong>
+        <asp:Button ID="Button1" runat="server" BackColor="Purple" CssClass="auto-style6" ForeColor="White" Height="87px" OnClick="Button1_Click" Text="Back" Width="196px" />
+        </strong></p>
 </asp:Content>
 

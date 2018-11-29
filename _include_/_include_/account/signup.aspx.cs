@@ -37,7 +37,7 @@ public partial class ManageAccount_signup : System.Web.UI.Page
                     if (rowsAffected == 1)
                     {
                         Con.Close();
-                        Application["islogin"] = true;
+                        Application["islogin"] = "true";
                         Application["name"] = TextBox1.Text;
                         Application["id"] = TextBox2.Text;
                         Application["email"] = TextBox3.Text;
@@ -49,7 +49,7 @@ public partial class ManageAccount_signup : System.Web.UI.Page
                     }
 
                 }
-                catch (Exception ex)
+                catch
                 {
 
                 }
