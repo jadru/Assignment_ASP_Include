@@ -22,11 +22,14 @@
         }
         .auto-style5 {
             height: 512px;
-            background-color: white;
+            padding : 150px;
+        }
+        .auto-style6 {
+            background-color :#f4fafa;
         }
     </style>
 </head>
-<body>
+<body class ="auto-style6">
     <form id="form1" runat="server">
         <div>
         <table class="auto-style1">
