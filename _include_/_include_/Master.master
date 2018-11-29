@@ -9,36 +9,48 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
+        .global-style {
+            background-color :#f4fafa;
+            font-family: Arial;
+        }
         .auto-style1 {
             width: 100%;
         }
-        .auto-style3 {
-            height: 120px;
-            text-align: right;
-        }
         .auto-style4 {
             height: 120px;
-            width: 70%;
+            width: 40%;
         }
         .auto-style5 {
             height: 512px;
             padding : 150px;
         }
-        .auto-style6 {
-            background-color :#f4fafa;
+        .auto-style7 {
+            height: 120px;
+            width: 150px;
+        }
+        .auto-style9 {
+            height: 120px;
+            width: 150px;
+            text-align: right;
+        }
+        .auto-style10 {
+            height: 120px;
+            width: 40%;
+            text-align: right;
         }
     </style>
 </head>
-<body class ="auto-style6">
+<body class ="global-style">
     <form id="form1" runat="server">
         <div>
         <table class="auto-style1">
-            <tr style="background-color: #CCFFFF"> 
-                <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <tr> 
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style4">
                     <asp:Image ID="Image1" runat="server" Height="51px" Width="246px" ImageUrl="~/objects/images/logo.png" />
 &nbsp;
                     </td>
-                <td class="auto-style3">
+                <td class="auto-style10">
                     <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
                         <Items>
                             <asp:MenuItem Text="Main" Value="Main"></asp:MenuItem>
@@ -47,9 +59,11 @@
                         <StaticMenuItemStyle Font-Bold="True" Font-Size="Large" ForeColor="#0066FF" HorizontalPadding="30px" />
                     </asp:Menu>
                 </td>
+                <td class="auto-style9">
+                    &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5" colspan="2">
+                <td class="auto-style5" colspan="4">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     <p></p>
                 </asp:ContentPlaceHolder>

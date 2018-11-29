@@ -11,9 +11,4 @@ public partial class languages_php_phpmain : System.Web.UI.Page
     {
 
     }
-
-    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-    {
-
-    }
 }
