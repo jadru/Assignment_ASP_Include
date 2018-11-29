@@ -11,19 +11,38 @@
         .auto-style5 {
             padding: 50px;
         }
+    .auto-style15 {
+        font-size: large;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style13">
         <tr>
-            <td class="auto-style14">&nbsp;</td>
+            <td class="auto-style14">
+                <asp:TreeView ID="TreeView1" runat="server" CssClass="auto-style15" ImageSet="BulletedList2" ShowExpandCollapse="False">
+                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                    <Nodes>
+                        <asp:TreeNode Text="커뮤니티" Value="커뮤니티">
+                            <asp:TreeNode Text="구인/구직" Value="구인/구직"></asp:TreeNode>
+                            <asp:TreeNode Text="뉴스" Value="뉴스">
+                                <asp:TreeNode Text="보안 이슈" Value="보안 이슈"></asp:TreeNode>
+                                <asp:TreeNode Text="신기술" Value="신기술"></asp:TreeNode>
+                                <asp:TreeNode Text="신제품" Value="신제품"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="자유게시판" Value="자유게시판"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                    <ParentNodeStyle Font-Bold="False" />
+                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                </asp:TreeView>
+            </td>
             <td>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
                 </asp:ContentPlaceHolder>
             </td>
         </tr>
     </table>
-    <br />
-    <br />
 </asp:Content>
 

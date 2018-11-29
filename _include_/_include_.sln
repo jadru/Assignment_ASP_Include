@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "_include_", "_include_", "{5FC2268D-EA66-4A83-A887-FA15269D404C}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "_include_", "_include_\", "{5FC2268D-EA66-4A83-A887-FA15269D404C}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_60364"
@@ -35,6 +35,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {649CDAB9-D0D6-4211-B60A-6B875F14D8D8}
+		SolutionGuid = {7F96F56A-3481-40CD-929F-433E3FBB22E5}
 	EndGlobalSection
 EndGlobal

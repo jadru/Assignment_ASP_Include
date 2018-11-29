@@ -10,77 +10,77 @@
     </asp:ContentPlaceHolder>
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css?family=Jua&subset=korean');
-        .global-style {
+        .m_global-style {
             background-color :#f4fafa;
             font-family: 'Jua', sans-serif;
             width: 99%;
             align-content: center;
         }
-        .auto-style1 {
+        .m_auto-style1 {
             width: 99%;
         }
-        .auto-style5 {
+        .m_auto-style5 {
             padding : 150px;
             text-align: center;
         }
-        .auto-style7 {
+        .m_auto-style7 {
             height: 120px;
             width: 150px;
         }
-        .auto-style9 {
+        .m_auto-style9 {
             height: 120px;
             width: 150px;
             text-align: right;
         }
-        .auto-style11 {
+        .m_auto-style11 {
             padding : 20px;
             text-align: center;
             color: darkgray;
         }
-        .auto-style4 {
+        .m_auto-style4 {
             height: 120px;
             width: 40%;
             text-align: right;
         }
-        .auto-style2 {
+        .m_auto-style2 {
             font-size: x-large;
             text-decoration: none;
         }
-        .auto-style12 {
+        .m_auto-style12 {
             height: 120px;
             width: 40%;
             text-align: left;
         }
         </style>
 </head>
-<body class ="global-style">
+<body class ="m_global-style">
     <form id="form1" runat="server">
         <div>
-        <table class="auto-style1">
+        <table class="m_auto-style1">
             <tr> 
-                <td class="auto-style7">&nbsp;</td>
-                <td class="auto-style12">
+                <td class="m_auto-style7">&nbsp;</td>
+                <td class="m_auto-style12">
 &nbsp;
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="51px" ImageUrl="~/objects/images/logo.png" Width="246px" PostBackUrl="~/home.aspx" />
                     </td>
                 <td class="auto-style4">
-                    <asp:LinkButton ID="LinkButton3" runat="server" CssClass="auto-style2" ForeColor="Black" OnClick="LinkButton3_Click">커뮤니티</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton3" runat="server" CssClass="m_auto-style2" ForeColor="Black" OnClick="LinkButton3_Click">커뮤니티</asp:LinkButton>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="auto-style2" ForeColor="Black" OnClick="LinkButton1_Click">회원가입</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="m_auto-style2" ForeColor="Black" OnClick="LinkButton1_Click">회원가입</asp:LinkButton>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:LinkButton ID="LinkButton2" runat="server" CssClass="auto-style2" ForeColor="Black" OnClick="LinkButton2_Click">로그인</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton2" runat="server" CssClass="m_auto-style2" ForeColor="Black" OnClick="LinkButton2_Click">로그인</asp:LinkButton>
                 </td>
-                <td class="auto-style9">
+                <td class="m_auto-style9">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5" colspan="4">
+                <td class="m_auto-style5" colspan="4">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style11" colspan="4">
+                <td class="m_auto-style11" colspan="4">
                     <br />
     Copyright&copy; 2018 Inje Univ. College of Computer Engineering All right received.</td>
             </tr>
