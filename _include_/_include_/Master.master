@@ -59,7 +59,7 @@
         <div>
         <table class="auto-style1">
             <tr> 
-                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style7"></td>
                 <td class="auto-style4">
 &nbsp;
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="51px" ImageUrl="~/objects/images/logo.png" Width="246px" PostBackUrl="~/home.aspx" />
@@ -70,7 +70,7 @@
                     <asp:LinkButton ID="LinkButton2" runat="server" CssClass="auto-style2" ForeColor="Black" OnClick="LinkButton2_Click">로그인</asp:LinkButton>
                 </td>
                 <td class="auto-style9">
-                    &nbsp;</td>
+                    </td>
             </tr>
             <tr>
                 <td class="auto-style5" colspan="4">

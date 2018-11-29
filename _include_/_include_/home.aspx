@@ -42,13 +42,15 @@
             height: 521px;
         }
 
+        .auto-style5{
+            padding : 70px;
+        }
+
         .table_style{
             padding : 10px;
         }
         .auto-style21 {
             height: 28px;   
-        }
-        .table_class ,th,td{
         }
         .auto-style22 {
             height: 452px;
@@ -57,6 +59,28 @@
             height: 523px;
             padding: 10px;
         }
+        .auto-style24 {
+            height: 28px;
+            width: 310px;
+        }
+        .auto-style25 {
+            width: 310px;
+        }
+        .auto-style26 {
+            height: 452px;
+            width: 310px;
+        }
+    .auto-style27 {
+        height: 28px;
+        width: 330px;
+    }
+    .auto-style28 {
+        width: 330px;
+    }
+    .auto-style29 {
+        height: 452px;
+        width: 330px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -82,6 +106,11 @@
                 <!-- 오른쪽 -->
                 <td class="auto-style17">
                     <asp:Image ID="Image2" runat="server" CssClass="auto-style8" ImageUrl="~/objects/images/home_image1.png" />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                 </td>
             </tr>
             <tr>
@@ -139,6 +168,10 @@
         &nbsp;
     </p>
     <p class="auto-style12">
+        &nbsp;</p>
+    <p class="auto-style12">
+        &nbsp;</p>
+    <p class="auto-style12">
         &nbsp;
         <asp:Label ID="Label12" runat="server" Font-Size="30pt" ForeColor="#36537E" Text="#include 는 당신을 "></asp:Label>
     </p>
@@ -158,18 +191,18 @@
         &nbsp;
     </p>
     <p class="auto-style12">
-        &nbsp;<table cellspacing="50" class="widthhundred">
+        &nbsp;<table cellspacing="30" class="widthhundred">
             <tr>
                 <td class="auto-style21">
                     <asp:ImageButton ID="ImageButton2" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/C.png" />
                 </td>
-                <td class="auto-style21">
+                <td class="auto-style27">
                     <asp:ImageButton ID="ImageButton3" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
                 </td>
                 <td class="auto-style21">
                     <asp:ImageButton ID="ImageButton4" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
                 </td>
-                <td class="auto-style21">
+                <td class="auto-style24">
                     <asp:ImageButton ID="ImageButton5" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
                 </td>
             </tr>
@@ -177,13 +210,13 @@
                 <td>
                     <asp:ImageButton ID="ImageButton6" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
                 </td>
-                <td>
+                <td class="auto-style28">
                     <asp:ImageButton ID="ImageButton7" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
                 </td>
                 <td>
                     <asp:ImageButton ID="ImageButton8" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
                 </td>
-                <td>
+                <td class="auto-style25">
                     <asp:ImageButton ID="ImageButton9" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
                 </td>
             </tr>
@@ -191,11 +224,11 @@
                 <td class="auto-style22">
                     <asp:ImageButton ID="ImageButton10" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
                 </td>
-                <td class="auto-style22">
+                <td class="auto-style29">
                     <asp:ImageButton ID="ImageButton11" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
                 </td>
                 <td class="auto-style22"></td>
-                <td class="auto-style22"></td>
+                <td class="auto-style26"></td>
             </tr>
         </table>
 &nbsp;</p>
