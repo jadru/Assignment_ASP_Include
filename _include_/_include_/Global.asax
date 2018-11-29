@@ -4,6 +4,10 @@
 
     void Application_Start(object sender, EventArgs e) 
     {
+        Application["islogin"] = false;
+        Application["name"] = "";
+        Application["id"] = "";
+        Application["email"] = "";
         // 응용 프로그램이 시작될 때 실행되는 코드입니다.
          ScriptManager.ScriptResourceMapping.AddDefinition(
                 "jquery",

@@ -39,7 +39,7 @@
     <p>
     <br />
 </p>
-<h1 class="auto-style22">sign up</h1>
+<h1 class="auto-style22">회원가입</h1>
 <p class="auto-style17" style="font-size: xx-large">
     &nbsp;</p>
 <table class="auto-style18">
