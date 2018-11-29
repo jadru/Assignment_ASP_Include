@@ -65,14 +65,14 @@
             <tr>
                 <!-- 왼쪽 -->
                 <td class="auto-style20">
-                    <asp:Label ID="Label1" runat="server" Text="세상 모든 언어를," Font-Size="30pt" ForeColor="#36537E"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="세상 모든 언어를," Font-Size="45pt" ForeColor="#36537E"></asp:Label>
                     <br />
-                    <asp:Label ID="Label2" runat="server" Text="이곳에서 한번에." Font-Size="30pt" ForeColor="#36537E"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="이곳에서 한번에." Font-Size="45pt" ForeColor="#36537E"></asp:Label>
                     <br />
                     <br />
-                    <asp:Label ID="Label9" runat="server" Text="프로그래밍 언어는 컴퓨터에서 아주 중요합니다." Font-Size="15pt" ForeColor="#9999AB"></asp:Label>
+                    <asp:Label ID="Label9" runat="server" Text="프로그래밍 언어는 컴퓨터에서 아주 중요합니다." Font-Size="20pt" ForeColor="#9999AB"></asp:Label>
                     <br />
-                    <asp:Label ID="Label10" runat="server" Text="언어를 배워서 세상을 창조 해보세요!" Font-Size="15pt" ForeColor="#9999AB"></asp:Label>
+                    <asp:Label ID="Label10" runat="server" Text="언어를 배워서 세상을 창조 해보세요!" Font-Size="20pt" ForeColor="#9999AB"></asp:Label>
                     <br />
                     <br />
                     <br />
