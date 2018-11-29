@@ -21,7 +21,6 @@
             width: 40%;
         }
         .auto-style5 {
-            height: 512px;
             padding : 150px;
         }
         .auto-style7 {
