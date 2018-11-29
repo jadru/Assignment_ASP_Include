@@ -37,6 +37,7 @@
         }
         /* 왼쪽 */
         .auto-style20 {
+            font-family: 'Jua', sans-serif;
             width: 30%;
             height: 521px;
         }
@@ -96,7 +97,12 @@
     </p>
     <p class="auto-style12">
         &nbsp;
-        <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="Label8" runat="server" Text="
+#include 홈페이지 는 온라인으로 언제 어디서든지 세상에 존재하는 모든 언어를 제공해드립니다." Font-Size="15pt" ForeColor="#9999BC"></asp:Label>
+    </p>
+    <p class="auto-style12">
+        &nbsp;
+        <asp:Label ID="Label11" runat="server" Text="저희는 꾸준히 새로운 언어를 찾고 있으며, 우주의 모든 언어를 담아 드리겠습니다." Font-Size="15pt" ForeColor="#9999BC"></asp:Label>
     </p>
     <p class="auto-style12">
         &nbsp;
@@ -104,26 +110,32 @@
     <p class="auto-style12">
         &nbsp;
     </p>
+                    <div class="auto-style14" style="padding: 45px; background-color: #FFFFFF; text-align: center;">
+                        <br />
+                        <br />
+                        <asp:Label ID="Label16" runat="server" ForeColor="#999999" Text="상, 중, 하의 레벨 그리고 새로운 퀴즈들." Font-Size="20pt"></asp:Label>
+                        <br />
+                        <asp:Label ID="Label17" runat="server" Font-Size="30pt" ForeColor="#33CCCC" Text="약 30개 이상"></asp:Label>
+                        <asp:Label ID="Label18" runat="server" ForeColor="#999999" Text="개" Font-Size="15pt"></asp:Label>
+                    </div>
     <p class="auto-style12">
         &nbsp;
     </p>
     <p class="auto-style12">
         &nbsp;
+        <asp:Label ID="Label12" runat="server" Font-Size="30pt" ForeColor="#36537E" Text="#include 는 당신을 "></asp:Label>
     </p>
     <p class="auto-style12">
         &nbsp;
+        <asp:Label ID="Label13" runat="server" Font-Size="30pt" ForeColor="#36537E" Text="프로그래밍 세계로 빠져들게 할 것 입니다."></asp:Label>
     </p>
     <p class="auto-style12">
         &nbsp;
+        <asp:Label ID="Label14" runat="server" Text="당신의 첫 발걸음을 저희가 도와드릴게요." Font-Size="15pt" ForeColor="#9999BC"></asp:Label>
     </p>
     <p class="auto-style12">
         &nbsp;
-    </p>
-    <p class="auto-style12">
-        &nbsp;
-    </p>
-    <p class="auto-style12">
-        &nbsp;
+        <asp:Label ID="Label15" runat="server" Text="전체 10개의 언어 그리고 당신의 레벨 마다 새로운 퀴즈를 제공해드립니다." Font-Size="15pt" ForeColor="#9999BC"></asp:Label>
     </p>
     <p class="auto-style12">
         &nbsp;
