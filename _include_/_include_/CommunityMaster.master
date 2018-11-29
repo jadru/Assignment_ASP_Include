@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="CommunityMaster.master.cs" Inherits="CommunityMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .auto-style13 {
+            width: 100%;
+        }
+        .auto-style14 {
+            width: 30%;
+        }
+        .auto-style5 {
+            padding: 50px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table class="auto-style13">
+        <tr>
+            <td class="auto-style14">&nbsp;</td>
+            <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+</asp:Content>
+

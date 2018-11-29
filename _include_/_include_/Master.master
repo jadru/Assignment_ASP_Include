@@ -46,6 +46,11 @@
             font-size: x-large;
             text-decoration: none;
         }
+        .auto-style12 {
+            height: 120px;
+            width: 40%;
+            text-align: left;
+        }
         </style>
 </head>
 <body class ="global-style">
@@ -54,7 +59,7 @@
         <table class="auto-style1">
             <tr> 
                 <td class="auto-style7">&nbsp;</td>
-                <td class="auto-style4">
+                <td class="auto-style12">
 &nbsp;
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="51px" ImageUrl="~/objects/images/logo.png" Width="246px" PostBackUrl="~/home.aspx" />
                     </td>

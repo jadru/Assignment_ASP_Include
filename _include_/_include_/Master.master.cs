@@ -11,7 +11,7 @@ public partial class Master : System.Web.UI.MasterPage
     {
         if (Application["islogin"].ToString() == "true")
         {
-            LinkButton1.Text = Application["islogin"].ToString() + "님 정보";
+            LinkButton1.Text = Application["name"].ToString() + "님 정보";
             LinkButton2.Text = "로그아웃";
 
         }
@@ -24,7 +24,7 @@ public partial class Master : System.Web.UI.MasterPage
 
     protected void LinkButton1_Click(object sender, EventArgs e)
     {
-        if (Application["name"].ToString() == "true")
+        if (Application["islogin"].ToString() == "true")
         {
             Response.Redirect("~/account/mypage.aspx");
         }
