@@ -34,10 +34,10 @@
     <table class="auto-style1">
         <tr>
             <td class="auto-style11">
-    <asp:Label ID="Label1" runat="server" Text="세상 모든 언어를," Font-Names="배달의민족 주아" Font-Size="25pt" ForeColor="#36537E"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="세상 모든 언어를," Font-Size="25pt" ForeColor="#36537E"></asp:Label>
                 <br />
                 <br />
-    <asp:Label ID="Label2" runat="server" Text="이곳에서 한번에." Font-Names="배달의민족 주아" Font-Size="25pt" ForeColor="#36537E"></asp:Label>
+    <asp:Label ID="Label2" runat="server" Text="이곳에서 한번에." Font-Size="25pt" ForeColor="#36537E"></asp:Label>
                 <br />
                 <br />
                 <br />
@@ -48,8 +48,16 @@
             </td>
         </tr>
     </table>
-    <div class="auto-style14">
-    </div>
+    <div class="auto-style14" style="background-color: #FFFFFF">
+        <br />
+        <br />
+        <br />
+        <asp:Image ID="Image3" runat="server" />
+&nbsp;
+        <asp:Label ID="Label3" runat="server" ForeColor="#999999" Text="Include에 담긴 언어들"></asp:Label>
+        <br />
+        <asp:Label ID="Label4" runat="server" Font-Size="30pt" ForeColor="#33CCCC" Text="10"></asp:Label>
+        d</div>
 <p class="auto-style12">
     &nbsp;</p>
 <p class="auto-style12">

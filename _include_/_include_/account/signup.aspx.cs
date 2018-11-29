@@ -14,7 +14,6 @@ public partial class ManageAccount_signup : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        if(TextBox1.Text != "" && TextBox2.Text != "" && TextBox3.Text != "" && TextBox4.Text !="" && TextBox5.Text != "")
         if(RegularExpressionValidator1.IsValid && RegularExpressionValidator2.IsValid && RegularExpressionValidator6.IsValid && RegularExpressionValidator7.IsValid && CompareValidator1.IsValid)
              Response.Redirect("after sign up.aspx");
     }
