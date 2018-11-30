@@ -19,6 +19,7 @@ public partial class account_login : System.Web.UI.Page
         {
             string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
             SqlConnection Con = new SqlConnection(connectionString);
+            // SPQ 선언
 
             // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
             SqlCommand Cmd = new SqlCommand();
@@ -30,19 +31,19 @@ public partial class account_login : System.Web.UI.Page
                 // ExecuteNonQuery()문은 CREATE, ALTER, DROP, INSERT, UPDATE, DELETE 문을 수행할때 사용
                 Cmd.CommandText = "select * from db_user where id='" + TextBox1.Text+ "' and pw='" + TextBox2.Text +"'" ;
                 // 리턴 값은 영향을 받은 ROW의 갯수
-                int rowsAffected = Cmd.ExecuteNonQuery();
-                if (rowsAffected == 1)
+                SqlDataReader reader = Cmd.ExecuteReader();
+                if (reader.Read())
                 {
-                    SqlDataReader reader = Cmd.ExecuteReader();
                     Application["islogin"] = "true";
                     Application["name"] = reader["name"];
                     Application["id"] = reader["id"];
                     Application["email"] = reader["email"];
-                    Response.Redirect("~/home.aspx");
+                    // 글로벌 변수에 정보 저장
+                    Response.Redirect("~/home.aspx"); // 홈으로 리다이렉트
                 }
                 else
                 {
-                    Label1.Text = "로그인이 안됩니다.";
+                    Label1.Text = "로그인이 안됩니다."; // 로그인 오류 표시
                 }
                 Con.Close();
 

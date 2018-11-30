@@ -20,7 +20,7 @@
     <table class="auto-style13">
         <tr>
             <td class="auto-style14">
-                <asp:TreeView ID="TreeView1" runat="server" CssClass="auto-style15" ImageSet="BulletedList2" ShowExpandCollapse="False">
+                <asp:TreeView ID="TreeView1" runat="server" CssClass="auto-style15" ImageSet="BulletedList2" ShowExpandCollapse="False" Font-Size="X-Large">
                     <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
                     <Nodes>
                         <asp:TreeNode Text="커뮤니티" Value="커뮤니티">
