@@ -56,4 +56,27 @@ public partial class ManageAccount_signup : System.Web.UI.Page
             }
 
     }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+       if(TextBox1.Text != Application["id"].ToString())
+        {
+            Label1.Text = "사용가능한 아이디입니다.";
+        }
+        else
+        {
+            Label1.Text = "중복된 아이디입니다.";
+        }
+    }
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        if (TextBox2.Text != Application["email"].ToString())
+        {
+            Label2.Text = "사용가능한 E-mail입니다.";
+        }
+        else
+        {
+            Label2.Text = "중복된 E-mail입니다.";
+        }
+    }
 }
