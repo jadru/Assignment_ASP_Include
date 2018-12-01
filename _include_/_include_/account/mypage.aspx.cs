@@ -9,6 +9,8 @@ public partial class account_mypage : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Application["islogin"].ToString() == "false")
+            Response.Redirect("~/home.aspx");
         string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
         SqlConnection Con = new SqlConnection(connectionString);
 
@@ -84,53 +86,7 @@ public partial class account_mypage : System.Web.UI.Page
         {
             if (TextBox1.Text != Application["name"].ToString())
             {
-                string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
-                SqlConnection Con = new SqlConnection(connectionString);
-
-                // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
-                SqlCommand Cmd = new SqlCommand();
-                Cmd.Connection = Con;
-                Cmd.CommandText = "UPDATE db_user SET name=" + TextBox1.Text + "WHERE id = '" + Application["id"].ToString() + "'";
-
-                try
-                {
-                    Con.Open();
-                    // ExecuteReader()는 SELECT 문을 사용하여 RECORD를 가져올때 사용
-                    //SqlDataReader reader = Cmd.ExecuteReader();
-                    //string temp = "";
-                    //temp = TextBox1.Text;
-                    //TextBox1.Text = reader["name"].ToString();
-                    //if(TextBox1.Text)
-
-                    // SqlDataReader의 기본 위치는 첫 번째 레코드 앞, Read( )를 호출하여 하나의 레코드 읽기 
-                    // read.Read( )의 반환 값 형식: Boolean, 행이 더 있으면 true이고, 그렇지 않으면 false입니다. 
-
-                    Con.Close();
-                    SqlConnection Conn = new SqlConnection(connectionString);
-                    SqlCommand Cmdd = new SqlCommand();
-                    Cmdd.Connection = Conn;
-                    Cmdd.CommandText = "select name from db_user where id='" + Application["id"] + "'";
-                    Conn.Open();
-                    // ExecuteReader()는 SELECT 문을 사용하여 RECORD를 가져올때 사용
-                    SqlDataReader reader = Cmd.ExecuteReader();
-                    string temp = "";
-                    temp = TextBox1.Text;
-                    
-                    if (TextBox1.Text == reader["name"].ToString())
-                    {
-                        Label1.Text = "Id가 변경되었습니다.";
-                    }
-
-                        // SqlDataReader의 기본 위치는 첫 번째 레코드 앞, Read( )를 호출하여 하나의 레코드 읽기 
-                        // read.Read( )의 반환 값 형식: Boolean, 행이 더 있으면 true이고, 그렇지 않으면 false입니다. 
-
-                    reader.Close();
-                    Conn.Close();
-                }
-                catch (Exception ex)
-                {
-
-                }
+               
             }
             
         }
