@@ -9,10 +9,7 @@
         .auto-style7 {
             text-align: center;
         }
-        .auto-style11 {
-            text-align: center;
-        }
-    .auto-style12 {
+        .auto-style12 {
         font-size: x-large;
     }
     </style>
@@ -24,11 +21,12 @@
     <p>
     </p>
     <h1 class="auto-style6">#include에 오신 것을 진심으로 환영합니다!</h1>
-    <h4>
+    <h4 class="auto-style7">
         <span class="auto-style12">안녕하세요! </span> <asp:Label ID="Label1" runat="server" CssClass="auto-style12"></asp:Label>
         님</h4>
     <p class="auto-style7">
-        &nbsp;</p>
+        <asp:Button ID="Button1" runat="server" BackColor="Black" ForeColor="White" Height="52px" OnClick="Button1_Click" Text="홈으로 가기" Width="164px" />
+    </p>
     <p>
     </p>
     <p>
