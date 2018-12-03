@@ -11,23 +11,28 @@ public partial class home : System.Web.UI.Page
     {
         if(Application["islogin"] == "true")
         {
-            imgbtn_signup1.Visible = false;
-            imgbtn_signup2.Visible = false;
+            imgbtn_signup1.ImageUrl = ".\\objects\\images\\language_btn_icon.png";
+            imgbtn_signup2.ImageUrl = ".\\objects\\images\\language_btn_icon.png";
         }
 
     }
-
+    //===================================================================
+    // 회원가입,언어 페이지 버튼
     protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect(".\\account\\signup.aspx");
-        //
+        if(Application["islogin"] == "true")
+            Response.Redirect(".\\languages.aspx");
+        else
+            Response.Redirect(".\\account\\signup.aspx");
     }
-
     protected void ImageButton12_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect(".\\account\\signup.aspx");
+        if (Application["islogin"] == "true")
+            Response.Redirect(".\\languages.aspx");
+        else
+            Response.Redirect(".\\account\\signup.aspx");
     }
-
+    //===================================================================
     protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
     {
         Response.Redirect(".\\languages\\C\\C_main.aspx");
