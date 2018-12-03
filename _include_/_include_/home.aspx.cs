@@ -56,6 +56,7 @@ public partial class home : System.Web.UI.Page
     protected void ImageButton8_Click(object sender, ImageClickEventArgs e)
     {
         // Kotlin
+        Response.Redirect(".\\languages\\Kotlin\\kotlin_main.aspx");
     }
 
     protected void ImageButton9_Click(object sender, ImageClickEventArgs e)
