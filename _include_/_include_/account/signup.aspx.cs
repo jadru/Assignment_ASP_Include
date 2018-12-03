@@ -53,29 +53,62 @@ public partial class ManageAccount_signup : System.Web.UI.Page
 
                 }
             }
-
     }
 
-    protected void Button2_Click(object sender, EventArgs e)
+    protected void TextBox2_TextChanged(object sender, EventArgs e)
     {
-       if(TextBox1.Text != Application["id"].ToString())
+        RegularExpressionValidator7.Validate();
+        if (RegularExpressionValidator7.IsValid)
         {
-            Label1.Text = "사용가능한 아이디입니다.";
+            string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
+            SqlConnection Con = new SqlConnection(connectionString);
+            // SPQ 선언
+
+            // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
+            SqlCommand Cmd = new SqlCommand();
+            Cmd.Connection = Con;
+            try
+            {
+                // SQL COMMAND 수행하기
+                Con.Open();
+                // ExecuteNonQuery()문은 CREATE, ALTER, DROP, INSERT, UPDATE, DELETE 문을 수행할때 사용
+                Cmd.CommandText = "SELECT id FROM db_user WHERE id = '" + TextBox2.Text + "'";
+                // 리턴 값은 영향을 받은 ROW의 갯수
+                SqlDataReader reader = Cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    Label1.Text = "중복 아이디가 존재합니다.";
+                }
+                Con.Close();
+
+            }
+            catch
+            {
+
+            }
         }
-        else
-        {
-            Label1.Text = "중복된 아이디입니다.";
+        else{
+
         }
     }
-    protected void Button3_Click(object sender, EventArgs e)
+
+    protected void TextBox1_TextChanged(object sender, EventArgs e)
     {
-        if (TextBox2.Text != Application["email"].ToString())
-        {
-            Label2.Text = "사용가능한 E-mail입니다.";
-        }
-        else
-        {
-            Label2.Text = "중복된 E-mail입니다.";
-        }
+        RegularExpressionValidator6.Validate();
+    }
+
+    protected void TextBox5_TextChanged(object sender, EventArgs e)
+    {
+        CompareValidator1.Validate();
+    }
+
+    protected void TextBox4_TextChanged(object sender, EventArgs e)
+    {
+        RegularExpressionValidator2.Validate();
+    }
+
+    protected void TextBox3_TextChanged(object sender, EventArgs e)
+    {
+        RegularExpressionValidator1.Validate();
     }
 }

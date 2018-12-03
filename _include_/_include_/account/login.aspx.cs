@@ -10,7 +10,7 @@ public partial class account_login : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        //텍스트박스에서 엔터치면 버튼 클릭이벤트 작동
     }
 
     protected void Button1_Click(object sender, EventArgs e)

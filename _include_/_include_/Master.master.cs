@@ -20,6 +20,8 @@ public partial class Master : System.Web.UI.MasterPage
             LinkButton1.Text = "회원가입";
             LinkButton2.Text = "로그인";
         }
+        LinkButton4.Text = "언어";
+        LinkButton5.Text = "커뮤니티";
     }
 
     protected void LinkButton1_Click(object sender, EventArgs e)
@@ -51,6 +53,16 @@ public partial class Master : System.Web.UI.MasterPage
     }
 
     protected void LinkButton3_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/community/main.aspx");
+    }
+
+    protected void LinkButton4_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/languages.aspx");
+    }
+
+    protected void LinkButton5_Click(object sender, EventArgs e)
     {
         Response.Redirect("~/community/main.aspx");
     }

@@ -10,7 +10,7 @@ public partial class languages_isAnswered : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Application["islogin"] == "false")
+        if (Application["islogin"].ToString() == "false")
         {
             Response.Redirect("~/home.aspx");
         }

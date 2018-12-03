@@ -20,7 +20,6 @@ public partial class account_mypage : System.Web.UI.Page
         Cmd.CommandText = "SELECT name, id, email, pw, mileage" +
             " FROM db_user WHERE id = '" + Application["id"].ToString() + "'";
 
-        int sum = 0;
         try
         {
 
@@ -43,10 +42,7 @@ public partial class account_mypage : System.Web.UI.Page
             reader.Close();
             Con.Close();
         }
-        catch (Exception ex)
-        {
-
-        }
+        catch {}
     }
 
     protected void Button1_Click(object sender, EventArgs e)

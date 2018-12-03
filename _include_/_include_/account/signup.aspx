@@ -7,18 +7,16 @@
             height: 100px;
             width: 574px;
         }
-    .auto-style20 {
-        font-size: large;
-    }
         .auto-style22 {
             text-align: center;
         }
         .auto-style25 {
-            width: 233px;
-            height: 100px;
-        }
+        width: 278px;
+        height: 100px;
+        text-align: right;
+    }
         .auto-style26 {
-            width: 659px;
+            width:50%;
             text-align: right;
             font-size: x-large;
             height: 100px;
@@ -36,7 +34,7 @@
     <tr>
         <td class="auto-style26">Name:</td>
         <td class="auto-style25">
-            <asp:TextBox ID="TextBox1" runat="server" Height="32px" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" Height="40px" Width="250px" AutoPostBack="True" CausesValidation="True" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
         </td>
         <td class="auto-style13">
             &nbsp;
@@ -46,53 +44,51 @@
     <tr>
         <td class="auto-style26">ID:</td>
         <td class="auto-style25">
-            <asp:TextBox ID="TextBox2" runat="server" Height="32px" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" Height="40px" Width="250px" AutoPostBack="True" CausesValidation="True" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
         </td>
         <td class="auto-style13">
-            &nbsp;<asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="중복확인" />
-&nbsp;
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="TextBox2" ErrorMessage="영문자와 숫자만 가능합니다!(4~10자리) " ForeColor="Red" ValidationExpression="[0-9a-zA-Z]{4,10}"></asp:RegularExpressionValidator>
+            &nbsp;&nbsp;<asp:Label ID="Label1" runat="server" ForeColor="Red"></asp:Label>
+        &nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="TextBox2" ErrorMessage="영문자와 숫자만 가능합니다! (4~10자리) " ForeColor="Red" ValidationExpression="[0-9a-zA-Z]{4,10}"></asp:RegularExpressionValidator>
             <br />
-            <asp:Label ID="Label1" runat="server"></asp:Label>
         </td>
     </tr>
     <tr>
         <td class="auto-style26">E-mail:</td>
         <td class="auto-style25">
-            <asp:TextBox ID="TextBox3" runat="server" Height="32px" Width="250px"></asp:TextBox>
+            <asp:TextBox ID="TextBox3" runat="server" Height="40px" Width="250px" AutoPostBack="True" CausesValidation="True" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
         </td>
         <td class="auto-style13">
-            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="중복확인" />
 &nbsp;
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="E-mail 형식에 맞게 입력하세요!" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             <br />
-            <asp:Label ID="Label2" runat="server"></asp:Label>
         </td>
     </tr>
     <tr>
         <td class="auto-style26">Password:</td>
         <td class="auto-style25">
-            <asp:TextBox ID="TextBox4" runat="server" Height="32px" Width="250px" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="TextBox4" runat="server" Height="40px" Width="250px" TextMode="Password" CausesValidation="True" OnTextChanged="TextBox4_TextChanged"></asp:TextBox>
         </td>
         <td class="auto-style13">
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox4" ErrorMessage="영문자와 숫자만 가능합니다!(4~10자리) " ForeColor="Red" ValidationExpression="[0-9a-zA-Z]{4,10}"></asp:RegularExpressionValidator>
+            &nbsp;&nbsp;
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox4" ErrorMessage="영문자와 숫자만 가능합니다! (4~10자리) " ForeColor="Red" ValidationExpression="[0-9a-zA-Z]{4,10}"></asp:RegularExpressionValidator>
         </td>
     </tr>
     <tr>
         <td class="auto-style26">Password Confirm:</td>
         <td class="auto-style25">
-            <asp:TextBox ID="TextBox5" runat="server" Height="32px" Width="250px" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="TextBox5" runat="server" Height="40px" Width="250px" TextMode="Password" CausesValidation="True" OnTextChanged="TextBox5_TextChanged"></asp:TextBox>
         </td>
         <td class="auto-style13">
-            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox5" ControlToValidate="TextBox4" EnableClientScript="False" ErrorMessage="비밀번호가 다릅니다!" ForeColor="Red"></asp:CompareValidator>
+            &nbsp;&nbsp;
+            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox5" ControlToValidate="TextBox4" ErrorMessage="비밀번호가 다릅니다!" ForeColor="Red"></asp:CompareValidator>
         </td>
     </tr>
 </table>
 <p class="auto-style22">
-    &nbsp;</p>
+    <asp:Button ID="Button1" runat="server" BackColor="Black" ForeColor="White" Height="65px" style="font-size: x-large" Text="회원가입" Width="199px" OnClick="Button1_Click" />
+    </p>
 <p class="auto-style22">
-    <asp:Button ID="Button1" runat="server" CssClass="auto-style20" Height="30px" Text="sign up" Width="87px" OnClick="Button1_Click" />
-</p>
+    &nbsp;</p>
 <p>
 </p>
 <p>
