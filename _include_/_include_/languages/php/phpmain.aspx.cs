@@ -14,6 +14,11 @@ public partial class languages_php_phpmain : System.Web.UI.Page
 
     protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect(".\\languages\\php\\PHP_I.aspx"); 
+        Response.Redirect("~/languages/php/PHP_I.aspx");
+    }
+
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("~/languages/php/PHP_II.aspx");
     }
 }

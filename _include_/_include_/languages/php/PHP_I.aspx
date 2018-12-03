@@ -5,22 +5,6 @@
         .auto-style6 {
             font-size: x-large;
         }
-        .auto-style7 {
-            font-size: medium;
-            text-align: center;
-        }
-        .auto-style9 {
-            width: 600px;
-            height: 649px;
-        }
-        .auto-style10 {
-            text-align: center;
-            height: 171px;
-        }
-        .auto-style11 {
-            text-align: center;
-            width: 299px;
-        }
         .auto-style21 {
             font-size: medium;
             height: 120px;
@@ -55,7 +39,9 @@
                     <h1 class="auto-style33"><strong>PHP - Hypertext Preprocessor</strong></h1>
                     <p>최초 개발자 : Rasmus Lerdorf</p>
                     <p>운영 및 개발자 : The PHP Group</p>
-                    <p>공식 사이트 : http://www.php.net</p>
+                    <p>공식 사이트 :
+                        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="http://www.php.net">http://www.php.net</asp:LinkButton>
+                    </p>
                 </td>
                 <td class="auto-style32">
         <strong>
