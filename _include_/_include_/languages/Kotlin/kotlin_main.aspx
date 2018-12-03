@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="phpmain.aspx.cs" Inherits="languages_php_phpmain" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="kotlin_main.aspx.cs" Inherits="languages_php_phpmain" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -13,14 +13,6 @@
 
         color: #0066CC;
     }
-    .auto-style4 {
-        width: 195px;
-        height: 337px;
-    }
-    .auto-style5 {
-        width: 54%;
-        height: 316px;
-        }
     .auto-style6 {
         width: 990px;
         margin-left: 120px;
@@ -65,17 +57,17 @@
     <table class="auto-style44">
     <tr>
         <td class="auto-style39" rowspan="4">
-            <asp:Image ID="Image2" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
+            <asp:Image ID="Image22" runat="server" Height="312px" ImageUrl="~/objects/images/languages/kotlin.png" Width="302px" />
         </td>
         <td>
             <asp:Image ID="Image3" runat="server" Height="68px" ImageUrl="~/objects/images/php_study.png" Width="162px" />
         </td>
     </tr>
     <tr>
-        <td><h1>PHP I</h1></td>
+        <td><h1>Kotlin I</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>PHP설치환경과 기본적인 개념 학습</h3></td>
+        <td class="auto-style3"><h3>Kotlin의 기본적인 개념 학습</h3></td>
     </tr>
     <tr>
         <td>
@@ -97,21 +89,21 @@
                 <table class="auto-style1">
     <tr>
         <td rowspan="4" class="auto-style39">
-            <asp:Image ID="Image1" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
+            <asp:Image ID="Image1" runat="server" Height="312px" ImageUrl="~/objects/images/languages/kotlin.png" Width="302px" />
         </td>
         <td>
                 <asp:Image ID="Image9" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />
         </td>
     </tr>
     <tr>
-        <td><h1>PHP I</h1></td>
+        <td><h1>Kotlin I</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3">PHP 최종 정리</td>
+        <td class="auto-style3">Kotlin 최종 정리</td>
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton2" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:ImageButton ID="ImageButton2" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" OnClick="ImageButton2_Click" />
         </td>
     </tr>
 </table>
@@ -123,17 +115,17 @@
 <table class="auto-style44">
     <tr>
         <td class="auto-style39" rowspan="4">
-            <asp:Image ID="Image4" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
+            <asp:Image ID="Image4" runat="server" Height="312px" ImageUrl="~/objects/images/languages/kotlin.png" Width="302px" />
         </td>
         <td>
             <asp:Image ID="Image5" runat="server" Height="68px" ImageUrl="~/objects/images/php_study.png" Width="162px" />
         </td>
     </tr>
     <tr>
-        <td><h1>PHP II</h1></td>
+        <td><h1>Kotlin II</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>PHP의 문법 배우기 - 변수, 연산자, 제어구조</h3></td>
+        <td class="auto-style3"><h3>Kotlin의 문법 배우기 - 변수, 연산자, 제어구조</h3></td>
     </tr>
     <tr>
         <td>
@@ -157,17 +149,17 @@
 <table class="auto-style45">
     <tr>
         <td class="auto-style39" rowspan="4">
-            <asp:Image ID="Image7" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
+            <asp:Image ID="Image7" runat="server" Height="312px" ImageUrl="~/objects/images/languages/kotlin.png" Width="302px" />
         </td>
         <td>
             <asp:Image ID="Image8" runat="server" Height="68px" ImageUrl="~/objects/images/php_study.png" Width="162px" />
         </td>
     </tr>
     <tr>
-        <td><h1>PHP III</h1></td>
+        <td><h1>Kotlin III</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>카운터 만들기</h3></td>
+        <td class="auto-style3"><h3>Kotlin 만들기</h3></td>
     </tr>
     <tr>
         <td>
@@ -191,10 +183,10 @@
 <table class="auto-style44">
     <tr>
         <td class="auto-style39" rowspan="5">
-            <asp:Image ID="Image10" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
+            <asp:Image ID="Image10" runat="server" Height="312px" ImageUrl="~/objects/images/languages/kotlin.png" Width="302px" />
         </td>
         <td">
-           
+            <asp:Image ID="Image11" runat="server" Height="68px" ImageUrl="~/objects/images/php_study.png" Width="162px" />
         </td>
     </tr>
     <tr>
@@ -204,10 +196,10 @@
         </td>
     </tr>
     <tr>
-        <td><h1>PHP IV</h1></td>
+        <td><h1>Kotlin IV</h1></td>
     </tr>
     <tr>
-        <td><h3 class="auto-style3">PHP 디버깅</h3></td>
+        <td><h3 class="auto-style3">Kotlin 디버깅</h3></td>
     </tr>
     <tr>
         <td>
@@ -231,17 +223,17 @@
 <table class="auto-style41">
     <tr>
         <td rowspan="4" class="auto-style39">
-            <asp:Image ID="Image17" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo.png" Width="302px" />
+            <asp:Image ID="Image17" runat="server" Height="312px" ImageUrl="~/objects/images/languages/kotlin.png" Width="302px" />
         </td>
         <td class="auto-style40">
                 <asp:Image ID="Image18" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />
         </td>
     </tr>
     <tr>
-        <td><h1>PHP V</h1>
+        <td><h1>Kotlin V</h1>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>PHP 최종 정리</h3></td>
+        <td class="auto-style3"><h3>Kotlin 최종 정리</h3></td>
     </tr>
     <tr>
         <td>

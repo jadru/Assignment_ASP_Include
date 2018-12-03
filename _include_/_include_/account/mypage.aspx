@@ -13,10 +13,6 @@
             text-align: right;
             width: 722px;
         }
-        .auto-style15 {
-            width: 983px;
-            text-align: center;
-        }
         .auto-style16 {
             margin-left: 0px;
         }
@@ -51,66 +47,12 @@
                 </strong></td>
         </tr>
         <tr>
-            <td class="auto-style14"><strong>l0:</strong></td>
+            <td class="auto-style14"><strong>mileage:</strong></td>
             <td class="auto-style13"><strong>
                 <asp:Label ID="Label1" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
                 </strong></td>
         </tr>
-        <tr>
-            <td class="auto-style14"><strong>l1:</strong></td>
-            <td class="auto-style13"><strong>
-                <asp:Label ID="Label2" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
-                </strong></td>
-        </tr>
-        <tr>
-            <td class="auto-style14"><strong>l2:</strong></td>
-            <td class="auto-style13"><strong>
-                <asp:Label ID="Label3" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
-                </strong></td>
-        </tr>
-        <tr>
-            <td class="auto-style14"><strong>l3:</strong></td>
-            <td class="auto-style13"><strong>
-                <asp:Label ID="Label4" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
-                </strong></td>
-        </tr>
-        <tr>
-            <td class="auto-style14"><strong>l4:</strong></td>
-            <td class="auto-style13"><strong>
-                <asp:Label ID="Label5" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
-                </strong></td>
-        </tr>
-        <tr>
-            <td class="auto-style14"><strong>l5:</strong></td>
-            <td class="auto-style13"><strong>
-                <asp:Label ID="Label6" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
-                </strong></td>
-        </tr>
-        <tr>
-            <td class="auto-style14"><strong>l6:</strong></td>
-            <td class="auto-style13"><strong>
-                <asp:Label ID="Label7" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
-                </strong></td>
-        </tr>
-        <tr>
-            <td class="auto-style14"><strong>l7:</strong></td>
-            <td class="auto-style13"><strong>
-                <asp:Label ID="Label8" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
-                </strong></td>
-        </tr>
-        <tr>
-            <td class="auto-style14"><strong>l8:</strong></td>
-            <td class="auto-style13"><strong>
-                <asp:Label ID="Label9" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
-                </strong></td>
-        </tr>
-        <tr>
-            <td class="auto-style14"><strong>l9:</strong></td>
-            <td class="auto-style13"><strong>
-                <asp:Label ID="Label10" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
-                </strong></td>
-        </tr>
-    </table>
+        </table>
     <h6>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label11" runat="server" Font-Size="X-Large"></asp:Label>

@@ -7,20 +7,21 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "_include_", "_include_\", "
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_60364"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Documents\development\asp\_include_\_include_\"
+		Debug.AspNetCompiler.PhysicalPath = "_include_\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60364\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_60364"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\Documents\development\asp\_include_\_include_\"
+		Release.AspNetCompiler.PhysicalPath = "_include_\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60364\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "60364"
+		SlnRelativePath = "_include_\"
 	EndProjectSection
 EndProject
 Global

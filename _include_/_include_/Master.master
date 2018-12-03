@@ -14,77 +14,63 @@
             background-color :#f4fafa;
             font-family: 'Jua', sans-serif;
             width: 99%;
-            align-content: center;
         }
-        .m_auto-style1 {
+        .table-style {
             width: 99%;
         }
-        .m_auto-style5 {
-            padding : 150px;
+        .content-style {
+            padding : 40px;
+            text-align: left;
         }
-        .m_auto-style7 {
-            height: 120px;
-            width: 150px;
-        }
-        .m_auto-style9 {
-            height: 120px;
-            width: 150px;
-            text-align: right;
-        }
-        .m_auto-style11 {
-            padding : 20px;
+        .copyright-style {
+            padding : 50px;
             text-align: center;
             color: darkgray;
         }
-        .m_auto-style4 {
-            height: 120px;
-            width: 40%;
-            text-align: right;
-        }
-        .m_auto-style2 {
+        .menu-button-style {
             font-size: x-large;
             text-decoration: none;
         }
-        .m_auto-style12 {
+        .logo-style {
             height: 120px;
             width: 40%;
             text-align: left;
         }
-        .m_auto-style1 {
+        .menu-style {
+            width: 99%;
             text-align: right;
         }
         </style>
 </head>
-<body class ="m_global-style">
+<body class ="m_global-style">                                                                                                                          
     <form id="form1" runat="server">
         <div>
-        <table class="m_auto-style1">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <table class="table-style">
             <tr> 
-                <td class="m_auto-style7">&nbsp;</td>
-                <td class="m_auto-style12">
+                <td class="logo-style">
 &nbsp;
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="51px" ImageUrl="~/objects/images/logo.png" Width="246px" PostBackUrl="~/home.aspx" />
                     </td>
-                <td class="m_auto-style1">
-                    <asp:LinkButton ID="LinkButton3" runat="server" CssClass="m_auto-style2" ForeColor="Black" OnClick="LinkButton3_Click">커뮤니티</asp:LinkButton>
+                <td class="menu-style">
+                    <asp:LinkButton ID="LinkButton3" runat="server" CssClass="menu-button-style" ForeColor="Black" OnClick="LinkButton3_Click"></asp:LinkButton>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="m_auto-style2" ForeColor="Black" OnClick="LinkButton1_Click">회원가입</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="menu-button-style" ForeColor="Black" OnClick="LinkButton1_Click"></asp:LinkButton>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:LinkButton ID="LinkButton2" runat="server" CssClass="m_auto-style2" ForeColor="Black" OnClick="LinkButton2_Click">로그인</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton2" runat="server" CssClass="menu-button-style" ForeColor="Black" OnClick="LinkButton2_Click"></asp:LinkButton>
                 </td>
-                <td class="m_auto-style9">
-                    &nbsp;</td>
             </tr>
             <tr>
-                <td class="m_auto-style5" colspan="4">
+                <td class="content-style" colspan="2">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>
+                        &nbsp;</p>
                 </asp:ContentPlaceHolder>
                 </td>
             </tr>
             <tr>
-                <td class="m_auto-style11" colspan="4">
-                    <br />
-    Copyright&copy; 2018 Inje Univ. College of Computer Engineering All right received.</td>
+                <td class="copyright-style" colspan="2">
+                    <h3>Copyright&copy; 2018 Inje Univ. College of Computer Engineering All right received.</h3></td>
             </tr>
         </table>
         </div>

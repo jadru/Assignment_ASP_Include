@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -29,9 +29,8 @@ public partial class ManageAccount_signup : System.Web.UI.Page
                     // SQL COMMAND 수행하기
                     Con.Open();
                     // ExecuteNonQuery()문은 CREATE, ALTER, DROP, INSERT, UPDATE, DELETE 문을 수행할때 사용
-                    Cmd.CommandText = "INSERT INTO db_user (name, id, email, pw, l0, l1, l2, l3, l4, l5, l6, l7, l8, l9) VALUES  "
-                 + "('" + TextBox1.Text + "' ,    " + "   '" + TextBox2.Text + "' ,  " + "   '" + TextBox3.Text + "' ,  "
-                 + " '" + TextBox4.Text + "' ,   " + "0,0,0,0,0,0,0,0,0,0" + " ) ";
+                    Cmd.CommandText = "INSERT INTO db_user (name, id, email, pw, mileage) VALUES  "
+                 + "('" + TextBox1.Text + "' , '" + TextBox2.Text + "' , '" + TextBox3.Text + "' , '" + TextBox4.Text + "' ,  0 ) ";
                     // 리턴 값은 영향을 받은 ROW의 갯수
                     int rowsAffected = Cmd.ExecuteNonQuery();
                     if (rowsAffected == 1)

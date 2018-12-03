@@ -17,7 +17,7 @@ public partial class account_mypage : System.Web.UI.Page
         // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
         SqlCommand Cmd = new SqlCommand();
         Cmd.Connection = Con;
-        Cmd.CommandText = "SELECT name, id, email, pw, l0, l1, l2, l3, l4, l5, l6, l7, l8, l9" +
+        Cmd.CommandText = "SELECT name, id, email, pw, mileage" +
             " FROM db_user WHERE id = '" + Application["id"].ToString() + "'";
 
         int sum = 0;
@@ -38,16 +38,7 @@ public partial class account_mypage : System.Web.UI.Page
                 TextBox1.Text = reader["name"].ToString();
                 TextBox2.Text = reader["id"].ToString();
                 TextBox3.Text = reader["email"].ToString();
-                Label1.Text = reader["l0"].ToString(); sum += int.Parse(reader["l0"].ToString());
-                Label2.Text = reader["l1"].ToString(); sum += int.Parse(reader["l1"].ToString());
-                Label3.Text = reader["l2"].ToString(); sum += int.Parse(reader["l2"].ToString());
-                Label4.Text = reader["l3"].ToString(); sum += int.Parse(reader["l3"].ToString());
-                Label5.Text = reader["l4"].ToString(); sum += int.Parse(reader["l4"].ToString());
-                Label6.Text = reader["l5"].ToString(); sum += int.Parse(reader["l5"].ToString());
-                Label7.Text = reader["l6"].ToString(); sum += int.Parse(reader["l6"].ToString());
-                Label8.Text = reader["l7"].ToString(); sum += int.Parse(reader["l7"].ToString());
-                Label9.Text = reader["l8"].ToString(); sum += int.Parse(reader["l8"].ToString());
-                Label10.Text = reader["l9"].ToString(); sum += int.Parse(reader["l9"].ToString());
+                Label1.Text = reader["mileage"].ToString();
             }
             reader.Close();
             Con.Close();
@@ -55,28 +46,6 @@ public partial class account_mypage : System.Web.UI.Page
         catch (Exception ex)
         {
 
-        }
-        
-
-        if (sum<=4&&sum>0)
-        {
-            Label11.Text = "등급:Bronze입니다.";
-        }
-        if(sum>4&&sum<=8)
-        {
-            Label11.Text = "등급:Gold입니다.";
-        }
-        if(sum>8&&sum<=12)
-        {
-            Label11.Text = "등급:Diamond입니다.";
-        }
-        if(sum>12&&sum<=16)
-        {
-            Label11.Text = "등급:Challenger입니다.";
-        }
-        if(sum==0)
-        {
-            Label11.Text = "등급:Unlank입니다.";
         }
     }
 
