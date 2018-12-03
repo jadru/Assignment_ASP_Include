@@ -97,7 +97,7 @@
                     <br />
                     <br />
                     <br />
-                    <asp:ImageButton ID="ImageButton1" runat="server" CssClass="auto-style13" Height="77px" ImageUrl="~/objects/images/sign_up_for_free.png" Width="242px" OnClick="ImageButton1_Click" />
+                    <asp:ImageButton ID="imgbtn_signup1" runat="server" CssClass="auto-style13" Height="77px" ImageUrl="~/objects/images/sign_up_for_free.png" Width="242px" OnClick="ImageButton1_Click" />
                 </td>
                 <!-- 오른쪽 -->
                 <td class="auto-style17">
@@ -277,7 +277,7 @@
     <p class="auto-style12">
         &nbsp;</p>
     <p class="auto-style12">
-        <asp:ImageButton ID="ImageButton12" runat="server" Height="80px" ImageUrl="~/objects/images/sign_up_for_free.png" OnClick="ImageButton12_Click" Width="250px" />
+        <asp:ImageButton ID="imgbtn_signup2" runat="server" Height="80px" ImageUrl="~/objects/images/sign_up_for_free.png" OnClick="ImageButton12_Click" Width="250px" />
     </p>
     <p class="auto-style12">
         &nbsp;</p>

@@ -9,6 +9,11 @@ public partial class home : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if(Application["islogin"] == "true")
+        {
+            imgbtn_signup1.Visible = false;
+            imgbtn_signup2.Visible = false;
+        }
 
     }
 
@@ -36,6 +41,7 @@ public partial class home : System.Web.UI.Page
     protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
     {
         // C#
+        Response.Redirect(".\\languages\\C_sharp\\C_sharp_main.aspx");
     }
 
     protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
@@ -46,6 +52,7 @@ public partial class home : System.Web.UI.Page
     protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
     {
         // C++
+        Response.Redirect(".\\languages\\C_Plus\\C_Plus_main.aspx");
     }
 
     protected void ImageButton7_Click(object sender, ImageClickEventArgs e)

@@ -16,4 +16,9 @@ public partial class languages_C_C_main : System.Web.UI.Page
         Response.Redirect(".\\C_info.aspx");
     }
 
+
+    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect(".\\C_quiz1.aspx");
+    }
 }
