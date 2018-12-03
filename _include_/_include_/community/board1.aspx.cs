@@ -9,6 +9,13 @@ public partial class community_board1 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Application["islogin"].ToString() == "false")
+        {
+            Response.Redirect("~/account/login.aspx");
+        }
+        else
+        {
 
+        }
     }
 }

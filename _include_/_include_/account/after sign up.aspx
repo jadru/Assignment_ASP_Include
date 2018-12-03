@@ -15,9 +15,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <p>
-        <br />
-    </p>
+    <h1>환영합니다</h1>
     <p>
     </p>
     <h1 class="auto-style6">#include에 오신 것을 진심으로 환영합니다!</h1>

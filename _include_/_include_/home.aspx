@@ -254,6 +254,5 @@
     </p>
     <p class="auto-style12">
         &nbsp;</p>
-    <hr />
-</asp:Content>
+    </asp:Content>
 

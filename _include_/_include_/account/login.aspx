@@ -6,10 +6,13 @@
         .auto-style22 {
             text-align: center;
         }
+        .auto-style23 {
+            text-align: left;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h1 class="auto-style22">로그인</h1>
+    <h1 class="auto-style23">로그인</h1>
 <p class="auto-style22" style="font-size: xx-large">
     id :
     <asp:TextBox ID="TextBox1" runat="server" Height="34px" Width="228px"></asp:TextBox>

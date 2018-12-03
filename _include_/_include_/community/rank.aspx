@@ -4,7 +4,7 @@
     <p>
     랭킹 사이트</p>
 <p style="margin-left: 40px">
-    <asp:Table ID="Rank_Table" runat="server" CellPadding="5" CellSpacing="5" GridLines="Both">
+    <asp:Table ID="Rank_Table" runat="server" CellPadding="7" CellSpacing="7" GridLines="Both">
         <asp:TableRow runat="server" Font-Bold="True">
             <asp:TableCell runat="server">등수</asp:TableCell>
             <asp:TableCell runat="server">이름</asp:TableCell>

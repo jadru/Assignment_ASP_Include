@@ -42,11 +42,6 @@ public partial class ManageAccount_signup : System.Web.UI.Page
                         Application["email"] = TextBox3.Text;
                         Response.Redirect("after sign up.aspx");
                     }
-                    else
-                    {
-
-                    }
-
                 }
                 catch
                 {

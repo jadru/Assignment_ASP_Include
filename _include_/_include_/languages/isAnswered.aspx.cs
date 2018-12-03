@@ -12,7 +12,7 @@ public partial class languages_isAnswered : System.Web.UI.Page
     {
         if (Application["islogin"].ToString() == "false")
         {
-            Response.Redirect("~/home.aspx");
+            Response.Redirect("~/account/login.aspx");
         }
         else
         {
@@ -27,12 +27,20 @@ public partial class languages_isAnswered : System.Web.UI.Page
             {
                 // SQL COMMAND 수행하기
                 Con.Open();
-                Cmd.CommandText = "UPDATE db_user SET mileage = mileage + 10 WHERE id = '" + Application["id"] + "'";
+                Cmd.CommandText = "UPDATE db_user SET mileage = mileage + 10 WHERE id = '" + Application["id"].ToString() + "'";
                 // 리턴 값은 영향을 받은 ROW의 갯수
-                Cmd.CommandText = "SELECT mileage FROM db_user WHERE id = '" + Application["id"] + "'";
+                int rowsAffected = Cmd.ExecuteNonQuery();
+                if (rowsAffected == 1)
+                {
+                    //Label1.Text = rowsAffected.ToString();
+                }
+                Cmd.CommandText = "SELECT mileage FROM db_user WHERE id = '" + Application["id"].ToString() + "'";
                 SqlDataReader reader = Cmd.ExecuteReader();
-                int mileage = int.Parse(reader["mileage"].ToString());
-                Label2.Text = mileage.ToString();
+                if (reader.Read())
+                {
+                    int mileage = int.Parse(reader["mileage"].ToString());
+                    Label2.Text = mileage.ToString();
+                }
                 Con.Close();
                 reader.Close();
             }

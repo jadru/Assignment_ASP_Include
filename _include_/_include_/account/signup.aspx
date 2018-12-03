@@ -21,13 +21,16 @@
             font-size: x-large;
             height: 100px;
         }
+        .auto-style27 {
+            text-align: left;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <p>
     <br />
 </p>
-<h1 class="auto-style22">회원가입</h1>
+<h1 class="auto-style27">회원가입</h1>
 <p class="auto-style17" style="font-size: xx-large">
     &nbsp;</p>
 <table class="auto-style18">
