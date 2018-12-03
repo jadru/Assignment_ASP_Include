@@ -42,10 +42,6 @@
             height: 521px;
         }
 
-        .auto-style5{
-            padding : 70px;
-        }
-
         .table_style{
             padding : 10px;
         }
@@ -200,32 +196,32 @@
                     <asp:ImageButton ID="ImageButton3" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/PHP.png" OnClick="ImageButton3_Click" />
                 </td>
                 <td class="auto-style21">
-                    <asp:ImageButton ID="ImageButton4" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/SQL.png" OnClick="ImageButton4_Click" />
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/C_shap.png" OnClick="ImageButton4_Click" />
                 </td>
                 <td class="auto-style24">
-                    <asp:ImageButton ID="ImageButton5" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                    <asp:ImageButton ID="ImageButton5" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/JS.png" OnClick="ImageButton5_Click" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:ImageButton ID="ImageButton6" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                    <asp:ImageButton ID="ImageButton6" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/C_Plus.png" OnClick="ImageButton6_Click" />
                 </td>
                 <td class="auto-style28">
-                    <asp:ImageButton ID="ImageButton7" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                    <asp:ImageButton ID="ImageButton7" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/SQL.png" OnClick="ImageButton7_Click" />
                 </td>
                 <td>
-                    <asp:ImageButton ID="ImageButton8" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                    <asp:ImageButton ID="ImageButton8" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/kotlin.png" OnClick="ImageButton8_Click" />
                 </td>
                 <td class="auto-style25">
-                    <asp:ImageButton ID="ImageButton9" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                    <asp:ImageButton ID="ImageButton9" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/Java.png" OnClick="ImageButton9_Click" />
                 </td>
             </tr>
             <tr>
                 <td class="auto-style22">
-                    <asp:ImageButton ID="ImageButton10" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                    <asp:ImageButton ID="ImageButton10" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/Python.png" OnClick="ImageButton10_Click" />
                 </td>
                 <td class="auto-style29">
-                    <asp:ImageButton ID="ImageButton11" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/test.png" />
+                    <asp:ImageButton ID="ImageButton11" runat="server" Height="400px" ImageUrl="~/objects/images/home_language_btn/Go.png" OnClick="ImageButton11_Click" />
                 </td>
                 <td class="auto-style22"></td>
                 <td class="auto-style26"></td>

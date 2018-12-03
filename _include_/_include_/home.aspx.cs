@@ -35,6 +35,41 @@ public partial class home : System.Web.UI.Page
 
     protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
     {
-       // Response.Redirect(".\\languages\\sql\\sqlmain.aspx");
+        // C#
+    }
+
+    protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+    {   // JS
+        Response.Redirect(".\\languages\\Javascript\\javascriptmain.aspx");
+    }
+
+    protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
+    {
+        // C++
+    }
+
+    protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
+    {
+        // SQL
+    }
+
+    protected void ImageButton8_Click(object sender, ImageClickEventArgs e)
+    {
+        // Kotlin
+    }
+
+    protected void ImageButton9_Click(object sender, ImageClickEventArgs e)
+    {
+        // Java
+    }
+
+    protected void ImageButton10_Click(object sender, ImageClickEventArgs e)
+    {
+        // Python
+    }
+
+    protected void ImageButton11_Click(object sender, ImageClickEventArgs e)
+    {
+        // Go
     }
 }
