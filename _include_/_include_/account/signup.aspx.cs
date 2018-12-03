@@ -72,12 +72,16 @@ public partial class ManageAccount_signup : System.Web.UI.Page
                 // SQL COMMAND 수행하기
                 Con.Open();
                 // ExecuteNonQuery()문은 CREATE, ALTER, DROP, INSERT, UPDATE, DELETE 문을 수행할때 사용
-                Cmd.CommandText = "SELECT id FROM db_user WHERE id = '" + TextBox2.Text + "'";
+                Cmd.CommandText = "SELECT id FROM db_user WHERE id = \'" + TextBox2.Text + "\'";
                 // 리턴 값은 영향을 받은 ROW의 갯수
                 SqlDataReader reader = Cmd.ExecuteReader();
                 if (reader.Read())
                 {
                     Label1.Text = "중복 아이디가 존재합니다.";
+                }
+                else
+                {
+                    Label1.Text = "";
                 }
                 Con.Close();
 

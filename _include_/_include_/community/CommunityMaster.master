@@ -31,6 +31,7 @@
                                 <asp:TreeNode Text="신제품" Value="신제품"></asp:TreeNode>
                             </asp:TreeNode>
                             <asp:TreeNode Text="자유게시판" Value="자유게시판"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/community/rank.aspx" Text="랭킹" Value="랭킹"></asp:TreeNode>
                         </asp:TreeNode>
                     </Nodes>
                     <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />

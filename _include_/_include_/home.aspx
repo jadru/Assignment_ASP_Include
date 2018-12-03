@@ -45,16 +45,9 @@
         .table_style{
             padding : 10px;
         }
-        .auto-style22 {
-            height: 452px;
-        }
         .auto-style23 {
             height: 523px;
             padding: 10px;
-        }
-        .auto-style26 {
-            height: 452px;
-            width: 310px;
         }
         .auto-style30 {
             height: 432px;
@@ -224,7 +217,7 @@
                         <br />
                         <br />
                         <asp:Label ID="Label23" runat="server" Font-Size="20pt" ForeColor="#365393" Text="퀴즈를 맞추시면 보상을 드립니다." Font-Strikeout="False"></asp:Label>
-                        &#39;<br />
+                        <br />
                         <br />
                         <asp:Label ID="Label24" runat="server" Font-Size="20pt" ForeColor="#365393" Text="저희는 당신의 언어 이해력을 올려드립니다." Font-Strikeout="False"></asp:Label>
                         <br />
