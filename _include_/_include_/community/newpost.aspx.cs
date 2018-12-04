@@ -83,15 +83,16 @@ public partial class community_newpost : System.Web.UI.Page
                 {
                     primarykey = int.Parse(reader["primarykey"].ToString().Trim());
                 }
+                reader.Close();
                 primarykey++;
-                Cmd.CommandText = "insert into db_board2 (author, title, content, primarykey) values ('" + TextBox2.Text + "', '" + TextBox1.Text +
+                
+                Cmd.CommandText = "INSERT INTO db_board2 (author, title, content, primarykey) values ('" + TextBox2.Text + "', '" + TextBox1.Text +
                     "', '" + TextBox4.Text + "', " + primarykey + ")";
                 int rowsAffected = Cmd.ExecuteNonQuery();
                 if (rowsAffected == 1)
                 {
-
+                    Response.Redirect("board2.aspx");
                 }
-                reader.Close();
                 // 리턴 값은 영향을 받은 ROW의 갯수
                 Con.Close();
                 Response.Redirect("board2.aspx");
