@@ -35,6 +35,12 @@
         .auto-style49 {
             text-align: right;
         }
+        .auto-style50 {
+            font-size: xx-large;
+        }
+        .auto-style51 {
+            width: 308px;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -97,16 +103,37 @@
                             <br />
                             <br />
                             난이도:Easy<br />
-                            난이도:Hard</td>
+                            </td>
                     </tr>
                 </table>
                 <div class="auto-style49">
-                    <asp:ImageButton ID="ImageButton4" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" OnClick="ImageButton4_Click" Width="337px" />
                 </div>
             </td>
         </tr>
     </table>
     <p>
-    &nbsp;&nbsp;</p>
+    &nbsp;&nbsp;<table style="width:100%;">
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style51" rowspan="3">
+                            <asp:Image ID="Image21" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/images/javascript1.jpg" />
+                        </td>
+                <td>
+                            <asp:Image ID="Image22" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />
+                        </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style50">JavaScript</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <asp:ImageButton ID="ImageButton5" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" OnClick="ImageButton4_Click" Width="337px" />
+                    <br />
+                            난이도:Hard</td>
+            </tr>
+        </table>
+    </p>
 </asp:Content>
 
