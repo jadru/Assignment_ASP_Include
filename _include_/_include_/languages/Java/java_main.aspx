@@ -129,7 +129,7 @@
     </tr>
     <tr>
         <td>
-                <asp:HyperLink ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" OnClick="ImageButton3_Click" NavigateUrl="https://opentutorials.org/course/1223/5293"/>
+                <asp:HyperLink ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" NavigateUrl="https://opentutorials.org/course/1223/5293"/>
         </td>
     </tr>
 </table>
