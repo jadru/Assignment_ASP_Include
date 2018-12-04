@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <board>
-  <post author="Jadru" title="안녕하세요 여기는 게시판입니다" content="게시판을 많이 이용해주세요." primarykey="0" />
-  <post author="Soobsoob" title="(주)카카오 개발자 구합니다." content="프론트엔드 개발자 2명, 자세한 사항은 링크 참조." primarykey="1" />
-  <post author="asdf" title="페이스북 프론트엔드 개발자 1명 모집합니다" content="링크를 참조하십시오" primarykey="ggwya" />
-  <post author="asdf" title="안녕하세요 잘 부탁드립니다." content="안녕하세요" primarykey="qgjys" />
-  <post author="asdf" title="네이버(주) 프론트엔드 개발자 구합니다" content="자세한 사항은 링크 참조&#xD;&lt;br&gt;http://www.naver.com" primarykey="39fdu" />
-  <post author="asdf" title="xml db" content="asdf" primarykey="q0ei1" />
-  <post author="shonn" title="ㄴㅁㅇㅁㄴㅇ" content="시발 최진서" primarykey="gwwxm" />
-  <post author="shonn" title="dfdf" content="dfdfdf" primarykey="315if" />
+  <post author="admin" title="(주)애플코리아유한회사 개발자 채용합니다." content="자세한 사항은 홈페이지 www.apple.com에서 참고하세요." primarykey="0" />
+  <post author="Soobsoob" title="(주)카카오 개발자 구합니다." content="프론트엔드 개발자 2명, 자세한 사항은 링크 참조. www.kakao.com" primarykey="1" />
+  <post author="injecs" title="페이스북 프론트엔드 개발자 1명 모집합니다" content="링크를 참조하십시오 www.facebook.com" primarykey="ggwya" />
+  <post author="injeuniv" title="인제정보시스템 db구축 발주" content="홈페이지 참조, www.inje.ac.kr" primarykey="qgjys" />
+  <post author="nhnent." title="네이버(주) 프론트엔드 개발자 구합니다" content="자세한 사항은 링크 참조&#xD;&lt;br&gt;http://www.naver.com" primarykey="39fdu" />
 </board>
