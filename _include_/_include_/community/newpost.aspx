@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/community/CommunityMaster.master" AutoEventWireup="true" CodeFile="newpost.aspx.cs" Inherits="community_newpost" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
-    <h1>새글 쓰기</h1>
+    <h1>새글 쓰기 </h1>
     <table style="padding: 5px; width: 100%; height: 500px;">
         <tr>
             <td style="width: 15%; text-align: right; height: 67px; font-size: x-large;">제목 : </td>

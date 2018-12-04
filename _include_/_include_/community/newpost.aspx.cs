@@ -25,7 +25,7 @@ public partial class community_newpost : System.Web.UI.Page
     {
         // SPQ 선언
         int board = DropDownList1.SelectedIndex;
-        if(board == 0)
+        if(board == 0) // 구인/구직
         {
             // 1. XML 파일 열기
             string fn = Server.MapPath("~/App_Data/board1.xml");
@@ -63,7 +63,7 @@ public partial class community_newpost : System.Web.UI.Page
             // 6. 리스트 페이지로 이동 
             Response.Redirect("board1.aspx");
         }
-        else if(board == 1)
+        else if(board == 1) // 자유게시판
         {
             string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
             SqlConnection Con = new SqlConnection(connectionString);
@@ -75,15 +75,16 @@ public partial class community_newpost : System.Web.UI.Page
             {
                 Con.Open();
                 // SQL COMMAND 수행하기
-                Cmd.CommandText = "SELECT * FROM db_board2 order by primarykey desc limit 1;";
+                Cmd.CommandText = "SELECT primarykey FROM db_board2 order by primarykey desc";
                 SqlDataReader reader = Cmd.ExecuteReader();
                 // SqlDataReader의 기본 위치는 첫 번째 레코드 앞, Read( )를 호출하여 하나의 레코드 읽기 
                 // read.Read( )의 반환 값 형식: Boolean, 행이 더 있으면 true이고, 그렇지 않으면 false입니다. 
                 int primarykey = 0;
-                while (reader.Read())
+                if(reader.Read())
                 {
                     primarykey = int.Parse(reader["primarykey"].ToString().TrimEnd());
                 }
+
                 reader.Close();
                 primarykey++;
                 
@@ -96,7 +97,8 @@ public partial class community_newpost : System.Web.UI.Page
                 // 리턴 값은 영향을 받은 ROW의 갯수
                 Con.Close();
             }
-            catch { }
+            catch {
+            }
         }
         
     }
