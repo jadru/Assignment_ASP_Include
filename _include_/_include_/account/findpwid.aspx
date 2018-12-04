@@ -36,7 +36,7 @@
         <tr>
             <td class="auto-style3" style="width: 40%;">&nbsp;</td>
             <td class="auto-style2" style="width: 60%;">
-                <asp:Button ID="Button1" runat="server" Height="55px" OnClick="Button1_Click" Text="id 찾기" Width="207px" />
+                <asp:Button ID="Button1" runat="server" Height="75px" OnClick="Button1_Click" Text="id 찾기" Width="250px" BackColor="Black" Font-Size="X-Large" ForeColor="White" />
 &nbsp;<asp:Label ID="Label1" runat="server"></asp:Label>
             </td>
         </tr>
@@ -63,7 +63,7 @@
         <tr>
             <td class="auto-style3" style="width: 40%;">&nbsp;</td>
             <td class="auto-style2" style="width: 60%;">
-                <asp:Button ID="Button2" runat="server" Height="55px" OnClick="Button2_Click" Text="pw 찾기" Width="207px" />
+                <asp:Button ID="Button2" runat="server" Height="75px" OnClick="Button2_Click" Text="pw 찾기" Width="250px" BackColor="Black" Font-Size="X-Large" ForeColor="White" />
 &nbsp;<asp:Label ID="Label2" runat="server"></asp:Label>
 &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" CssClass="menu-button-style" NavigateUrl="~/account/changepw.aspx" ForeColor="Black">비밀번호 수정</asp:HyperLink>
             </td>

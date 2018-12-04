@@ -12,6 +12,9 @@
         .auto-style5 {
         width: 30%;
     }
+        .auto-style6 {
+            font-size: x-large;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -38,7 +41,7 @@
             <asp:ListItem>?</asp:ListItem>
         </asp:RadioButtonList>
         </div>
-         <p class="auto-style4"><asp:Button ID="Button1" runat="server" BackColor="Black" ForeColor="White" Height="52px" OnClick="Button1_Click" Text="제출하기" Width="164px" /></p>
+         <p class="auto-style4"><asp:Button ID="Button1" runat="server" BackColor="Black" ForeColor="White" Height="75px" OnClick="Button1_Click" Text="제출하기" Width="250px" CssClass="auto-style6" /></p>
             <p></p>
          <p class="auto-style4"><asp:Label ID="Label1" runat="server" ForeColor="Red"></asp:Label></p>
 </asp:Content>

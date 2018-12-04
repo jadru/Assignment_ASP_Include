@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/community/CommunityMaster.master" AutoEventWireup="true" CodeFile="newpost.aspx.cs" Inherits="community_newpost" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+    <h1>새글 쓰기</h1>
     <table style="padding: 5px; width: 100%; height: 500px;">
         <tr>
             <td style="width: 15%; text-align: right; height: 67px; font-size: x-large;">제목 : </td>
@@ -22,7 +23,7 @@
             </td>
             <td style="width: 15%; "></td>
             <td style="width: 35%; text-align: right;">
-                <asp:Button ID="Button1" runat="server" Height="51px" OnClick="Button1_Click" style="font-size: x-large; margin-left: 0px" Text="글 작성" Width="150px" />
+                <asp:Button ID="Button1" runat="server" Height="75px" OnClick="Button1_Click" style="font-size: x-large; margin-left: 0px" Text="글 작성" Width="250px" BackColor="Black" ForeColor="White" />
             </td>
         </tr>
         <tr>

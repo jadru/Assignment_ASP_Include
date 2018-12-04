@@ -45,7 +45,7 @@
             text-align: left;
         }
         .menu-style {
-            width: 128px;
+            width: 150px;
             text-align: center;
         }
         menu-style:hover {color:darkslategrey;}

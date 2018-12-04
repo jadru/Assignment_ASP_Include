@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/community/CommunityMaster.master" AutoEventWireup="true" CodeFile="news2.aspx.cs" Inherits="community_news_news2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="XmlDataSource1" Width="100%" CellPadding="10" CellSpacing="3" ForeColor="Black" GridLines="Horizontal" AllowSorting="True" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
+    <h1>신기술 및 신제품 소식</h1>
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="XmlDataSource1" Width="100%" CellPadding="10" CellSpacing="3" ForeColor="Black" GridLines="Horizontal" AllowSorting="True" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" style="font-size: x-large">
         <Columns>
             <asp:HyperLinkField DataNavigateUrlFields="link" DataTextField="title" HeaderText="제목 (링크)" Target="_blank" >
             <ControlStyle Font-Size="X-Large" />

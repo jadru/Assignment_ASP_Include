@@ -129,7 +129,7 @@
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:HyperLink ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" NavigateUrl="http://wonwoo.ml/index.php/post/1427" />
         </td>
     </tr>
 </table>
@@ -159,11 +159,11 @@
         <td><h1>Kotlin III</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>Kotlin 만들기</h3></td>
+        <td class="auto-style3"><h3>Kotlin으로 안드로이드 앱 개발하기</h3></td>
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton4" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:HyperLink ID="ImageButton4" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" NavigateUrl="https://tech.wanted.co.kr/android/2018/02/23/android-kotlin-dev-1.html" />
         </td>
     </tr>
 </table>
@@ -199,11 +199,11 @@
         <td><h1>Kotlin IV</h1></td>
     </tr>
     <tr>
-        <td><h3 class="auto-style3">Kotlin 디버깅</h3></td>
+        <td><h3 class="auto-style3">코루틴</h3></td>
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton5" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:HyperLink ID="ImageButton5" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" NavigateUrl="https://tourspace.tistory.com/150?category=797357" />
         </td>
     </tr>
 </table>

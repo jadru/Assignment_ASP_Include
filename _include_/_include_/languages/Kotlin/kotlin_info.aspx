@@ -99,7 +99,7 @@ println(greet_ko) </span><span style="box-sizing: inherit; color: rgb(136, 136, 
         <a href="https://namu.wiki/w/Kotlin">https://namu.wiki/w/Kotlin</a></p>
     <p class="auto-style21">
         <strong>
-        <asp:Button ID="Button1" runat="server" BackColor="#FF9900" CssClass="auto-style6" ForeColor="White" Height="87px" OnClick="Button1_Click" Text="Back" Width="196px" />
+        <asp:Button ID="Button1" runat="server" BackColor="#FF9900" CssClass="auto-style6" ForeColor="White" Height="75px" OnClick="Button1_Click" Text="뒤로가기" Width="250px" />
         </strong></p>
     <p class="auto-style21">
     </p>

@@ -29,8 +29,8 @@ public partial class Master : System.Web.UI.MasterPage
                 // read.Read( )의 반환 값 형식: Boolean, 행이 더 있으면 true이고, 그렇지 않으면 false입니다. 
                 while (reader.Read())
                 {
-                    Application["name"] = reader["name"];
-                    Application["id"] = reader["id"];
+                    Application["name"] = reader["name"].ToString().Trim();
+                    Application["id"] = reader["id"].ToString().Trim();
                     Application["email"] = reader["email"].ToString().Trim();
                 }
                 reader.Close();
@@ -84,6 +84,6 @@ public partial class Master : System.Web.UI.MasterPage
 
     protected void LinkButton5_Click(object sender, EventArgs e)
     {
-        Response.Redirect("~/community/main.aspx");
+        Response.Redirect("~/community/board2.aspx");
     }
 }

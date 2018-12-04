@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
     <h1>구인 / 구직</h1>
 <p style="text-align: right">
-    <asp:Button ID="Button1" runat="server" Font-Size="X-Large" ForeColor="White" Height="60px" Text="새 글" Width="120px" BackColor="Black" OnClick="Button1_Click" />
+    <asp:Button ID="Button1" runat="server" Font-Size="X-Large" ForeColor="White" Height="75px" Text="글쓰기" Width="250px" BackColor="Black" OnClick="Button1_Click" />
     <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource1" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" CellSpacing="4" ForeColor="Black" GridLines="Horizontal" RepeatLayout="Flow" Width="100%" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False">
         <EditItemStyle Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
         <FooterStyle ForeColor="Black" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
@@ -16,9 +16,11 @@
         </HeaderTemplate>
         <ItemTemplate>
             <div style="text-align: center">
-                <h3><asp:Label ID="titleLabel" runat="server" ForeColor="Blue" Text='<%# Eval("title") %>' /></h3>
-                <p><asp:Label ID="contentLabel" runat="server" Text='<%# Eval("content") %>' /><p/>
-                <h6> by <asp:Label ID="idLabel" runat="server" Text='<%# Eval("author") %>' /><h6 />
+                <h2>
+                    <asp:Label ID="titleLabel" runat="server" ForeColor="Blue" style="font-size: xx-large" Text='<%# Eval("title") %>' />
+                </h2>
+                <p><asp:Label ID="contentLabel" runat="server" Text='<%# Eval("content") %>' style="font-size: x-large" /><p/>
+                <h6> <span class="auto-style15">by </span> <asp:Label ID="idLabel" runat="server" Text='<%# Eval("author") %>' CssClass="auto-style15" /><h6 />
             </div>
         </ItemTemplate>
         <SelectedItemStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
