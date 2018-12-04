@@ -35,19 +35,7 @@
             <asp:ListItem>리치 톰</asp:ListItem>
             <asp:ListItem>백 톰</asp:ListItem>
         </asp:RadioButtonList>
-    </p>
-    <h3>2. C는 &#39;이식 가능한 ???&#39;로 낮추어 부르기도 한다. 이 문장에서 ???은 뭘까요?</h3>
-    <p class="auto-style2">
-
-        <asp:RadioButtonList ID="RadioButtonList2" runat="server">
-            <asp:ListItem>저급 어셈블리어</asp:ListItem>
-            <asp:ListItem>저급 인터프리터</asp:ListItem>
-            <asp:ListItem>고급 인터프리터</asp:ListItem>
-            <asp:ListItem>고급 어셈블리어</asp:ListItem>
-            <asp:ListItem>아스키 코드</asp:ListItem>
-        </asp:RadioButtonList>
-
-    </p>
+        &nbsp;</p>
     <p>
         <asp:Button ID="send_btn" runat="server" BackColor="Black" ForeColor="White" Height="52px" OnClick="send_btn_Click" Text="제출하기" Width="164px" />
         &nbsp;&nbsp;&nbsp;

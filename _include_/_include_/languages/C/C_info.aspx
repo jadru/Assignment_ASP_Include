@@ -46,7 +46,7 @@
                     최초 개발자 : Dennis MacAlistair Ritchie</p>
             </td>
             <td class="auto-style32"><strong>
-                <asp:Image ID="Image2" runat="server" Height="176px" Width="342px" />
+                <asp:Image ID="Image2" runat="server" Height="176px" Width="342px" ImageUrl="~/objects/images/languages/C_icon.png" />
                 </strong></td>
             </tr>
         </table>

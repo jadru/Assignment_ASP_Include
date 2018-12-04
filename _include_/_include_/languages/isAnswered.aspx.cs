@@ -16,6 +16,8 @@ public partial class languages_isAnswered : System.Web.UI.Page
         }
         else
         {
+            int mileage = 0; // 마일리지를 담을 변수 선언.
+
             string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
             SqlConnection Con = new SqlConnection(connectionString);
             // SPQ 선언
@@ -27,22 +29,25 @@ public partial class languages_isAnswered : System.Web.UI.Page
             {
                 // SQL COMMAND 수행하기
                 Con.Open();
-                Cmd.CommandText = "UPDATE db_user SET mileage = mileage + 10 WHERE id = '" + Application["id"].ToString() + "'";
+                // 마일리지를 업데이트한다.
+                Cmd.CommandText = "UPDATE db_user SET mileage += 5 WHERE id = \'" + Application["id"].ToString() + "\'";
                 // 리턴 값은 영향을 받은 ROW의 갯수
                 int rowsAffected = Cmd.ExecuteNonQuery();
                 if (rowsAffected == 1)
                 {
-                    //Label1.Text = rowsAffected.ToString();
+                    Label1.Text = rowsAffected.ToString();
                 }
-                Cmd.CommandText = "SELECT mileage FROM db_user WHERE id = '" + Application["id"].ToString() + "'";
+                // 업데이트 된 마일리지 불러옴.
+                Cmd.CommandText = "SELECT mileage FROM db_user WHERE id = \'" + Application["id"].ToString() + "\'";
                 SqlDataReader reader = Cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    int mileage = int.Parse(reader["mileage"].ToString());
-                    Label2.Text = mileage.ToString();
+                    mileage = int.Parse(reader["mileage"].ToString()) + 5 ; // 마일리지 변수에 DB에 업데이트된 마일리지 값을 불러옴.
                 }
                 Con.Close();
                 reader.Close();
+
+                Label2.Text = mileage.ToString(); // 마일리지 출력.
             }
             catch {}
         }
