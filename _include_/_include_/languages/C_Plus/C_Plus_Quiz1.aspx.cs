@@ -11,4 +11,9 @@ public partial class languages_C_Plus_C_Plus_Quiz1 : System.Web.UI.Page
     {
 
     }
+
+    protected void send_btn_Click(object sender, EventArgs e)
+    {
+
+    }
 }

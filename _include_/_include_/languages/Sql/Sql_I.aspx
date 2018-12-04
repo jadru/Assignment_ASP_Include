@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="PHP_I.aspx.cs" Inherits="languages_php_PHP_I" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="Sql_I.aspx.cs" Inherits="languages_php_PHP_I" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -41,9 +41,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div>
-        <table class="auto-style50" style="background-color:plum">
+        <table class="auto-style50" style="background-color:#66CCFF">
             <tr">
-                <td class="auto-style31">
+                <td class="auto-style31" style="background-color: #66CCFF">
                     <h1 class="auto-style33"><strong>PHP</strong></h1>
                     <p class="auto-style52">최초 개발자 : Rasmus Lerdorf</p>
                     <p class="auto-style52">운영 및 개발자 : The PHP Group</p>
@@ -52,9 +52,9 @@
                         <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="http://www.php.net" CssClass="auto-style52">http://www.php.net</asp:LinkButton>
                     </p>
                 </td>
-                <td class="auto-style32">
+                <td class="auto-style32" style="background-color: #66CCFF">
         <strong>
-                <asp:Image ID="Image2" runat="server" Height="176px" ImageUrl="~/objects/images/php-00441489844a0103eae71ba2fe15244c.png" Width="342px" />
+                <asp:Image ID="Image2" runat="server" Height="176px" ImageUrl="~/objects/images/SQL_icon.png" Width="174px" />
                 </strong></td>
             </tr>
         </table>

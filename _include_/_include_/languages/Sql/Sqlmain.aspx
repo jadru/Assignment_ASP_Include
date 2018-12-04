@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="phpmain.aspx.cs" Inherits="languages_php_phpmain" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="Sqlmain.aspx.cs" Inherits="languages_php_phpmain" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -55,14 +55,14 @@
     <table class="auto-style44">
     <tr>
         <td class="auto-style39" rowspan="4">
-            <asp:Image ID="Image2" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo_3.png" Width="302px" />
+            <asp:Image ID="Image2" runat="server" Height="312px" ImageUrl="~/objects/images/SQL_icon.png" Width="302px" />
         </td>
         <td>
             <asp:Image ID="Image3" runat="server" Height="68px" ImageUrl="~/objects/images/php_study_blue_color.png" Width="162px" />
         </td>
     </tr>
     <tr>
-        <td><h1>PHP I</h1></td>
+        <td><h1>SQL I</h1></td>
     </tr>
     <tr>
         <td class="auto-style3"><h3>PHP설치환경과 기본적인 개념 학습</h3></td>
@@ -87,7 +87,7 @@
                 <table class="auto-style1">
     <tr>
         <td rowspan="4" class="auto-style39">
-            <asp:Image ID="Image1" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo_3.png" Width="302px" />
+            <asp:Image ID="Image1" runat="server" Height="312px" ImageUrl="~/objects/images/SQL_icon.png" Width="302px" />
         </td>
         <td>
                 <asp:Image ID="Image9" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />
@@ -113,7 +113,7 @@
 <table class="auto-style44">
     <tr>
         <td class="auto-style39" rowspan="4">
-            <asp:Image ID="Image4" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo_3.png" Width="302px" />
+            <asp:Image ID="Image4" runat="server" Height="312px" ImageUrl="~/objects/images/SQL_icon.png" Width="302px" />
         </td>
         <td>
             <asp:Image ID="Image5" runat="server" Height="68px" ImageUrl="~/objects/images/php_study_blue_color.png" Width="162px" />
@@ -147,7 +147,7 @@
                 <table class="auto-style1">
     <tr>
         <td rowspan="4" class="auto-style39">
-            <asp:Image ID="Image24" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo_3.png" Width="302px" />
+            <asp:Image ID="Image24" runat="server" Height="312px" ImageUrl="~/objects/images/SQL_icon.png" Width="302px" />
         </td>
         <td>
                 <asp:Image ID="Image25" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />
@@ -175,7 +175,7 @@
 <table class="auto-style45">
     <tr>
         <td class="auto-style39" rowspan="4">
-            <asp:Image ID="Image7" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo_3.png" Width="302px" />
+            <asp:Image ID="Image7" runat="server" Height="312px" ImageUrl="~/objects/images/SQL_icon.png" Width="302px" />
         </td>
         <td>
             <asp:Image ID="Image8" runat="server" Height="68px" ImageUrl="~/objects/images/php_study_blue_color.png" Width="162px" />
@@ -209,7 +209,7 @@
                 <table class="auto-style1">
     <tr>
         <td rowspan="4" class="auto-style39">
-            <asp:Image ID="Image28" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo_3.png" Width="302px" />
+            <asp:Image ID="Image28" runat="server" Height="312px" ImageUrl="~/objects/images/SQL_icon.png" Width="302px" />
         </td>
         <td>
                 <asp:Image ID="Image29" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />
@@ -237,7 +237,7 @@
 <table class="auto-style44">
     <tr>
         <td class="auto-style39" rowspan="5">
-            <asp:Image ID="Image10" runat="server" Height="312px" ImageUrl="~/objects/images/php_logo_3.png" Width="302px" />
+            <asp:Image ID="Image10" runat="server" Height="312px" ImageUrl="~/objects/images/SQL_icon.png" Width="302px" />
         </td>
         <td">
            

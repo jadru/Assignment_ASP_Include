@@ -63,6 +63,7 @@ public partial class home : System.Web.UI.Page
     protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
     {
         // SQL
+        Response.Redirect("~/languages/Sql/Sqlmain.aspx");
     }
 
     protected void ImageButton8_Click(object sender, ImageClickEventArgs e)

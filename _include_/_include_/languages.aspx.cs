@@ -42,7 +42,7 @@ public partial class languages : System.Web.UI.Page
 
     protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
     {
-
+        Response.Redirect("~/languages/Sql/Sqlmain.aspx");
     }
 
     protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
