@@ -89,7 +89,7 @@ public partial class community_newpost : System.Web.UI.Page
                 primarykey++;
                 
                 Cmd.CommandText = "INSERT db_board2 values (\'" + TextBox2.Text + "\', \'" + TextBox1.Text +
-                    "\', \'" + TextBox4.Text + "\', " + primarykey + ")";
+                    "\', \'" + TextBox4.Text + "\', \'" + primarykey + "\', \'" + DateTime.Now + "\')";
                 if (Cmd.ExecuteNonQuery() == 1)
                 {
                     Response.Redirect("board2.aspx");
