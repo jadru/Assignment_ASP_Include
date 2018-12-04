@@ -13,12 +13,17 @@ public partial class languages_C_C_main : System.Web.UI.Page
     }
     protected void Study_StartLesson_imgbtn_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect(".\\C_info.aspx");
+        Response.Redirect(".\\Python_info.aspx");
     }
 
 
     protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect(".\\C_quiz1.aspx");
+        Response.Redirect(".\\Pythonexam.aspx");
+    }
+
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect(".\\Pythonexam1.aspx");
     }
 }

@@ -25,13 +25,22 @@
         .auto-style45 {
             height: 29px;
         }
+        .auto-style46 {
+            text-align: right;
+        }
+        .auto-style47 {
+            text-align: left;
+        }
+        .auto-style48 {
+            text-align: center;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style44">
         <tr>
             <td class="auto-style39" rowspan="4">
-                <asp:Image ID="Image2" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/images/languages/C_icon.png" />
+                <asp:Image ID="Image2" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/python2.PNG" />
             </td>
             <td>
                 <asp:Image ID="Image3" runat="server" Height="68px" ImageUrl="~/objects/images/php_study.png" Width="162px" />
@@ -39,12 +48,12 @@
         </tr>
         <tr>
             <td>
-                <h1>C I</h1>
+                <h1>Python</h1>
             </td>
         </tr>
         <tr>
             <td class="auto-style45">
-                <h3 style="color: #0066FF">C언어의 개요</h3>
+                <h3 style="color: #0066FF">Python언어의 개요</h3>
             </td>
         </tr>
         <tr>
@@ -63,30 +72,34 @@
             <td class="auto-style43">
                 <asp:Image ID="Image20" runat="server" Height="13px" ImageUrl="~/objects/images/connect_image_width.png" Width="400px" />
             </td>
-            <td>
+            <td class="auto-style46">
                 <table class="auto-style1">
                     <tr>
                         <td rowspan="4" class="auto-style39">
-                            <asp:Image ID="Image1" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/images/languages/C_icon.png" />
+                            <asp:Image ID="Image1" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/python2.PNG" />
                         </td>
-                        <td>
+                        <td class="auto-style47">
                             <asp:Image ID="Image9" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <h1>C I</h1>
+                        <td class="auto-style47">
+                            <h1>Python</h1>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style3" style="color: #0066FF; font-weight: bolder">C언어의 개요</td>
+                        <td class="auto-style47" style="color: #0066FF; font-weight: bolder">Python언어의 개요</td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="auto-style48">
                             <asp:ImageButton ID="ImageButton2" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" OnClick="ImageButton2_Click" />
-                        </td>
+                            <br />
+                            <br />
+                            난이도:Easy<br />
+                            난이도:Hard</td>
                     </tr>
                 </table>
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" OnClick="ImageButton3_Click" Width="337px" />
             </td>
         </tr>
     </table>

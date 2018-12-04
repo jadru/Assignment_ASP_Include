@@ -24,7 +24,7 @@
         }
         .auto-style45 {
             height: 29px;
-            text-align: center;
+            text-align: left;
         }
         .auto-style46 {
             text-align: center;
@@ -48,7 +48,7 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style46">
+            <td class="auto-style48">
                 <h1>JavaScript</h1>
             </td>
         </tr>
@@ -84,12 +84,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style46">
+                        <td class="auto-style48">
                             <h1>JavaScript</h1>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style46" style="color: #0066FF; font-weight: bolder">JavaScript문제</td>
+                        <td class="auto-style48" style="color: #0066FF; font-weight: bolder">JavaScript문제</td>
                     </tr>
                     <tr>
                         <td class="auto-style46">
