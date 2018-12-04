@@ -34,6 +34,24 @@
         .auto-style48 {
             text-align: center;
         }
+        .auto-style49 {
+            width: 162px;
+        }
+        .auto-style50 {
+            font-size: xx-large;
+            text-align: left;
+        }
+        .auto-style51 {
+            width: 162px;
+            height: 105px;
+        }
+        .auto-style52 {
+            text-align: left;
+            height: 105px;
+        }
+        .auto-style53 {
+            width: 291px;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -104,15 +122,36 @@
                             <br />
                             <br />
                             난이도:Easy<br />
-                            난이도:Hard</td>
+                            </td>
                     </tr>
                 </table>
-                <asp:ImageButton ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" OnClick="ImageButton3_Click" Width="337px" />
                 <br />
             </td>
         </tr>
     </table>
     <p>
-    &nbsp;&nbsp;</p>
+    &nbsp;&nbsp;<table style="width:100%;">
+            <tr>
+                <td class="auto-style51"></td>
+                <td class="auto-style53" rowspan="3">
+                            <asp:Image ID="Image21" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/python2.PNG" />
+                        </td>
+                <td class="auto-style52">
+                            <asp:Image ID="Image22" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />
+                        </td>
+            </tr>
+            <tr>
+                <td class="auto-style49">&nbsp;</td>
+                <td class="auto-style50"><strong>Python</strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style49">&nbsp;</td>
+                <td class="auto-style47">
+                <asp:ImageButton ID="ImageButton4" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" OnClick="ImageButton3_Click" Width="337px" />
+                    <br />
+                            난이도:Hard</td>
+            </tr>
+        </table>
+    </p>
 </asp:Content>
 
