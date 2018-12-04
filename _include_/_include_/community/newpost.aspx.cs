@@ -74,7 +74,7 @@ public partial class community_newpost : System.Web.UI.Page
             try
             {
                 // SQL COMMAND 수행하기
-                Cmd.CommandText = "SELECT * FROM db_board2 order by primarykey desc limit 1; ";
+                Cmd.CommandText = "SELECT * FROM db_board2 order by primarykey desc limit 1;";
                 SqlDataReader reader = Cmd.ExecuteReader();
                 // SqlDataReader의 기본 위치는 첫 번째 레코드 앞, Read( )를 호출하여 하나의 레코드 읽기 
                 // read.Read( )의 반환 값 형식: Boolean, 행이 더 있으면 true이고, 그렇지 않으면 false입니다. 
@@ -84,8 +84,13 @@ public partial class community_newpost : System.Web.UI.Page
                     primarykey = int.Parse(reader["primarykey"].ToString().Trim());
                 }
                 primarykey++;
-                Cmd.CommandText = "insert into db_board2 values ('" + TextBox2.Text + "', '" + TextBox1.Text +
+                Cmd.CommandText = "insert into db_board2 (author, title, content, primarykey) values ('" + TextBox2.Text + "', '" + TextBox1.Text +
                     "', '" + TextBox4.Text + "', " + primarykey + ")";
+                int rowsAffected = Cmd.ExecuteNonQuery();
+                if (rowsAffected == 1)
+                {
+
+                }
                 reader.Close();
                 // 리턴 값은 영향을 받은 ROW의 갯수
                 Con.Close();

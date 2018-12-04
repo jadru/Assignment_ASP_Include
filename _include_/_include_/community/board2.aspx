@@ -21,8 +21,8 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_userConnectionString1 %>" SelectCommand="SELECT [author], [title], [content] FROM [db_board2]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_userConnectionString1 %>" SelectCommand="SELECT [author], [title], [content] FROM [db_board2] ORDER BY [primarykey]"></asp:SqlDataSource>
     <br />
-    <p style="text-align: right"><asp:Button ID="Button1" runat="server" Font-Size="X-Large" ForeColor="White" Height="60px" Text="새 글" Width="120px" BackColor="Black" /></p>
+    <p style="text-align: right"><asp:Button ID="Button1" runat="server" Font-Size="X-Large" ForeColor="White" Height="60px" Text="새 글" Width="120px" BackColor="Black" OnClick="Button1_Click" /></p>
     </asp:Content>
 

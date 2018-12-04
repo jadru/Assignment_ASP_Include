@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
         .auto-style3 {
-            text-align: center;
+            text-align: justify;
             width: 100%
         }
         .auto-style4 {

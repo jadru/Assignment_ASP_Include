@@ -27,6 +27,11 @@
     <asp:Button ID="Button1" runat="server" BackColor="Black" ForeColor="White" Height="65px" style="font-size: x-large" Text="로그인" Width="199px" OnClick="Button1_Click" />
 </p>
     <p class="auto-style22" style="font-size: xx-large">
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/account/signup.aspx">회원가입</asp:HyperLink>
+&nbsp;|
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/account/findpwid.aspx">id/pw 찾기</asp:HyperLink>
+</p>
+    <p class="auto-style22" style="font-size: xx-large">
     <asp:Label ID="Label1" runat="server"></asp:Label>
 </p>
 </asp:Content>

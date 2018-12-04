@@ -63,7 +63,7 @@ public partial class account_mypage : System.Web.UI.Page
         {
             // SQL COMMAND 수행하기
             Con.Open();
-            Cmd.CommandText = "UPDATE db_user SET name = '" + TextBox1.Text + "' WHERE id = '" + TextBox2.Text + "'";
+            Cmd.CommandText = "UPDATE db_user SET name = \'" + TextBox1.Text + "\' WHERE id = \'" + TextBox2.Text + "\'";
             // 리턴 값은 영향을 받은 ROW의 갯수
             int rowsAffected = Cmd.ExecuteNonQuery();
             if (rowsAffected == 1)
@@ -88,14 +88,14 @@ public partial class account_mypage : System.Web.UI.Page
         {
             // SQL COMMAND 수행하기
             Con.Open();
-            Cmd.CommandText = "UPDATE db_user SET email = '" + TextBox3.Text + "' WHERE id = '" + Application["id"].ToString() + "'";
+            Cmd.CommandText = "UPDATE db_user SET email = \'" + TextBox3.Text + "\' WHERE id = \'" + Application["id"].ToString() + "\'";
             // 리턴 값은 영향을 받은 ROW의 갯수
             int rowsAffected = Cmd.ExecuteNonQuery();
             if (rowsAffected == 1)
             {
                 //Label1.Text = rowsAffected.ToString();
             }
-            Cmd.CommandText = "SELECT email FROM db_user WHERE id = '" + Application["id"].ToString() + "'";
+            Cmd.CommandText = "SELECT email FROM db_user WHERE id = \'" + Application["id"].ToString() + "\'";
             SqlDataReader reader = Cmd.ExecuteReader();
             if (reader.Read())
             {
