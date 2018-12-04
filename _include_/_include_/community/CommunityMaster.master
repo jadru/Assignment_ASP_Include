@@ -31,7 +31,7 @@
                     <Nodes>
                         <asp:TreeNode Text="자유게시판" Value="자유게시판" NavigateUrl="~/community/board2.aspx">
                         </asp:TreeNode>
-                        <asp:TreeNode Expanded="True" Text="뉴스" Value="뉴스" NavigateUrl="~/community/news.aspx">
+                        <asp:TreeNode Expanded="True" Text="뉴스" Value="뉴스" NavigateUrl="~/community/news/news.aspx">
                             <asp:TreeNode Text="보안 이슈" Value="보안 이슈"></asp:TreeNode>
                             <asp:TreeNode Text="신기술" Value="신기술"></asp:TreeNode>
                             <asp:TreeNode Text="신제품" Value="신제품"></asp:TreeNode>
