@@ -13,7 +13,6 @@ public partial class Master : System.Web.UI.MasterPage
         {
             LinkButton1.Text = Application["name"].ToString() + "님 정보";
             LinkButton2.Text = "로그아웃";
-
         }
         else
         {
