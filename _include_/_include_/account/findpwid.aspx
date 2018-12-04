@@ -65,7 +65,7 @@
             <td class="auto-style2" style="width: 60%;">
                 <asp:Button ID="Button2" runat="server" Height="55px" OnClick="Button2_Click" Text="pw 찾기" Width="207px" />
 &nbsp;<asp:Label ID="Label2" runat="server"></asp:Label>
-&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" CssClass="menu-button-style" NavigateUrl="~/account/changepw.aspx">비밀번호 수정</asp:HyperLink>
+&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" CssClass="menu-button-style" NavigateUrl="~/account/changepw.aspx" ForeColor="Black">비밀번호 수정</asp:HyperLink>
             </td>
         </tr>
     </table>

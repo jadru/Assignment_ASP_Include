@@ -88,22 +88,20 @@ public partial class account_mypage : System.Web.UI.Page
         {
             // SQL COMMAND 수행하기
             Con.Open();
-            Cmd.CommandText = "UPDATE db_user SET email = \'" + TextBox3.Text + "\' WHERE id = \'" + Application["id"].ToString() + "\'";
+            Cmd.CommandText = "UPDATE db_user SET email = \'" + TextBox3.Text + "\' WHERE id = \'" + Application["id"].ToString().Trim() + "\'";
             // 리턴 값은 영향을 받은 ROW의 갯수
             int rowsAffected = Cmd.ExecuteNonQuery();
             if (rowsAffected == 1)
             {
-                //Label1.Text = rowsAffected.ToString();
-            }
-            Cmd.CommandText = "SELECT email FROM db_user WHERE id = \'" + Application["id"].ToString() + "\'";
-            SqlDataReader reader = Cmd.ExecuteReader();
-            if (reader.Read())
-            {
-                TextBox3.Text = reader["email"].ToString();
-                TextBox3.Text.Trim();
+                Cmd.CommandText = "SELECT email FROM db_user WHERE id = \'" + Application["id"].ToString().Trim() + "\'";
+                SqlDataReader reader = Cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    TextBox3.Text = reader["email"].ToString().Trim();
+                }
+                reader.Close();
             }
             Con.Close();
-            reader.Close();
         }
         catch { }
     }
@@ -111,5 +109,35 @@ public partial class account_mypage : System.Web.UI.Page
     protected void TextBox1_TextChanged(object sender, EventArgs e)
     {
 
+    }
+
+    protected void LinkButton6_Click(object sender, EventArgs e)
+    {
+        string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
+        SqlConnection Con = new SqlConnection(connectionString);
+        // SPQ 선언
+
+        // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
+        SqlCommand Cmd = new SqlCommand();
+        Cmd.Connection = Con;
+        Con.Open();
+        try
+        {
+            // SQL COMMAND 수행하기
+            
+            Cmd.CommandText = "DELETE FROM db_user WHERE id = \'" + Application["id"].ToString().Trim() + "\'";
+            // 리턴 값은 영향을 받은 ROW의 갯수
+            int rowsAffected = Cmd.ExecuteNonQuery();
+            if (rowsAffected == 1)
+            {
+                Application["islogin"] = "false";
+                Application["name"] = "";
+                Application["id"] = "";
+                Application["email"] = "";
+                Response.Redirect("~/home.aspx");
+            }
+            Con.Close();
+        }
+        catch { }
     }
 }

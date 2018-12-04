@@ -41,6 +41,9 @@
         font-size: x-large;
         text-align: left;
     }
+        .auto-style26 {
+            text-decoration: none;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -83,7 +86,10 @@
         </tr>
         </table>
         <br />
-        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="menu-button-style" NavigateUrl="~/account/changepw.aspx">비밀번호 수정</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="menu-button-style" NavigateUrl="~/account/changepw.aspx" ForeColor="Black">비밀번호 수정</asp:HyperLink>
+        <span class="auto-style17">&nbsp;/
+        <asp:LinkButton ID="LinkButton6" runat="server" CssClass="auto-style26" ForeColor="Black" OnClick="LinkButton6_Click">회원탈퇴</asp:LinkButton>
+        </span>
 </div>
 </asp:Content>
 
