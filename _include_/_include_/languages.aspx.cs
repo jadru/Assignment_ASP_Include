@@ -9,9 +9,9 @@ public partial class languages : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Application["islogin"].ToString() == "false")
+        if (Application["islogin"].ToString() == "false") // 로그아웃인 경우
         {
-            Response.Redirect("~/account/login.aspx");
+            Response.Redirect("~/account/login.aspx"); // 로그인 페이지로 이동
         }
     }
 

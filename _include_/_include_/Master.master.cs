@@ -12,13 +12,13 @@ public partial class Master : System.Web.UI.MasterPage
     {
         if (Application["islogin"].ToString() == "true")
         {
-            string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
-            SqlConnection Con = new SqlConnection(connectionString);
+            string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user"; // db주소
+            SqlConnection Con = new SqlConnection(connectionString); // sql사용 선언
 
             // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
             SqlCommand Cmd = new SqlCommand();
             Cmd.Connection = Con;
-            Cmd.CommandText = "SELECT * FROM db_user WHERE id = '" + Application["id"].ToString() + "'";
+            Cmd.CommandText = "SELECT * FROM db_user WHERE id = '" + Application["id"].ToString() + "'"; // id로 열 불러오기
             try
             {
                 Con.Open();

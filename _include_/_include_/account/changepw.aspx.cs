@@ -10,25 +10,15 @@ public partial class account_changepw : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Application["islogin"].ToString() == "false")
+        if (Application["islogin"].ToString() == "false") // 비로그인 시
         {
-            Response.Redirect("~/account/login.aspx");
-        }
-        else
-        {
-
+            Response.Redirect("~/account/login.aspx"); // 로그인 페이지로 이동
         }
     }
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        if (Application["islogin"].ToString() == "false")//로그인 상태가 아닐때
-        {
-            Response.Redirect("~/account/login.aspx");//로그인창으로 이동
-        }
-        else
-        {
-            bool IsPwSame = false;
+        bool IsPwSame = false;
             // 현재 비밀번호
             CompareValidator1.Validate();
             CompareValidator2.Validate();
@@ -84,9 +74,6 @@ public partial class account_changepw : System.Web.UI.Page
                 catch { // 예외 처리
                     Label1.Text = "안되는대?";
                 }
-            }
-           
-        }
     }
 
     protected void TextBox3_TextChanged(object sender, EventArgs e)
