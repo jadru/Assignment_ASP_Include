@@ -86,16 +86,14 @@ public partial class community_newpost : System.Web.UI.Page
                 reader.Close();
                 primarykey++;
                 
-                Cmd.CommandText = "INSERT INTO db_board2 (author, title, content, primarykey) values ('" + TextBox2.Text + "', '" + TextBox1.Text +
-                    "', '" + TextBox4.Text + "', " + primarykey + ")";
-                int rowsAffected = Cmd.ExecuteNonQuery();
-                if (rowsAffected == 1)
+                Cmd.CommandText = "INSERT INTO db_board2 VALUES (\'" + TextBox2.Text + "\', \'" + TextBox1.Text +
+                    "\', \'" + TextBox4.Text + "\', " + primarykey + ")";
+                if (Cmd.ExecuteNonQuery() == 1)
                 {
                     Response.Redirect("board2.aspx");
                 }
                 // 리턴 값은 영향을 받은 ROW의 갯수
                 Con.Close();
-                Response.Redirect("board2.aspx");
             }
             catch { }
         }
