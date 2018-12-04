@@ -37,6 +37,7 @@ public partial class account_login : System.Web.UI.Page
                     Application["islogin"] = "true";
                     Application["name"] = reader["name"].ToString().TrimEnd();
                     Application["id"] = reader["id"].ToString().TrimEnd();
+                    Application["pw"] = reader["pw"].ToString().TrimEnd();
                     Application["email"] = reader["email"].ToString().TrimEnd();
                     // 글로벌 변수에 정보 저장
                     Response.Redirect("~/home.aspx"); // 홈으로 리다이렉트

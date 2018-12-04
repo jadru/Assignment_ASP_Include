@@ -9,7 +9,7 @@ public partial class home : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if(Application["islogin"] == "true")
+        if(Application["islogin"].ToString() == "true")
         {
             imgbtn_signup1.ImageUrl = ".\\objects\\images\\language_btn_icon.png";
             imgbtn_signup2.ImageUrl = ".\\objects\\images\\language_btn_icon.png";
@@ -20,14 +20,14 @@ public partial class home : System.Web.UI.Page
     // 회원가입,언어 페이지 버튼
     protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {
-        if(Application["islogin"] == "true")
+        if(Application["islogin"].ToString() == "true")
             Response.Redirect(".\\languages.aspx");
         else
             Response.Redirect(".\\account\\signup.aspx");
     }
     protected void ImageButton12_Click(object sender, ImageClickEventArgs e)
     {
-        if (Application["islogin"] == "true")
+        if (Application["islogin"].ToString() == "true")
             Response.Redirect(".\\languages.aspx");
         else
             Response.Redirect(".\\account\\signup.aspx");
@@ -75,15 +75,18 @@ public partial class home : System.Web.UI.Page
     protected void ImageButton9_Click(object sender, ImageClickEventArgs e)
     {
         // Java
+        Response.Redirect(".\\languages\\Java\\Java_main.aspx");
     }
 
     protected void ImageButton10_Click(object sender, ImageClickEventArgs e)
     {
         // Python
+        Response.Redirect(".\\languages\\Python\\Python_main.aspx");
     }
 
     protected void ImageButton11_Click(object sender, ImageClickEventArgs e)
     {
         // Go
+        Response.Redirect(".\\languages\\Go\\Go_main.aspx");
     }
 }

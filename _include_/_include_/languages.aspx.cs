@@ -32,7 +32,7 @@ public partial class languages : System.Web.UI.Page
 
     protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/languages/Javascript/javascriptmain.aspx");
+        Response.Redirect("~/languages/Javascript/JavaScript_main.aspx");
     }
 
     protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
@@ -42,7 +42,7 @@ public partial class languages : System.Web.UI.Page
 
     protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
     {
-
+        Response.Redirect("~/languages/Sql/Sqlmain.aspx");
     }
 
     protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
@@ -57,7 +57,7 @@ public partial class languages : System.Web.UI.Page
 
     protected void ImageButton9_Click(object sender, ImageClickEventArgs e)
     {
-
+        Response.Redirect(".\\languages\\Python\\Python_main.aspx");
     }
 
     protected void ImageButton10_Click(object sender, ImageClickEventArgs e)
