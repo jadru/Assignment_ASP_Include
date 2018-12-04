@@ -4,8 +4,9 @@
     <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="10" CellSpacing="3" DataSourceID="SqlDataSource1" ForeColor="Black" style="font-size: x-large" Width="100%">
         <EditRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
         <Fields>
-            <asp:BoundField DataField="author" HeaderText="작성자" SortExpression="author" />
+            <asp:BoundField DataField="author" HeaderText="아이디" SortExpression="author" />
             <asp:BoundField DataField="title" HeaderText="제목" SortExpression="title" />
+            <asp:BoundField DataField="date" HeaderText="작성 일자" SortExpression="date" />
             <asp:BoundField DataField="content" HeaderText="내용" SortExpression="content" />
         </Fields>
         <FooterStyle BackColor="#CCCCCC" />
@@ -18,5 +19,7 @@
             <asp:QueryStringParameter Name="primarykey" QueryStringField="key" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
+    <asp:Button ID="Del_btn" runat="server" BackColor="Black" ForeColor="White" Height="50px" OnClick="Del_btn_Click" style="font-size: x-large" Text="삭제" Visible="False" Width="85px" />
+&nbsp;
 </asp:Content>
 

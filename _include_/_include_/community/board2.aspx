@@ -6,9 +6,11 @@
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="100%" CellPadding="10" CellSpacing="3" ForeColor="#333333" GridLines="None" AllowSorting="True" style="font-size: x-large">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
-            <asp:BoundField DataField="author" HeaderText="작성자" SortExpression="author" />
+            <asp:BoundField DataField="author" HeaderText="아이디" SortExpression="author" />
 
             <asp:HyperLinkField DataNavigateUrlFields="primarykey" DataNavigateUrlFormatString="board2_d.aspx?key={0}" DataTextField="title" HeaderText="제목" />
+
+            <asp:BoundField DataField="date" HeaderText="작성 일자" SortExpression="date" />
 
         </Columns>
         <EditRowStyle BackColor="#999999" />
