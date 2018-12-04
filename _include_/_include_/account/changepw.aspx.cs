@@ -22,27 +22,14 @@ public partial class account_changepw : System.Web.UI.Page
             // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
             SqlCommand Cmd = new SqlCommand();
             Cmd.Connection = Con;
-            Cmd.CommandText = "SELECT name, id, email, pw, mileage" +
-                " FROM db_user WHERE id = '" + Application["id"].ToString() + "'";
+          
 
             try
             {
-
-
                 Con.Open();
-                // ExecuteReader()는 SELECT 문을 사용하여 RECORD를 가져올때 사용
                 SqlDataReader reader = Cmd.ExecuteReader();
-
-                // SqlDataReader의 기본 위치는 첫 번째 레코드 앞, Read( )를 호출하여 하나의 레코드 읽기 
-                // read.Read( )의 반환 값 형식: Boolean, 행이 더 있으면 true이고, 그렇지 않으면 false입니다. 
-
-
-                while (reader.Read())
-                {
-                    TextBox1.Text = reader["pw"].ToString().Trim();
-
-
-                }
+               
+               
                 reader.Close();
                 Con.Close();
             }
@@ -52,31 +39,48 @@ public partial class account_changepw : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        if (Application["islogin"].ToString() == "false")
+        if (Application["islogin"].ToString() == "false")//로그인 상태가 아닐때
         {
-            Response.Redirect("~/account/login.aspx");
+            Response.Redirect("~/account/login.aspx");//로그인창으로 이동
         }
         else
         {
-            string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
-            SqlConnection Con = new SqlConnection(connectionString);
-
-            // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
-            SqlCommand Cmd = new SqlCommand();
-            Cmd.Connection = Con;
-            Cmd.CommandText = "UPDATE  db_user SET pw= '" + TextBox2.Text + "' WHERE id = '" + Application["id"].ToString().Trim() + "'";
-
-            try
+            CompareValidator1.Validate();
+            if (CompareValidator1.IsValid)
             {
-                Con.Open();
-                int rowsAffected = Cmd.ExecuteNonQuery();
-                if (rowsAffected == 1)
+
+                string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";//서버 연결
+                SqlConnection Con = new SqlConnection(connectionString);
+
+                // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
+                SqlCommand Cmd = new SqlCommand();
+                Cmd.Connection = Con;
+                //새 비밀번호를 DB에 업데이트
+                Cmd.CommandText = "UPDATE  db_user SET pw= '" + TextBox2.Text + "' WHERE id = '" + Application["id"].ToString().Trim() + "'";
+
+                try
                 {
-                    Response.Redirect("pwchanged.aspx");
+                    Con.Open();
+
+                    // ExecuteNonQuery()문은 CREATE, ALTER, DROP, INSERT, UPDATE, DELETE 문을 수행할때 사용
+                    int rowsAffected = Cmd.ExecuteNonQuery();//편집구문에따라 영향받는 줄은 몇줄인가?
+
+
+                    if (rowsAffected == 1)//영향받는 줄은 1줄
+                    {
+                        Response.Redirect("pwchanged.aspx");//비밀번호 변경후로 이동
+                    }
+
+                    Con.Close();
                 }
-                Con.Close();
+                catch { }
             }
-            catch { }
+           
         }
+    }
+
+    protected void TextBox3_TextChanged(object sender, EventArgs e)
+    {
+      
     }
 }

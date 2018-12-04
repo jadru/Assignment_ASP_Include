@@ -71,6 +71,14 @@
             </td>
             <td class="auto-style43">
                 <asp:Image ID="Image20" runat="server" Height="13px" ImageUrl="~/objects/images/connect_image_width.png" Width="400px" />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
             </td>
             <td class="auto-style46">
                 <table class="auto-style1">
@@ -100,6 +108,7 @@
                     </tr>
                 </table>
                 <asp:ImageButton ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" OnClick="ImageButton3_Click" Width="337px" />
+                <br />
             </td>
         </tr>
     </table>

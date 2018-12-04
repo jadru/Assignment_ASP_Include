@@ -52,24 +52,28 @@ public partial class account_mypage : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
+        string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";//서버 연결
         SqlConnection Con = new SqlConnection(connectionString);
-        // SPQ 선언
 
         // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
         SqlCommand Cmd = new SqlCommand();
         Cmd.Connection = Con;
+        //새 비밀번호를 DB에 업데이트
+        Cmd.CommandText = "UPDATE  db_user SET  name= '" + TextBox1.Text + "' WHERE id = '" + Application["id"].ToString().Trim() + "'";
+
         try
         {
-            // SQL COMMAND 수행하기
             Con.Open();
-            Cmd.CommandText = "UPDATE db_user SET name = \'" + TextBox1.Text + "\' WHERE id = \'" + TextBox2.Text + "\'";
-            // 리턴 값은 영향을 받은 ROW의 갯수
-            int rowsAffected = Cmd.ExecuteNonQuery();
-            if (rowsAffected == 1)
+
+            // ExecuteNonQuery()문은 CREATE, ALTER, DROP, INSERT, UPDATE, DELETE 문을 수행할때 사용
+            int rowsAffected = Cmd.ExecuteNonQuery();//편집구문에따라 영향받는 줄은 몇줄인가?
+
+
+            if (rowsAffected == 1)//영향받는 줄은 1줄
             {
-                TextBox1.Text.Trim();
+                //Response.Redirect("pwchanged.aspx");//비밀번호 변경후로 이동
             }
+
             Con.Close();
         }
         catch { }
@@ -77,38 +81,44 @@ public partial class account_mypage : System.Web.UI.Page
 
     protected void Button3_Click(object sender, EventArgs e)
     {
-        string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
-        SqlConnection Con = new SqlConnection(connectionString);
-        // SPQ 선언
-
-        // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
-        SqlCommand Cmd = new SqlCommand();
-        Cmd.Connection = Con;
-        try
+        if (Application["islogin"].ToString() == "false")
         {
-            // SQL COMMAND 수행하기
-            Con.Open();
-            Cmd.CommandText = "UPDATE db_user SET email = \'" + TextBox3.Text + "\' WHERE id = \'" + Application["id"].ToString().Trim() + "\'";
-            // 리턴 값은 영향을 받은 ROW의 갯수
-            int rowsAffected = Cmd.ExecuteNonQuery();
-            if (rowsAffected == 1)
-            {
-                Cmd.CommandText = "SELECT email FROM db_user WHERE id = \'" + Application["id"].ToString().Trim() + "\'";
-                SqlDataReader reader = Cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    TextBox3.Text = reader["email"].ToString().Trim();
-                }
-                reader.Close();
-            }
-            Con.Close();
+            Response.Redirect("~/account/login.aspx");
         }
-        catch { }
+        else
+        {
+
+            string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
+            SqlConnection Con = new SqlConnection(connectionString);
+
+            // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
+            SqlCommand Cmd = new SqlCommand();
+            Cmd.Connection = Con;
+            Cmd.CommandText = "UPDATE  db_user SET email= '" + TextBox3.Text + "' WHERE email = '" + Application["email"].ToString().Trim() + "'";
+
+            try
+            {
+                Con.Open();
+
+
+                int rowsAffected = Cmd.ExecuteNonQuery();
+
+                Con.Close();
+
+                if (rowsAffected == 1)
+                {
+                    Response.Redirect("pwchanged.aspx");
+                }
+
+                Con.Close();
+            }
+            catch { }
+        }
     }
 
     protected void TextBox1_TextChanged(object sender, EventArgs e)
     {
-
+       
     }
 
     protected void LinkButton6_Click(object sender, EventArgs e)

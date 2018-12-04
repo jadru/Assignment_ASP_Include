@@ -76,6 +76,7 @@
                 <asp:Button ID="Button3" runat="server" Text="수정" CssClass="auto-style17" OnClick="Button3_Click" />
                 &nbsp;
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="E-mail 형식에 맞게 입력하세요!" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                <br />
                 </strong></td>
         </tr>
         <tr>
