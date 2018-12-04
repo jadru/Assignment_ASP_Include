@@ -16,7 +16,7 @@
             <div style="text-align: center">
                 <h3><asp:Label ID="titleLabel" runat="server" ForeColor="Blue" Text='<%# Eval("title") %>' /></h3>
                 <p><asp:Label ID="contentLabel" runat="server" Text='<%# Eval("content") %>' /><p/>
-                <h6> by <asp:Label ID="idLabel" runat="server" Text='<%# Eval("id") %>' /><h6 />
+                <h6> by <asp:Label ID="idLabel" runat="server" Text='<%# Eval("author") %>' /><h6 />
             </div>
         </ItemTemplate>
         <SelectedItemStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />

@@ -15,8 +15,6 @@ public partial class account_mypage : System.Web.UI.Page
         }
         else
         {
-            if (Application["islogin"].ToString() == "false")
-                Response.Redirect("~/home.aspx");
             string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
             SqlConnection Con = new SqlConnection(connectionString);
 

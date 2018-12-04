@@ -1,5 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <board>
-  <post id="Jadru" title="안녕하세요 여기는 게시판입니다" content="게시판을 많이 이용해주세요." />
-  <post id="Soobsoob" title="(주)카카오 개발자 구합니다." content="프론트엔드 개발자 2명, 자세한 사항은 링크 참조." />
+  <post author="Jadru" title="안녕하세요 여기는 게시판입니다" content="게시판을 많이 이용해주세요." primarykey="0" />
+  <post author="Soobsoob" title="(주)카카오 개발자 구합니다." content="프론트엔드 개발자 2명, 자세한 사항은 링크 참조." primarykey="1" />
+  <post author="asdf" title="페이스북 프론트엔드 개발자 1명 모집합니다" content="링크를 참조하십시오" primarykey="ggwya" />
+  <post author="asdf" title="안녕하세요 잘 부탁드립니다." content="안녕하세요" primarykey="qgjys" />
+  <post author="asdf" title="네이버(주) 프론트엔드 개발자 구합니다" content="자세한 사항은 링크 참조&#xD;&lt;br&gt;http://www.naver.com" primarykey="39fdu" />
 </board>
