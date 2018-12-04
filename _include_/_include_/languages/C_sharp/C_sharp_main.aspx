@@ -51,7 +51,7 @@
         </tr>
         <tr>
             <td>
-                <asp:ImageButton ID="study1_StartLesson_imgbtn" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" OnClick="study1_StartLesson_imgbtn_Click" />
+                <asp:ImageButton ID="study1_StartLesson_imgbtn" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" OnClick="study1_StartLesson_imgbtn_Click1" />
             </td>
         </tr>
     </table>
@@ -91,8 +91,70 @@
                 </table>
             </td>
         </tr>
+        </table>
+    <p>&nbsp;</p>
+    <table class="auto-style44">
+        <tr>
+            <td class="auto-style39" rowspan="4">
+                <asp:Image ID="Image21" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/images/languages/C_sharp.png" />
+            </td>
+            <td>
+                <asp:Image ID="Image22" runat="server" Height="68px" ImageUrl="~/objects/images/php_study.png" Width="162px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>C# II</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style45">
+                <h3 style="color: #0066FF">C#언어의 문법</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ImageButton ID="study1_StartLesson_imgbtn0" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" OnClick="study1_StartLesson_imgbtn_Click" />
+            </td>
+        </tr>
     </table>
     <p>
-    &nbsp;&nbsp;</p>
-</asp:Content>
+        &nbsp;
+    </p>
+    <table class="auto-style6">
+        <tr>
+            <td class="auto-style33">
+                <asp:Image ID="Image23" runat="server" CssClass="auto-style2" ImageUrl="~/objects/images/connect_image.png" />
+            </td>
+            <td class="auto-style43">
+                <asp:Image ID="Image24" runat="server" Height="13px" ImageUrl="~/objects/images/connect_image_width.png" Width="400px" />
+            </td>
+            <td>
+                <table class="auto-style1">
+                    <tr>
+                        <td rowspan="4" class="auto-style39">
+                            <asp:Image ID="Image25" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/images/languages/C_sharp.png" />
+                        </td>
+                        <td>
+                            <asp:Image ID="Image26" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>C# II</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="color: #0066FF; font-weight: bolder">C#언어의 문법</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:ImageButton ID="quiz1_startlesson_imgbtn0" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" OnClick="quiz1_startlesson_imgbtn0_Click1" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+    </asp:Content>
 

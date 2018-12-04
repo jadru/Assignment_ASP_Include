@@ -132,6 +132,9 @@ C#으로 안드로이드와 iOS용 앱, macOS용 Cocoa 기반 프로그램을 �
     <p class="auto-style21">
         출처 : https://namu.wiki/w/C%23</p>
     <p class="auto-style21">
+        <strong>
+        <asp:Button ID="Button1" runat="server" CssClass="auto-style6" ForeColor="White" Height="87px" OnClick="Button1_Click" Text="Back" Width="196px" BackColor="RosyBrown" />
+        </strong>
     </p>
 </asp:Content>
 

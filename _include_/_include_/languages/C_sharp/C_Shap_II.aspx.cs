@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class languages_C_sharp_C_sharp_info : System.Web.UI.Page
+public partial class languages_C_sharp_C_Shap_II : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {

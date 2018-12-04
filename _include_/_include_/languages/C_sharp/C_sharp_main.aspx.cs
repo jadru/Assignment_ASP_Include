@@ -14,6 +14,17 @@ public partial class languages_C_sharp_C_sharp_main : System.Web.UI.Page
 
     protected void study1_StartLesson_imgbtn_Click(object sender, ImageClickEventArgs e)
     {
+        Response.Redirect(".\\C_shap_II.aspx");
+    }
+
+    protected void quiz1_startlesson_imgbtn0_Click1(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect(".\\C_sharp_Quiz2.aspx");
+
+    }
+
+    protected void study1_StartLesson_imgbtn_Click1(object sender, ImageClickEventArgs e)
+    {
         Response.Redirect(".\\C_sharp_info.aspx");
     }
 
