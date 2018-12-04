@@ -39,15 +39,15 @@
         .auto-style46 {
             height: 34px;
         }
-        .auto-style47 {
-            height: 88px;
-        }
         .auto-style48 {
             height: 63px;
         }
         .auto-style49 {
             color: #0066CC;
             height: 44px;
+        }
+        .auto-style50 {
+            height: 52px;
         }
     </style>
 </asp:Content>
@@ -65,7 +65,7 @@
         <td><h1>SQL I</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>PHP설치환경과 기본적인 개념 학습</h3></td>
+        <td class="auto-style3"><h3>SQL기본적인 개념 학습</h3></td>
     </tr>
     <tr>
         <td>
@@ -120,10 +120,10 @@
         </td>
     </tr>
     <tr>
-        <td><h1>PHP II</h1></td>
+        <td class="auto-style50"><h1>SQL II</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>PHP의 문법 배우기 - 변수, 연산자, 제어구조</h3></td>
+        <td class="auto-style3"><h3>Table 배우기 1</h3></td>
     </tr>
     <tr>
         <td>
@@ -154,7 +154,7 @@
         </td>
     </tr>
     <tr>
-        <td><h1>PHP II</h1></td>
+        <td><h1>SQL II</h1></td>
     </tr>
     <tr>
         <td class="auto-style3">&nbsp;</td>
@@ -182,10 +182,10 @@
         </td>
     </tr>
     <tr>
-        <td><h1>PHP III</h1></td>
+        <td><h1>SQL III</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>PHP의 문법 배우기 - 연산자</h3></td>
+        <td class="auto-style3"><h3>Table 배우기 1</h3></td>
     </tr>
     <tr>
         <td>
@@ -216,7 +216,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style48"><h1>PHP III</h1></td>
+        <td class="auto-style48"><h1>SQL III</h1></td>
     </tr>
     <tr>
         <td class="auto-style49"></td>
@@ -234,35 +234,6 @@
 </p>
 <p>
     &nbsp;</p>
-<table class="auto-style44">
-    <tr>
-        <td class="auto-style39" rowspan="5">
-            <asp:Image ID="Image10" runat="server" Height="312px" ImageUrl="~/objects/images/SQL_icon.png" Width="302px" />
-        </td>
-        <td">
-           
-        </td>
-    </tr>
-    <tr>
-        <td class="auto-style47"><h1>
-            <asp:Image ID="Image21" runat="server" Height="68px" ImageUrl="~/objects/images/php_study_blue_color.png" Width="162px" />
-            </h1>
-        </td>
-    </tr>
-    <tr>
-        <td><h1>PHP IV</h1></td>
-    </tr>
-    <tr>
-        <td><h3 class="auto-style3">PHP의 문법 배우기 - 제어구조</h3></td>
-    </tr>
-    <tr>
-        <td>
-                
-            <asp:ImageButton ID="ImageButton10" runat="server" ImageUrl="~/objects/images/php_startlesson_blue_color.png" OnClick="ImageButton10_Click" />
-                
-        </td>
-    </tr>
-</table>
 <p>
 </p>
     </asp:Content>

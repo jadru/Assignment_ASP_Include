@@ -20,7 +20,7 @@ public partial class languages_php_phpmain : System.Web.UI.Page
 
     protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/languages/php/PHP_Quiz1.aspx.aspx");
+        Response.Redirect("~/languages/php/PHP_Quiz1.aspx");
     }
 
     protected void ImageButton6_Click(object sender, ImageClickEventArgs e)

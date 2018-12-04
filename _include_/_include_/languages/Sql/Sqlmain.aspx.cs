@@ -15,36 +15,31 @@ public partial class languages_php_phpmain : System.Web.UI.Page
 
     protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/languages/php/PHP_I.aspx");
+        Response.Redirect("~/languages/Sql/Sql_I.aspx");
     }
 
     protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/languages/php/PHP_Quiz1.aspx.aspx");
+        Response.Redirect("~/languages/Sql/Sql_Quiz1.aspx");
     }
 
     protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/languages/php/PHP_II.aspx");
+        Response.Redirect("~/languages/Sql/Sql_II.aspx");
     }
 
     protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/languages/php/PHP_Quiz2.aspx");
+        Response.Redirect("~/languages/Sql/Sql_Quiz2.aspx");
     }
 
     protected void ImageButton8_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/languages/php/PHP_III.aspx");
+        Response.Redirect("~/languages/Sql/Sql_III.aspx");
     }
 
     protected void ImageButton9_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/languages/php/PHP_Quiz3.aspx");
-    }
-
-    protected void ImageButton10_Click(object sender, ImageClickEventArgs e)
-    {
-        Response.Redirect("~/languages/php/PHP_IV.aspx");
+        Response.Redirect("~/languages/Sql/Sql_Quiz3.aspx");
     }
 }

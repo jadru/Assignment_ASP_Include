@@ -10,6 +10,9 @@
         .auto-style3 {
             text-align: center;
         }
+        .auto-style4 {
+            font-size: x-large;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -17,7 +20,7 @@
         <table style="width: 100%; height:100%;">
             <tr>
                 <td class="auto-style1"><strong>
-                    <asp:Image ID="Image2" runat="server" Height="176px" Width="176px" ImageUrl="~/objects/images/php_logo_3.png" />
+                    <asp:Image ID="Image2" runat="server" Height="176px" Width="176px" ImageUrl="~/objects/images/SQL_icon.png" />
                     </strong></td>
                 <td>
                     <h1>PHP 기본 개념 퀴즈</h1>
@@ -27,13 +30,12 @@
     </div>
     <br />
     <br />
-    <h3>1. 역 슬래쉬를 표현하는 방법은 무엇일까요?</h3>
+    <h3 class="auto-style4">1. O INTO table(O), VALUES(O); 에서 O에 들어가야 할 것은 뭘까요?</h3>
     <div class="auto-style3">
         <asp:RadioButtonList ID="RadioButtonList3" runat="server" Font-Size="X-Large" Width="100%" Height="210px">
-            <asp:ListItem>\\</asp:ListItem>
-            <asp:ListItem>\&quot;</asp:ListItem>
-            <asp:ListItem>\n</asp:ListItem>
-            <asp:ListItem Value="\$">\$</asp:ListItem>
+            <asp:ListItem>INSERT, value, field</asp:ListItem>
+            <asp:ListItem>value, field, INSERT</asp:ListItem>
+            <asp:ListItem>INSERT, field, value</asp:ListItem>
         </asp:RadioButtonList>
         </div>
     <div class="auto-style3">
