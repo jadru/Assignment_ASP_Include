@@ -37,19 +37,50 @@ public partial class community_rank : System.Web.UI.Page
                     while (reader.Read())
                     {
                         TableRow r = new TableRow();
-                        // 필드(  name ) 값 추출하여 테이블 cell에 넣기
+                        // 등수
                         TableCell c0 = new TableCell();
                         c0.Controls.Add(new LiteralControl(reader["rand"].ToString()));
                         r.Cells.Add(c0);
 
+                        // 이름
                         TableCell c1 = new TableCell();
                         c1.Controls.Add(new LiteralControl(reader["name"].ToString()));
                         r.Cells.Add(c1);
 
+                        // 마일리지 점수
                         TableCell c2 = new TableCell();
                         c2.Controls.Add(new LiteralControl(reader["mileage"].ToString()));
                         r.Cells.Add(c2);
 
+                        int mileage = int.Parse(reader["mileage"].ToString()); // 마일리지 추출
+
+                        // 등급 넣기
+                        TableCell c3 = new TableCell();
+                        //===================== 등급 지정 =====================
+                        string s_rating; // 등급을 담을 문자열 변수
+                        if (mileage >= 0 && mileage < 50) // 브론즈
+                        {
+                            c3.ForeColor = System.Drawing.Color.Brown;
+                            s_rating = "브론즈";
+                        }
+                        else if (mileage >= 50 && mileage < 100) // 실버
+                        {
+                            c3.ForeColor = System.Drawing.Color.Silver;
+                            s_rating = "실버";
+                        }
+                        else if (mileage >= 100 && mileage < 200) // 골드
+                        {
+                            c3.ForeColor = System.Drawing.Color.Gold;
+                            s_rating = "골드";
+                        }
+                        else
+                        {
+                            c3.ForeColor = System.Drawing.Color.Aqua;
+                            s_rating = "다이아";
+                        }
+                        //==========================================
+                        c3.Controls.Add(new LiteralControl(s_rating));
+                        r.Cells.Add(c3);
 
                         Rank_Table.Rows.Add(r);
                     }

@@ -8,6 +8,7 @@
             <asp:TableCell runat="server">등수</asp:TableCell>
             <asp:TableCell runat="server">이름</asp:TableCell>
             <asp:TableCell runat="server">마일리지</asp:TableCell>
+            <asp:TableCell runat="server">등급</asp:TableCell>
         </asp:TableRow>
     </asp:Table>
 </asp:Content>
