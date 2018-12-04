@@ -125,11 +125,11 @@
         <td><h1>Go II</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>Go의 문법 배우기 - 변수, 연산자, 제어구조</h3></td>
+        <td class="auto-style3"><h3>Go 설치법</h3></td>
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:HyperLink ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" NavigateUrl="http://isukorea.com/blog/home/bomul0327/86" />
         </td>
     </tr>
 </table>
@@ -159,11 +159,11 @@
         <td><h1>Go III</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>Go 만들기</h3></td>
+        <td class="auto-style3"><h3>웹서버 직접 만들어보기 (http)</h3></td>
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton4" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:HyperLink ID="ImageButton4" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" NavigateUrl="http://golang.site/go/article/111-%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%9B%B9-%EC%84%9C%EB%B2%84-HTTP-%EC%84%9C%EB%B2%84" />
         </td>
     </tr>
 </table>
@@ -196,11 +196,11 @@
         <td><h1>Go IV</h1></td>
     </tr>
     <tr>
-        <td><h3 class="auto-style3">Go 디버깅</h3></td>
+        <td><h3 class="auto-style3">웹 프레임워크 활용하기</h3></td>
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton5" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:HyperLink ID="ImageButton5" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" NavigateUrl="http://golang.site/go/article/112-Go-%EC%9B%B9-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC" />
         </td>
     </tr>
 </table>

@@ -62,7 +62,7 @@
         </tr>
     </table>
 <p class="auto-style22" style="font-size: xx-large">
-    <asp:Button ID="Button1" runat="server" BackColor="Black" ForeColor="White" Height="65px" style="font-size: x-large" Text="로그인" Width="199px" OnClick="Button1_Click" />
+    <asp:Button ID="Button1" runat="server" BackColor="Black" ForeColor="White" Height="75px" style="font-size: x-large" Text="로그인" Width="250px" OnClick="Button1_Click" />
 </p>
     <p class="auto-style22" style="font-size: xx-large">
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/account/signup.aspx" CssClass="auto-style24" ForeColor="Black">회원가입</asp:HyperLink>

@@ -26,4 +26,9 @@ public partial class languages_Java_java_main : System.Web.UI.Page
     {
         Response.Redirect("java_exam2.aspx");
     }
+
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+
+    }
 }

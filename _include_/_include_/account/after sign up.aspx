@@ -23,7 +23,7 @@
         <span class="auto-style12">안녕하세요! </span> <asp:Label ID="Label1" runat="server" CssClass="auto-style12"></asp:Label>
         님</h4>
     <p class="auto-style7">
-        <asp:Button ID="Button1" runat="server" BackColor="Black" ForeColor="White" Height="52px" OnClick="Button1_Click" Text="홈으로 가기" Width="164px" />
+        <asp:Button ID="Button1" runat="server" BackColor="Black" ForeColor="White" Height="75px" OnClick="Button1_Click" Text="홈으로 가기" Width="250px" CssClass="auto-style12" />
     </p>
     <p>
     </p>

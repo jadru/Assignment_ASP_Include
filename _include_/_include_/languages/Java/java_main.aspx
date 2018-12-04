@@ -129,7 +129,7 @@
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:HyperLink ID="ImageButton3" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" OnClick="ImageButton3_Click" NavigateUrl="https://opentutorials.org/course/1223/5293"/>
         </td>
     </tr>
 </table>
@@ -159,11 +159,11 @@
         <td><h1>Java III</h1></td>
     </tr>
     <tr>
-        <td class="auto-style3"><h3>Java 만들기</h3></td>
+        <td class="auto-style3"><h3>객체지향 프로그래밍</h3></td>
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton4" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:HyperLink ID="ImageButton4" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" NavigateUrl="https://opentutorials.org/course/1223/5399" />
         </td>
     </tr>
 </table>
@@ -196,11 +196,11 @@
         <td><h1>Java IV</h1></td>
     </tr>
     <tr>
-        <td><h3 class="auto-style3">Java 디버깅</h3></td>
+        <td><h3 class="auto-style3">인터페이스</h3></td>
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton5" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:HyperLink ID="ImageButton5" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" NavigateUrl="https://opentutorials.org/course/1223/6063" />
         </td>
     </tr>
 </table>

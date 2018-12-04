@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/community/CommunityMaster.master" AutoEventWireup="true" CodeFile="board2.aspx.cs" Inherits="community_board2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="100%" CellPadding="10" CellSpacing="3" ForeColor="#333333" GridLines="None" AllowSorting="True">
+    <h1 style="text-align: left">자유게시판</h1>
+    <p style="text-align: right"><asp:Button ID="Button1" runat="server" Font-Size="X-Large" ForeColor="White" Height="75px" Text="글쓰기" Width="250px" BackColor="Black" OnClick="Button1_Click" Font-Names="Jua" /></p>
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="100%" CellPadding="10" CellSpacing="3" ForeColor="#333333" GridLines="None" AllowSorting="True" style="font-size: x-large">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:BoundField DataField="author" HeaderText="author" SortExpression="author" />
@@ -23,6 +25,6 @@
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_userConnectionString1 %>" SelectCommand="SELECT [author], [title], [content] FROM [db_board2] ORDER BY [primarykey]"></asp:SqlDataSource>
     <br />
-    <p style="text-align: right"><asp:Button ID="Button1" runat="server" Font-Size="X-Large" ForeColor="White" Height="60px" Text="새 글" Width="120px" BackColor="Black" OnClick="Button1_Click" /></p>
+    <p style="text-align: right">&nbsp;</p>
     </asp:Content>
 
