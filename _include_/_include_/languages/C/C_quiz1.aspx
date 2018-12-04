@@ -39,7 +39,7 @@
     <p>
         <asp:Button ID="send_btn" runat="server" BackColor="Black" ForeColor="White" Height="52px" OnClick="send_btn_Click" Text="제출하기" Width="164px" />
         &nbsp;&nbsp;&nbsp;
-        <asp:Label ID="Test_Label" runat="server"></asp:Label>
+        <asp:Label ID="Label1" runat="server" ForeColor="Red"></asp:Label>
         </p>
 </asp:Content>
 

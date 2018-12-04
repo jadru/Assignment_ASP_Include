@@ -27,24 +27,14 @@
     </div>
     <br />
     <br />
-    <h3>1. C언어를 개발한 사람은 누구인가요?</h3>
+    <h3>1. C++를 개발한 사람은 누구 인가요?</h3>
     <p class="auto-style2">
         <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+            <asp:ListItem>비야네 스트롭스트룹</asp:ListItem>
             <asp:ListItem>데니스 리치</asp:ListItem>
-            <asp:ListItem>테니스 </asp:ListItem>
             <asp:ListItem>벨 톰슨</asp:ListItem>
             <asp:ListItem>리치 톰</asp:ListItem>
             <asp:ListItem>백 톰</asp:ListItem>
-        </asp:RadioButtonList>
-    </p>
-    <h3>2. C는 &#39;이식 가능한 ???&#39;로 낮추어 부르기도 한다. 이 문장에서 ???은 뭘까요?</h3>
-    <p class="auto-style2">
-        <asp:RadioButtonList ID="RadioButtonList2" runat="server">
-            <asp:ListItem>저급 어셈블리어</asp:ListItem>
-            <asp:ListItem>저급 인터프리터</asp:ListItem>
-            <asp:ListItem>고급 인터프리터</asp:ListItem>
-            <asp:ListItem>고급 어셈블리어</asp:ListItem>
-            <asp:ListItem>아스키 코드</asp:ListItem>
         </asp:RadioButtonList>
     </p>
     <p>

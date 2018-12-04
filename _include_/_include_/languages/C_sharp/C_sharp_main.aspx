@@ -33,7 +33,7 @@
     <table class="auto-style44">
         <tr>
             <td class="auto-style39" rowspan="4">
-                <asp:Image ID="Image2" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/images/languages/C_plus_icon.png" />
+                <asp:Image ID="Image2" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/images/languages/C_sharp.png" />
             </td>
             <td>
                 <asp:Image ID="Image3" runat="server" Height="68px" ImageUrl="~/objects/images/php_study.png" Width="162px" />
@@ -69,7 +69,7 @@
                 <table class="auto-style1">
                     <tr>
                         <td rowspan="4" class="auto-style39">
-                            <asp:Image ID="Image1" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/images/languages/C_plus_icon.png" />
+                            <asp:Image ID="Image1" runat="server" Height="312px" Width="302px" ImageUrl="~/objects/images/languages/C_sharp.png" />
                         </td>
                         <td>
                             <asp:Image ID="Image9" runat="server" Height="74px" ImageUrl="~/objects/images/php_quiz.png" Width="177px" />

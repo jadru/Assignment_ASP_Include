@@ -17,7 +17,7 @@
         <table style="width: 100%; height:100%;">
             <tr>
                 <td class="auto-style1"><strong>
-                    <asp:Image ID="Image2" runat="server" Height="176px" Width="176px" ImageUrl="~/objects/images/languages/C_plus_icon.png" />
+                    <asp:Image ID="Image2" runat="server" Height="176px" Width="176px" ImageUrl="~/objects/images/languages/C_sharp.png" />
                     </strong></td>
                 <td>
                     <h1>C#언어 개요 퀴즈</h1>
@@ -27,24 +27,14 @@
     </div>
     <br />
     <br />
-    <h3>1. C언어를 개발한 사람은 누구인가요?</h3>
+    <h3>1. C#을 개발한 회사는 어디인가요?</h3>
     <p class="auto-style2">
         <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-            <asp:ListItem>데니스 리치</asp:ListItem>
-            <asp:ListItem>테니스 </asp:ListItem>
-            <asp:ListItem>벨 톰슨</asp:ListItem>
-            <asp:ListItem>리치 톰</asp:ListItem>
-            <asp:ListItem>백 톰</asp:ListItem>
-        </asp:RadioButtonList>
-    </p>
-    <h3>2. C는 &#39;이식 가능한 ???&#39;로 낮추어 부르기도 한다. 이 문장에서 ???은 뭘까요?</h3>
-    <p class="auto-style2">
-        <asp:RadioButtonList ID="RadioButtonList2" runat="server">
-            <asp:ListItem>저급 어셈블리어</asp:ListItem>
-            <asp:ListItem>저급 인터프리터</asp:ListItem>
-            <asp:ListItem>고급 인터프리터</asp:ListItem>
-            <asp:ListItem>고급 어셈블리어</asp:ListItem>
-            <asp:ListItem>아스키 코드</asp:ListItem>
+            <asp:ListItem>마이크로소프트</asp:ListItem>
+            <asp:ListItem>애플</asp:ListItem>
+            <asp:ListItem>구글</asp:ListItem>
+            <asp:ListItem>오라클</asp:ListItem>
+            <asp:ListItem>삼성</asp:ListItem>
         </asp:RadioButtonList>
     </p>
     <p>

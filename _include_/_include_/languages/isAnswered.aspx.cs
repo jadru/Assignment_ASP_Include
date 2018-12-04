@@ -35,7 +35,7 @@ public partial class languages_isAnswered : System.Web.UI.Page
                 int rowsAffected = Cmd.ExecuteNonQuery();
                 if (rowsAffected == 1)
                 {
-                    Label1.Text = rowsAffected.ToString();
+                    //Label1.Text = rowsAffected.ToString();
                 }
                 // 업데이트 된 마일리지 불러옴.
                 Cmd.CommandText = "SELECT mileage FROM db_user WHERE id = \'" + Application["id"].ToString() + "\'";
