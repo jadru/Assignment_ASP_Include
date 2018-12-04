@@ -70,9 +70,10 @@ public partial class community_newpost : System.Web.UI.Page
             // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
             SqlCommand Cmd = new SqlCommand();
             Cmd.Connection = Con;
-            Con.Open();
+            
             try
             {
+                Con.Open();
                 // SQL COMMAND 수행하기
                 Cmd.CommandText = "SELECT * FROM db_board2 order by primarykey desc limit 1;";
                 SqlDataReader reader = Cmd.ExecuteReader();
@@ -81,12 +82,12 @@ public partial class community_newpost : System.Web.UI.Page
                 int primarykey = 0;
                 while (reader.Read())
                 {
-                    primarykey = int.Parse(reader["primarykey"].ToString().Trim());
+                    primarykey = int.Parse(reader["primarykey"].ToString().TrimEnd());
                 }
                 reader.Close();
                 primarykey++;
                 
-                Cmd.CommandText = "INSERT INTO db_board2 VALUES (\'" + TextBox2.Text + "\', \'" + TextBox1.Text +
+                Cmd.CommandText = "INSERT db_board2 values (\'" + TextBox2.Text + "\', \'" + TextBox1.Text +
                     "\', \'" + TextBox4.Text + "\', " + primarykey + ")";
                 if (Cmd.ExecuteNonQuery() == 1)
                 {

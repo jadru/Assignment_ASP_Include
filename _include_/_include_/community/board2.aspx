@@ -6,10 +6,9 @@
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="100%" CellPadding="10" CellSpacing="3" ForeColor="#333333" GridLines="None" AllowSorting="True" style="font-size: x-large">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
-            <asp:BoundField DataField="author" HeaderText="author" SortExpression="author" />
+            <asp:BoundField DataField="author" HeaderText="작성자" SortExpression="author" />
 
-            <asp:BoundField DataField="title" HeaderText="title" SortExpression="title" />
-            <asp:BoundField DataField="content" HeaderText="content" SortExpression="content" />
+            <asp:HyperLinkField DataNavigateUrlFields="primarykey" DataNavigateUrlFormatString="board2_d.aspx?key={0}" DataTextField="title" HeaderText="제목" />
 
         </Columns>
         <EditRowStyle BackColor="#999999" />
@@ -23,7 +22,7 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_userConnectionString1 %>" SelectCommand="SELECT [author], [title], [content] FROM [db_board2] ORDER BY [primarykey]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_userConnectionString1 %>" SelectCommand="SELECT * FROM [db_board2] ORDER BY [primarykey] DESC"></asp:SqlDataSource>
     <br />
     <p style="text-align: right">&nbsp;</p>
     </asp:Content>

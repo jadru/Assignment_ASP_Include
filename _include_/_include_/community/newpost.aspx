@@ -10,7 +10,7 @@
             </td>
             <td style="width: 15%; text-align: right; font-size: x-large;">작성할 게시판 : </td>
             <td style="width: 35%; ">
-                <asp:DropDownList ID="DropDownList1" runat="server" Width="100%" style="font-size: x-large; font-family: Jua;">
+                <asp:DropDownList ID="DropDownList1" runat="server" Width="100%" style="font-size: x-large; font-family: Jua;" Font-Size="X-Large">
                     <asp:ListItem Value="board1">구인 / 구직</asp:ListItem>
                     <asp:ListItem Value="board2">자유게시판</asp:ListItem>
                 </asp:DropDownList>
