@@ -86,6 +86,7 @@
                 <span class="auto-style18">점</span></strong></td>
         </tr>
         </table>
+        <asp:Label ID="Label2" runat="server"></asp:Label>
         <br />
         <asp:HyperLink ID="HyperLink1" runat="server" CssClass="menu-button-style" NavigateUrl="~/account/changepw.aspx" ForeColor="Black">비밀번호 수정</asp:HyperLink>
         <span class="auto-style17">&nbsp;/

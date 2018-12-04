@@ -64,7 +64,7 @@ public partial class account_mypage : System.Web.UI.Page
         try
         {
             Con.Open();
-
+            SqlDataReader reader = Cmd.ExecuteReader();
             // ExecuteNonQuery()문은 CREATE, ALTER, DROP, INSERT, UPDATE, DELETE 문을 수행할때 사용
             int rowsAffected = Cmd.ExecuteNonQuery();//편집구문에따라 영향받는 줄은 몇줄인가?
 
@@ -73,7 +73,10 @@ public partial class account_mypage : System.Web.UI.Page
             {
                 //Response.Redirect("pwchanged.aspx");//비밀번호 변경후로 이동
             }
-
+            while(reader.Read())
+            {
+                TextBox1.Text = reader["name"].ToString().Trim();
+            }
             Con.Close();
         }
         catch { }
