@@ -45,6 +45,17 @@
         .auto-style26 {
             text-decoration: none;
         }
+        .auto-style28 {
+            text-align: center;
+            font-size: x-large;
+            height: 28px;
+        }
+        .auto-style29 {
+            text-align: right;
+            width: 37%;
+            font-size: x-large;
+            height: 118px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -55,13 +66,14 @@
     <div class="auto-style24">
     <table class="auto-style21">
         <tr>
-            <td class="auto-style22"><strong>Name:</strong></td>
+            <td class="auto-style22"><strong>이름 :</strong></td>
             <td class="auto-style23"><strong>
                 <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style17" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 &nbsp;
                 <asp:Button ID="Button1" runat="server" CssClass="auto-style16" OnClick="Button1_Click" Text="수정" Height="36px" />
                 <span class="auto-style17">&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="TextBox1" ErrorMessage="한글이름 2-5자를 입력하세요 !" ForeColor="Red" ValidationExpression="[가-힣]{2,5}" Display="Dynamic"></asp:RegularExpressionValidator>
-                &nbsp;</span><asp:Label ID="name_label" runat="server"></asp:Label>
+                &nbsp;<asp:Label ID="name_label" runat="server"></asp:Label>
+                </span>
                 </strong></td>
         </tr>
         <tr>
@@ -77,18 +89,27 @@
                 &nbsp;
                 <asp:Button ID="Button3" runat="server" Text="수정" CssClass="auto-style17" OnClick="Button3_Click" />
                 &nbsp;
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="E-mail 형식에 맞게 입력하세요!" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="E-mail 형식에 맞게 입력하세요!" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"></asp:RegularExpressionValidator>
+                <asp:Label ID="email_label" runat="server"></asp:Label>
                 <br />
                 </strong></td>
         </tr>
         <tr>
-            <td class="auto-style22"><strong>mileage:</strong></td>
+            <td class="auto-style29"><strong>마일리지 :</strong></td>
             <td class="auto-style20"><strong>
                 <asp:Label ID="Label1" runat="server" CssClass="auto-style18" Font-Size="X-Large"></asp:Label>
-                <span class="auto-style18">점</span></strong></td>
+                <span class="auto-style18">점 </span></strong></td>
+        </tr>
+        <tr>
+            <td class ="auto-style28" colspan="2">
+                <asp:Label ID="name_label2" runat="server"></asp:Label>
+                님의 등급은
+                <asp:Label ID="rating_label" runat="server" Font-Size="20pt"></asp:Label>
+&nbsp;입니다.</td>
         </tr>
         </table>
-        <asp:Label ID="Label2" runat="server"></asp:Label>
+        <br />
+        <br />
         <br />
         <asp:HyperLink ID="HyperLink1" runat="server" CssClass="menu-button-style" NavigateUrl="~/account/changepw.aspx" ForeColor="Black">비밀번호 수정</asp:HyperLink>
         <span class="auto-style17">&nbsp;/

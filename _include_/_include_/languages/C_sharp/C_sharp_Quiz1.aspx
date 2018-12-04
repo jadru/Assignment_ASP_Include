@@ -38,7 +38,7 @@
         </asp:RadioButtonList>
     </p>
     <p>
-        <asp:Button ID="send_btn" runat="server" BackColor="Black" ForeColor="White" Height="52px" Text="제출하기" Width="164px" />
+        <asp:Button ID="send_btn" runat="server" BackColor="Black" ForeColor="White" Height="52px" Text="제출하기" Width="164px" OnClick="send_btn_Click" />
         &nbsp;&nbsp;&nbsp;
         <asp:Label ID="Test_Label" runat="server"></asp:Label>
     </p>

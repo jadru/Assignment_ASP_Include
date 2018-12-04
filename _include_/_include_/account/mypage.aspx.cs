@@ -37,10 +37,38 @@ public partial class account_mypage : System.Web.UI.Page
 
                     while (reader.Read())
                     {
+                        int imileage; // 마일리지를 정수형으로 받기 위해 변수 선언
                         TextBox1.Text = reader["name"].ToString().Trim();
                         TextBox2.Text = reader["id"].ToString().Trim();
                         TextBox3.Text = reader["email"].ToString().Trim();
                         Label1.Text = reader["mileage"].ToString().Trim();
+
+                        //===================== 등급 지정 =====================
+                        imileage = int.Parse(Label1.Text); // Label.Text 에 담긴 마일리지를 int로 변환후 변수에 초기화.
+
+                        name_label2.Text = TextBox1.Text; // 이름 받아옴
+                        // 점수에따라 등급 설정
+                        if(imileage >= 0 && imileage < 50) // 브론즈
+                        {
+                            rating_label.ForeColor = System.Drawing.Color.Brown;
+                            rating_label.Text = "브론즈";
+                        }
+                        else if (imileage >= 50 && imileage < 100) // 실버
+                        {
+                            rating_label.ForeColor = System.Drawing.Color.Silver;
+                            rating_label.Text = "실버";
+                        }
+                        else if (imileage >= 100 && imileage < 200) // 골드
+                        {
+                            rating_label.ForeColor = System.Drawing.Color.Gold;
+                            rating_label.Text = "골드";
+                        }
+                        else
+                        {
+                            rating_label.ForeColor = System.Drawing.Color.Aqua;
+                            rating_label.Text = "다이아";
+                        }
+                        //==========================================
                     }
                     reader.Close();
                     Con.Close();
@@ -53,8 +81,10 @@ public partial class account_mypage : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        name_label.Text = "";
         RegularExpressionValidator6.Validate();
+        // 라벨 초기화
+        name_label.Text = "";
+        email_label.Text = "";
         if (RegularExpressionValidator6.IsValid)
         {
             string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";//서버 연결
@@ -74,6 +104,7 @@ public partial class account_mypage : System.Web.UI.Page
                 if (rowsAffected == 1)
                 {
                     name_label.Text = "수정되었습니다!";
+                    name_label2.Text = TextBox1.Text; // 이름 받아옴
                 }
                 Con.Close();
             }
@@ -83,39 +114,35 @@ public partial class account_mypage : System.Web.UI.Page
 
     protected void Button3_Click(object sender, EventArgs e)
     {
-        if (Application["islogin"].ToString() == "false")
+        RegularExpressionValidator1.Validate();
+        // 라벨 초기화
+        name_label.Text = "";
+        email_label.Text = "";
+        if (RegularExpressionValidator1.IsValid)
         {
-            Response.Redirect("~/account/login.aspx");
-        }
-        else
-        {
-            RegularExpressionValidator1.Validate();
-            if (RegularExpressionValidator1.IsValid)
+            string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
+            SqlConnection Con = new SqlConnection(connectionString);
+
+            // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
+            SqlCommand Cmd = new SqlCommand();
+            Cmd.Connection = Con;
+            Cmd.CommandText = "UPDATE db_user SET email = \'" + TextBox3.Text + "' WHERE id = \'" + Application["id"].ToString().Trim() + "\'";
+
+            try
             {
-                string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
-                SqlConnection Con = new SqlConnection(connectionString);
+                Con.Open();
 
-                // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
-                SqlCommand Cmd = new SqlCommand();
-                Cmd.Connection = Con;
-                Cmd.CommandText = "UPDATE  db_user SET email= '" + TextBox3.Text + "' WHERE email = '" + Application["email"].ToString().Trim() + "'";
+                int rowsAffected = Cmd.ExecuteNonQuery();
 
-                try
+                if (rowsAffected == 1)
                 {
-                    Con.Open();
-
-                    int rowsAffected = Cmd.ExecuteNonQuery();
-
-                    if (rowsAffected == 1)
-                    {
-                        Response.Redirect("pwchanged.aspx");
-                    }
-                    Con.Close();
+                    email_label.Text = "수정되었습니다!";
                 }
-                catch { }
+                Con.Close();
             }
-
+            catch { }
         }
+
     }
 
     protected void TextBox1_TextChanged(object sender, EventArgs e)

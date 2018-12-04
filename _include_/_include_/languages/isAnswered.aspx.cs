@@ -42,16 +42,40 @@ public partial class languages_isAnswered : System.Web.UI.Page
                 SqlDataReader reader = Cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    mileage = int.Parse(reader["mileage"].ToString()) + 5 ; // 마일리지 변수에 DB에 업데이트된 마일리지 값을 불러옴.
+                    mileage = int.Parse(reader["mileage"].ToString()) + 5; // 마일리지 변수에 DB에 업데이트된 마일리지 값을 불러옴.
+                    //===================== 등급 지정 =====================
+                    // 점수에따라 등급 설정
+                    if (mileage >= 0 && mileage < 50) // 브론즈
+                    {
+                        rating_label.ForeColor = System.Drawing.Color.Brown;
+                        rating_label.Text = "브론즈";
+                    }
+                    else if (mileage >= 50 && mileage < 100) // 실버
+                    {
+                        rating_label.ForeColor = System.Drawing.Color.Silver;
+                        rating_label.Text = "실버";
+                    }
+                    else if (mileage >= 100 && mileage < 200) // 골드
+                    {
+                        rating_label.ForeColor = System.Drawing.Color.Gold;
+                        rating_label.Text = "골드";
+                    }
+                    else
+                    {
+                        rating_label.ForeColor = System.Drawing.Color.Aqua;
+                        rating_label.Text = "다이아";
+                    }
+                    //==========================================
+
                 }
                 Con.Close();
                 reader.Close();
 
                 Label2.Text = mileage.ToString(); // 마일리지 출력.
             }
-            catch {}
+            catch { }
         }
-        
+
     }
 
     protected void Button1_Click(object sender, EventArgs e)

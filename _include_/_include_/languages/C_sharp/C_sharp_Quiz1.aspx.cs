@@ -11,4 +11,12 @@ public partial class languages_C_sharp_C_sharp_Quiz1 : System.Web.UI.Page
     {
 
     }
+
+    protected void send_btn_Click(object sender, EventArgs e)
+    {
+        if(RadioButtonList1.SelectedIndex == 0)
+        {
+            Response.Redirect("~/languages/isAnswered.aspx");
+        }
+    }
 }
