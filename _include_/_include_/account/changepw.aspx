@@ -21,11 +21,13 @@
         .auto-style6 {
             text-align: right;
             font-size: x-large;
+            width: 503px;
         }
         .auto-style7 {
             height: 34px;
             text-align: right;
             font-size: x-large;
+            width: 503px;
         }
         .auto-style8 {
             height: 34px;
@@ -60,7 +62,7 @@
             <td class="auto-style8"><asp:TextBox ID="TextBox2" runat="server" CssClass="auto-style3" TextMode="Password" Width="220px" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
             </td>
             <td class="auto-style5">
-                <asp:CompareValidator ID="CompareValidator2" runat="server" ControlToCompare="TextBox2" ControlToValidate="TextBox1" ErrorMessage="현재 비밀번호와 새 비밀번호가 같습니다!" ForeColor="Red" Operator="NotEqual"></asp:CompareValidator>
+                <asp:CompareValidator ID="CompareValidator2" runat="server" ControlToCompare="TextBox2" ControlToValidate="TextBox1" ErrorMessage="현재 비밀번호와 새 비밀번호가 같습니다!" ForeColor="Red"></asp:CompareValidator>
 &nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextBox2" ErrorMessage="영문자와 숫자만 가능합니다! (4~10자리) " ForeColor="Red" ValidationExpression="[0-9a-zA-Z]{4,10}"></asp:RegularExpressionValidator>
             </td>
         </tr>

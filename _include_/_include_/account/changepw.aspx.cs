@@ -16,24 +16,7 @@ public partial class account_changepw : System.Web.UI.Page
         }
         else
         {
-            string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
-            SqlConnection Con = new SqlConnection(connectionString);
 
-            // SQL COMMAND OBJECT를 만들고  SQL COMMAND 넣기
-            SqlCommand Cmd = new SqlCommand();
-            Cmd.Connection = Con;
-          
-
-            try
-            {
-                Con.Open();
-                SqlDataReader reader = Cmd.ExecuteReader();
-               
-               
-                reader.Close();
-                Con.Close();
-            }
-            catch { }
         }
     }
 

@@ -58,9 +58,10 @@
             <td class="auto-style23"><strong>
                 <asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style17" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
                 &nbsp;
-                <asp:Button ID="Button1" runat="server" CssClass="auto-style16" OnClick="Button1_Click" Text="수정" />
+                <asp:Button ID="Button1" runat="server" CssClass="auto-style16" OnClick="Button1_Click" Text="수정" Height="36px" />
                 <span class="auto-style17">&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="TextBox1" ErrorMessage="한글이름 2-5자를 입력하세요 !" ForeColor="Red" ValidationExpression="[가-힣]{2,5}" Display="Dynamic"></asp:RegularExpressionValidator>
-                </span></strong></td>
+                &nbsp;</span><asp:Label ID="name_label" runat="server"></asp:Label>
+                </strong></td>
         </tr>
         <tr>
             <td class="auto-style22"><strong>ID:</strong></td>
