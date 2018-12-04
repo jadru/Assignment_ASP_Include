@@ -23,11 +23,16 @@
         }
         .auto-style33 {
             font-weight: normal;
+            text-align: center;
         }
         .auto-style50 {
             border-radius:10px;
             box-shadow:3px 3px 3px 3px #999;
             width: 100%;
+        }
+        .auto-style51 {
+            font-size: x-large;
+            text-align: center;
         }
     </style>
 </asp:Content>
@@ -37,9 +42,9 @@
             <tr">
                 <td class="auto-style31" style="background-color: #FFFF00">
                     <h1 class="auto-style33">JavaScript</h1>
-                    <p>최초 개발자 : Brendan Eich</p>
-                    <p>운영 및 개발자 : Brendan Eich</p>
-                    <p>공식 사이트 :없음</p>
+                    <p class="auto-style30">최초 개발자 : Brendan Eich</p>
+                    <p class="auto-style30">운영 및 개발자 : Brendan Eich</p>
+                    <p class="auto-style30">공식 사이트 :없음</p>
                 </td>
                 <td class="auto-style32" style="background-color: #FFFF00">
         <strong>
@@ -51,42 +56,42 @@
     <h1 class="auto-style30">
         &nbsp;</h1>
     
-    <p class="auto-style6">
+    <p class="auto-style51">
         프로그래밍 언어로, 스크립트 언어(Script Language)에 해당된다.</p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         오늘날 HTML, CSS와 함께 웹을 구성하는 요소 중 하나다.
     </p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         HTML이 웹 페이지의 기본 구조를 담당하고, CSS가 디자인을 담당한다면 JavaScript는
     </p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다</p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         썬 마이크로시스템즈(현재 오라클)에서 개발한&nbsp;Java와는 별 관계가 없는 언어이다.</p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         처음에는 Mocha라는 이름이었지만 4달 만에 LiveScript라는 이름으로 개명하고
     </p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         다시 3달 후에는 JavaScript라는 이름이 되어 오늘날까지 이어지고 있다</p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         JavaScript는 멀티-패러다임 언어로 명령형, 함수형, 객체지향형 언어다. 기본적으로는
     </p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         함수형 프로그래밍 패러다임을 따른다. 자연스럽게 이는 클로저로 시작해 끝을 보는 것이 가능하다.</p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         오늘날 JavaScript가 가장 널리 쓰이는 분야는 클라이언트용 인터페이스이다.
     </p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         이 때 주로 JavaScript는 웹 브라우저에서 제공되는 DOM API로 사용하게 된다.</p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         Java 같은 이름이기는 해도 프로그래밍 언어로서 상당히 우수한 설계를 자랑한다.
     </p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         우수한 텍스트 표기법(JSON)[16]을 가졌으며, 구조적으로 비동기 프로그래밍에
     </p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         유리하다.</p>
-    <p class="auto-style6">
+    <p class="auto-style51">
         &nbsp;</p>
     <p class="auto-style21">
         출처 : 한국정보통신기술협회</p>

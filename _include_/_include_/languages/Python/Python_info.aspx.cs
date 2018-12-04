@@ -5,15 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class languages_php_phpmain : System.Web.UI.Page
+public partial class languages_C_C_info : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
-    }
-
-    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-    {
-        Response.Redirect("javascript_1.aspx");
     }
 }

@@ -51,7 +51,7 @@ public partial class home : System.Web.UI.Page
 
     protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
     {   // JS
-        Response.Redirect(".\\languages\\Javascript\\javascriptmain.aspx");
+        Response.Redirect("\\languages\\Javascript\\Javascript_main.aspx");
     }
 
     protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
