@@ -38,11 +38,7 @@
     &nbsp;</p>
 <table class="auto-style18">
     <tr>
-<<<<<<< HEAD
         <td class="auto-style26">이름 :</td>
-=======
-        <td class="auto-style26" style="width: 50%;">Name:</td>
->>>>>>> 146838f66dc1197eda6e84ffe54a42784b56254c
         <td class="auto-style25">
             <asp:TextBox ID="TextBox1" runat="server" Height="40px" Width="250px" AutoPostBack="True" CausesValidation="True" OnTextChanged="TextBox1_TextChanged" CssClass="auto-style28"></asp:TextBox>
         </td>
@@ -53,11 +49,7 @@
         </td>
     </tr>
     <tr>
-<<<<<<< HEAD
         <td class="auto-style26">아이디 :</td>
-=======
-        <td class="auto-style26" style="width: 50%;">ID:</td>
->>>>>>> 146838f66dc1197eda6e84ffe54a42784b56254c
         <td class="auto-style25">
             <asp:TextBox ID="TextBox2" runat="server" Height="40px" Width="250px" AutoPostBack="True" CausesValidation="True" OnTextChanged="TextBox2_TextChanged" CssClass="auto-style28"></asp:TextBox>
         </td>
@@ -80,11 +72,7 @@
         </td>
     </tr>
     <tr>
-<<<<<<< HEAD
         <td class="auto-style26">비밀번호 :</td>
-=======
-        <td class="auto-style26" style="width: 50%;">Password:</td>
->>>>>>> 146838f66dc1197eda6e84ffe54a42784b56254c
         <td class="auto-style25">
             <asp:TextBox ID="TextBox4" runat="server" Height="40px" Width="250px" TextMode="Password" CausesValidation="True" OnTextChanged="TextBox4_TextChanged" CssClass="auto-style28"></asp:TextBox>
         </td>
@@ -95,11 +83,7 @@
         </td>
     </tr>
     <tr>
-<<<<<<< HEAD
         <td class="auto-style26">비밀번호 확인:</td>
-=======
-        <td class="auto-style26" style="width: 50%;">Password Confirm:</td>
->>>>>>> 146838f66dc1197eda6e84ffe54a42784b56254c
         <td class="auto-style25">
             <asp:TextBox ID="TextBox5" runat="server" Height="40px" Width="250px" TextMode="Password" CausesValidation="True" OnTextChanged="TextBox5_TextChanged" CssClass="auto-style28"></asp:TextBox>
         </td>
