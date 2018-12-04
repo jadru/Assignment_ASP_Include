@@ -14,7 +14,7 @@
     <div class="auto-style1">
         <h1>정답입니다!</h1>
         <p class="auto-style2">
-            10 마일리지를 획득하셨습니다.</p>
+            마일리지를 획득하셨습니다.</p>
         <p>
             <span class="auto-style2">당신의 등급은 :
             </span>
