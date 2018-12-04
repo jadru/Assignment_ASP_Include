@@ -37,9 +37,9 @@ public partial class ManageAccount_signup : System.Web.UI.Page
                     {
                         Con.Close();
                         Application["islogin"] = "true";
-                        Application["name"] = TextBox1.Text;
-                        Application["id"] = TextBox2.Text;
-                        Application["email"] = TextBox3.Text;
+                        Application["name"] = TextBox1.Text.TrimEnd();
+                        Application["id"] = TextBox2.Text.TrimEnd();
+                        Application["email"] = TextBox3.Text.TrimEnd();
                         Response.Redirect("after sign up.aspx");
                     }
                 }

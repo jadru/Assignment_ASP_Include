@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="kotlin_main.aspx.cs" Inherits="languages_php_phpmain" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="kotlin_main.aspx.cs" Inherits="languages_kotlin_kotlin_main" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -237,7 +237,7 @@
     </tr>
     <tr>
         <td>
-                <asp:ImageButton ID="ImageButton6" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" />
+                <asp:ImageButton ID="ImageButton6" runat="server" Height="101px" ImageUrl="~/objects/images/php_startlesson_1.png" Width="337px" OnClick="ImageButton6_Click" />
         </td>
     </tr>
 </table>

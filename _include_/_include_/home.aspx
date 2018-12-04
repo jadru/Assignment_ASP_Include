@@ -7,7 +7,6 @@
             width: 800px;
             height: 650px;
         }
-
         .auto-style12 {
             text-align: center;
         }

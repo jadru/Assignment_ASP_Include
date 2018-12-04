@@ -30,7 +30,6 @@
         .menu-button-style {
             font-size: x-large;
             text-decoration: none;
-            margin-left: 20px;
         }
         .menu-button-style-s {
             font-size: x-large;
@@ -42,13 +41,15 @@
         }
         .logo-style {
             height: 120px;
-            width: 40%;
+            /*width: 80%;*/
             text-align: left;
         }
         .menu-style {
-            width: 99%;
-            text-align: right;
+            width: 128px;
+            text-align: center;
         }
+        menu-style:hover {color:darkslategrey;}
+        menu-style:active {color:blue;}
         </style>
 </head>
 <body class ="m_global-style">                                                                                                                          
@@ -62,14 +63,16 @@
                     </td>
                 <td class="menu-style">
                     <asp:LinkButton ID="LinkButton4" runat="server" CssClass="menu-button-style-s" OnClick="LinkButton4_Click" ForeColor="#0099FF" BorderColor="#0099FF" BorderStyle="Solid" BorderWidth="2px"></asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton5" runat="server" CssClass="menu-button-style" ForeColor="Black" OnClick="LinkButton5_Click"></asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton3" runat="server" CssClass="menu-button-style" ForeColor="Black" OnClick="LinkButton3_Click"></asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="menu-button-style" ForeColor="Black" OnClick="LinkButton1_Click"></asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton2" runat="server" CssClass="menu-button-style" ForeColor="Black" OnClick="LinkButton2_Click"></asp:LinkButton>
                 </td>
+                <td class="menu-style">
+                    <asp:LinkButton ID="LinkButton5" runat="server" CssClass="menu-button-style" ForeColor="Black" OnClick="LinkButton5_Click"></asp:LinkButton></td>
+                <td class="menu-style">
+                <asp:LinkButton ID="LinkButton1" runat="server" CssClass="menu-button-style" ForeColor="Black" OnClick="LinkButton1_Click"></asp:LinkButton></td>
+                <td class="menu-style">
+                    <asp:LinkButton ID="LinkButton2" runat="server" CssClass="menu-button-style" ForeColor="Black" OnClick="LinkButton2_Click"></asp:LinkButton></td>
             </tr>
             <tr>
-                <td class="content-style" colspan="2">
+                <td class="content-style" colspan="5">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     <p>
                         &nbsp;</p>
@@ -77,11 +80,11 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td colspan="5">
                     <hr /></td>
             </tr>
             <tr>
-                <td class="copyright-style" colspan="2">
+                <td class="copyright-style" colspan="5">
                     <h3>Copyright&copy; 2018 Inje Univ. College of Computer Engineering All right received.</h3></td>
             </tr>
         </table>

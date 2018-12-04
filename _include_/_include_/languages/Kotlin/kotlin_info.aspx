@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="kotlin_info.aspx.cs" Inherits="languages_C_C_info" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="kotlin_info.aspx.cs" Inherits="languages_kotlin_kotlin_info" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -35,11 +35,14 @@
         .auto-style52 {
             font-size: x-large;
         }
+        .auto-style6 {
+            font-size: x-large;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div>
-        <table class="auto-style50" style="background-color:#6699FF">
+        <table class="auto-style50" style="background-color:#FF9900">
             <tr">
             <td class="auto-style31">
                 <h1 class="auto-style33">Kotlin</h1>
@@ -93,7 +96,11 @@ println(greet_en) <span style="box-sizing: inherit; color: rgb(136, 136, 136);">
 println(greet_ko) </span><span style="box-sizing: inherit; color: rgb(136, 136, 136);"><span class="auto-style52">// 출력: include님 안녕하세요!</span></span></pre>
     </div>
     <p class="auto-style21">
-        https://namu.wiki/w/Kotlin</p>
+        <a href="https://namu.wiki/w/Kotlin">https://namu.wiki/w/Kotlin</a></p>
+    <p class="auto-style21">
+        <strong>
+        <asp:Button ID="Button1" runat="server" BackColor="#FF9900" CssClass="auto-style6" ForeColor="White" Height="87px" OnClick="Button1_Click" Text="Back" Width="196px" />
+        </strong></p>
     <p class="auto-style21">
     </p>
 </asp:Content>

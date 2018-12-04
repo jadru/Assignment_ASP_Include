@@ -52,11 +52,6 @@ public partial class Master : System.Web.UI.MasterPage
         }
     }
 
-    protected void LinkButton3_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("~/community/main.aspx");
-    }
-
     protected void LinkButton4_Click(object sender, EventArgs e)
     {
         Response.Redirect("~/languages.aspx");
