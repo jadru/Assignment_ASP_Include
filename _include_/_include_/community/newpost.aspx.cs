@@ -23,7 +23,7 @@ public partial class community_newpost : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        // SPQ 선언
+        // SQL 선언
         int board = DropDownList1.SelectedIndex;
         if(board == 0) // 구인/구직
         {
@@ -87,7 +87,7 @@ public partial class community_newpost : System.Web.UI.Page
 
                 reader.Close();
                 primarykey++;
-                
+
                 Cmd.CommandText = "INSERT db_board2 values (\'" + TextBox2.Text + "\', \'" + TextBox1.Text +
                     "\', \'" + TextBox4.Text + "\', \'" + primarykey + "\', \'" + DateTime.Now + "\')";
                 if (Cmd.ExecuteNonQuery() == 1)

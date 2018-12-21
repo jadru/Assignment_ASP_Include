@@ -85,7 +85,7 @@ public partial class account_mypage : System.Web.UI.Page
         // 라벨 초기화
         name_label.Text = "";
         email_label.Text = "";
-        if (RegularExpressionValidator6.IsValid)
+        if (RegularExpressionValidator6.IsValid && TextBox1.Text != "")
         {
             string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";//서버 연결
             SqlConnection Con = new SqlConnection(connectionString);
@@ -118,7 +118,7 @@ public partial class account_mypage : System.Web.UI.Page
         // 라벨 초기화
         name_label.Text = "";
         email_label.Text = "";
-        if (RegularExpressionValidator1.IsValid)
+        if (RegularExpressionValidator1.IsValid && TextBox3.Text != "")
         {
             string connectionString = @"server=(local)\SQLExpress;Integrated Security=true;database=db_user";
             SqlConnection Con = new SqlConnection(connectionString);

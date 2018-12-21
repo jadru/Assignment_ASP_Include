@@ -11,6 +11,8 @@ public partial class account_login : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //텍스트박스에서 엔터치면 버튼 클릭이벤트 작동
+        this.TextBox2.Attributes["onkeypress"] = "if(event.keyCode == 13) {" +
+            Page.GetPostBackEventReference(this.Button1) + "; return false;}";
     }
 
     protected void Button1_Click(object sender, EventArgs e)
